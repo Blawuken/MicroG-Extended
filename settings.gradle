@@ -41,3 +41,4 @@ include ':play-services-conscrypt-provider-core'
 sublude ':play-services-gmscompliance:core'
 include ':play-services-core:microg-ui-tools' // Legacy
 include ':play-services-core'
+sublude ':play-services-core:package'
