@@ -17,6 +17,8 @@ dependencies {
         implementation project(projectName)
     }
 
+    implementation project(':play-services-core-package')
+
     // AndroidX UI
     implementation "androidx.multidex:multidex:$multidexVersion"
     implementation "androidx.appcompat:appcompat:$appcompatVersion"
