@@ -45,9 +45,14 @@
             android:key="pref_checkin" />
         <Preference
             android:icon="@drawable/ic_cloud_bell"
-            android:layout="@layout/uwu_bot"
+            android:layout="@layout/uwu_mid"
             android:title="@string/service_name_mcs"
             android:key="pref_gcm" />
+        <Preference
+            android:icon="@drawable/ic_shop"
+            android:layout="@layout/uwu_bot"
+            android:key="pref_play"
+            android:title="@string/service_name_play" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="@string/extended_misc">

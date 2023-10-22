@@ -23,6 +23,9 @@
         <action
             android:id="@+id/openAbout"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/openPlaySettings"
+            app:destination="@id/playFragment" />
     </fragment>
 
     <!-- Self-Check -->
@@ -96,5 +99,12 @@
         android:name="org.microg.gms.ui.AboutFragment"
         android:label="@string/prefcat_about"
         tools:layout="@layout/about_root" />
+
+    <!-- Play Store services -->
+
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="org.microg.gms.ui.PlayFragment"
+        android:label="@string/service_name_play" />
 
 </navigation>
