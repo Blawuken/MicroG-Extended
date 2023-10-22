@@ -19,6 +19,7 @@ import org.microg.gms.common.PackageUtils.warnIfNotMainProcess
 import org.microg.gms.settings.SettingsContract.Auth
 import org.microg.gms.settings.SettingsContract.CheckIn
 import org.microg.gms.settings.SettingsContract.Gcm
+import org.microg.gms.settings.SettingsContract.Play
 import org.microg.gms.settings.SettingsContract.Profile
 import org.microg.gms.settings.SettingsContract.getAuthority
 import java.io.File
@@ -70,6 +71,7 @@ class SettingsProvider : ContentProvider() {
         Gcm.getContentUri(context!!) -> queryGcm(projection ?: Gcm.PROJECTION)
         Auth.getContentUri(context!!) -> queryAuth(projection ?: Auth.PROJECTION)
         Profile.getContentUri(context!!) -> queryProfile(projection ?: Profile.PROJECTION)
+        Play.getContentUri(context!!) -> queryPlay(projection ?: Play.PROJECTION)
         else -> null
     }
 
@@ -86,6 +88,7 @@ class SettingsProvider : ContentProvider() {
             Gcm.getContentUri(context!!) -> updateGcm(values)
             Auth.getContentUri(context!!) -> updateAuth(values)
             Profile.getContentUri(context!!) -> updateProfile(values)
+            Play.getContentUri(context!!) -> updatePlay(values)
             else -> return 0
         }
         return 1
@@ -232,6 +235,25 @@ class SettingsProvider : ContentProvider() {
             when (key) {
                 Profile.PROFILE -> editor.putString(key, value as String?)
                 Profile.SERIAL -> editor.putString(key, value as String?)
+                else -> throw IllegalArgumentException("Unknown key: $key")
+            }
+        }
+        editor.apply()
+    }
+
+    private fun queryPlay(p: Array<out String>): Cursor = MatrixCursor(p).addRow(p) { key ->
+        when (key) {
+            Play.LICENSING -> getSettingsBoolean(key, false)
+            else -> throw IllegalArgumentException("Unknown key: $key")
+        }
+    }
+
+    private fun updatePlay(values: ContentValues) {
+        if (values.size() == 0) return
+        val editor = preferences.edit()
+        values.valueSet().forEach { (key, value) ->
+            when (key) {
+                Play.LICENSING -> editor.putBoolean(key, value as Boolean)
                 else -> throw IllegalArgumentException("Unknown key: $key")
             }
         }

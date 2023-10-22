@@ -18,6 +18,7 @@ import com.google.android.gms.R
 import org.microg.gms.checkin.CheckinPreferences
 import org.microg.gms.gcm.GcmDatabase
 import org.microg.gms.gcm.GcmPrefs
+import org.microg.gms.play.PlayPreferences
 import org.microg.gms.ui.settings.SettingsProvider
 import org.microg.gms.ui.settings.getAllSettingsProviders
 import org.microg.tools.ui.ResourceSettingsFragment
@@ -44,6 +45,10 @@ class SettingsFragment : ResourceSettingsFragment() {
         }
         findPreference<Preference>(PREF_ABOUT)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
             findNavController().navigate(requireContext(), R.id.openAbout)
+            true
+        }
+        findPreference<Preference>(PREF_PLAY)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            findNavController().navigate(requireContext(), R.id.openPlaySettings)
             true
         }
         findPreference<SwitchPreference>(PREF_CAST_HIDE_LAUNCHER_ICON)?.apply {
@@ -114,6 +119,7 @@ class SettingsFragment : ResourceSettingsFragment() {
         }
 
         findPreference<Preference>(PREF_CHECKIN)!!.setSummary(if (CheckinPreferences.isEnabled(requireContext())) org.microg.gms.base.core.R.string.service_status_enabled_short else org.microg.gms.base.core.R.string.service_status_disabled_short)
+        findPreference<Preference>(PREF_PLAY)!!.setSummary(if (PlayPreferences.isLicensingEnabled(requireContext())) R.string.pref_play_summary_licensing_on else R.string.pref_play_summary_licensing_off)
 
         lifecycleScope.launchWhenResumed {
             val entries = getAllSettingsProviders(requireContext()).flatMap { it.getEntriesDynamic(requireContext()) }
@@ -134,6 +140,7 @@ class SettingsFragment : ResourceSettingsFragment() {
         const val PREF_CHECKIN = "pref_checkin"
         const val PREF_ACCOUNTS = "pref_accounts"
         const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
+        const val PREF_PLAY = "pref_play"
     }
 
     init {
