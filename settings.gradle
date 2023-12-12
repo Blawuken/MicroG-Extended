@@ -35,12 +35,10 @@ include ':play-services-core-proto'
 sublude ':play-services-basement:ktx'
 sublude ':play-services-tasks:ktx'
 sublude ':play-services-base:core'
+sublude ':play-services-base:core:package'
 sublude ':play-services-cast:core'
 sublude ':play-services-cast-framework:core'
 include ':play-services-conscrypt-provider-core'
 sublude ':play-services-gmscompliance:core'
 include ':play-services-core:microg-ui-tools' // Legacy
 include ':play-services-core'
-
-include ':play-services-base-core-package'
-project(':play-services-base-core-package').projectDir = file('play-services-base/core/package')
