@@ -454,6 +454,12 @@
             android:taskAffinity="org.microg.gms.settings" />
 
         <activity
+            android:label="@string/opsi_pengembang"
+            android:name="org.microg.gms.ui.OpsiPengembang$AsActivity"
+            android:process=":ui"
+            android:taskAffinity="org.microg.gms.settings" />
+
+        <activity
             android:name="org.microg.gms.accountsettings.ui.MainActivity"
             android:process=":ui"
             android:exported="false"

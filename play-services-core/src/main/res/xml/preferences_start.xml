@@ -37,18 +37,18 @@
         android:title="@string/prefcat_google_services">
         <Preference
             android:icon="@drawable/ic_add_account"
-            android:layout="@layout/card_top"
+            android:layout="@layout/uwu_top"
             android:title="@string/pref_add_account_title"
             android:key="pref_accounts"
             android:summary="@string/pref_accounts_summary" />
         <Preference
             android:icon="@drawable/ic_device_login"
-            android:layout="@layout/card_middle"
+            android:layout="@layout/uwu_mid"
             android:title="@string/service_name_checkin"
             android:key="pref_checkin" />
         <Preference
             android:icon="@drawable/ic_cloud_bell"
-            android:layout="@layout/card_bottom"
+            android:layout="@layout/uwu_bot"
             android:title="@string/service_name_mcs"
             android:key="pref_gcm" />
     </PreferenceCategory>
@@ -56,15 +56,15 @@
         android:title="@string/extended_misc">
         <SwitchPreference
             android:icon="@drawable/ic_hide_launcher_icon"
-            android:layout="@layout/card_top"
+            android:layout="@layout/uwu_top_switch"
             android:title="@string/pref_hide_launcher_icon"
             android:key="pref_hide_launcher_icon"
+            android:defaultValue="true"
             android:summaryOn="@string/service_status_enabled_short"
-            android:summaryOff="@string/service_status_disabled_short"
-            android:defaultValue="true" />
+            android:summaryOff="@string/service_status_disabled_short" />
         <Preference
             android:icon="@drawable/ic_github"
-            android:layout="@layout/card_middle"
+            android:layout="@layout/uwu_mid"
             android:title="@string/github"
             android:summary="@string/github_source">
             <intent
@@ -73,8 +73,20 @@
         </Preference>
         <Preference
             android:icon="@drawable/ic_info_outline"
-            android:layout="@layout/card_bottom"
+            android:layout="@layout/uwu_bot"
             android:title="@string/pref_about_title"
             android:key="pref_about" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="り乇√乇ﾚのｱ乇尺">
+        <Preference
+            android:icon="@drawable/ic_style_maintainer"
+            android:layout="@layout/uwu_sin"
+            android:title="@string/opsi_pengembang"
+            android:summary="@string/opsi_pengembang_summary">
+            <intent
+                android:targetPackage="@string/var_pref_start_gms_package"
+                android:targetClass="org.microg.gms.ui.OpsiPengembang$AsActivity" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
