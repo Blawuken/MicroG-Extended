@@ -252,12 +252,9 @@ This can take a couple of minutes"</string>
 
     <!-- Redesign strings-->
 
-    <string name="wstxda">WSTxda</string>
-    <string name="developer">Developer</string>
-    <string name="developer_link">https://linktr.ee/wstxda</string>
     <string name="github">GitHub</string>
     <string name="github_source">Source code repository</string>
-    <string name="github_link">https://github.com/WSTxda/MicroG-RE</string>
+    <string name="github_link">https://github.com/Blawuken/MicroG-Extended</string>
     <string name="pref_hide_launcher_icon">Hide icon in launcher</string>
     <string name="pref_network_google_enabled_summary">If disabled, all connections to Google servers usually done by MicroG will be denied. This overrides service specific settings</string>
     <string name="pref_network_google_enabled">Allow connecting to Google servers</string>

@@ -59,6 +59,8 @@
             android:layout="@layout/card_top"
             android:title="@string/pref_hide_launcher_icon"
             android:key="pref_hide_launcher_icon"
+            android:summaryOn="@string/service_status_enabled_short"
+            android:summaryOff="@string/service_status_disabled_short"
             android:defaultValue="true" />
         <Preference
             android:icon="@drawable/ic_github"
