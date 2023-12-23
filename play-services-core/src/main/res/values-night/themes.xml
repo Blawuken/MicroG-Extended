@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemeBase" parent="Theme.AppCompat.DayNight">
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+        <item name="colorBackgroundFloating">@color/theme_foreground_dark</item>
+        <item name="android:colorBackground">@color/theme_background_dark</item>
+        <item name="android:actionBarSize">48dip</item>
+        <item name="android:colorAccent">@color/theme_accent_dark</item>
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/theme_background_dark</item>
+        <item name="android:colorAccent">@color/theme_accent_dark</item>
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="colorPrimary">?android:colorBackground</item>
+        <item name="colorPrimaryDark">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+</resources>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SPDX-FileCopyrightText: 2019, The Android Open Source Project
+  ~ SPDX-FileCopyrightText: 2020, microG Project Team
+  ~ SPDX-License-Identifier: Apache-2.0
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:tint="?android:textColorPrimary"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+    <group>
+        <clip-path android:pathData="M0 0H24V24H0z" />
+        <group>
+            <path
+                android:fillColor="#ff000000"
+                android:pathData="M11.5 16.5h1V11h-1v5.5ZM12 9.57c0.17 0 0.31-0.05 0.44-0.17 0.12-0.12 0.19-0.27 0.19-0.45 0-0.17-0.07-0.3-0.2-0.42C12.32 8.4 12.18 8.35 12 8.35c-0.17 0-0.31 0.06-0.44 0.18-0.12 0.11-0.19 0.25-0.19 0.42 0 0.18 0.07 0.33 0.2 0.45 0.12 0.12 0.26 0.17 0.43 0.17ZM12 21c-1.25 0-2.42-0.24-3.51-0.71-1.1-0.48-2.04-1.12-2.85-1.93-0.81-0.8-1.45-1.76-1.93-2.85C3.24 14.42 3 13.25 3 12s0.24-2.42 0.71-3.51c0.48-1.1 1.12-2.04 1.93-2.85 0.8-0.81 1.76-1.45 2.85-1.93C9.58 3.24 10.75 3 12 3s2.42 0.24 3.51 0.71c1.1 0.48 2.04 1.12 2.85 1.93 0.81 0.8 1.45 1.76 1.93 2.85C20.76 9.58 21 10.75 21 12s-0.24 2.42-0.71 3.51c-0.48 1.1-1.12 2.04-1.93 2.85-0.8 0.81-1.76 1.45-2.85 1.93C14.42 20.76 13.25 21 12 21Zm0-1c2.23 0 4.13-0.77 5.68-2.32C19.23 16.13 20 14.23 20 12c0-2.23-0.77-4.13-2.32-5.67C16.13 4.78 14.23 4 12 4 9.77 4 7.87 4.78 6.33 6.33 4.78 7.87 4 9.77 4 12s0.78 4.13 2.33 5.68C7.87 19.23 9.77 20 12 20Z" />
+        </group>
+    </group>
+</vector>

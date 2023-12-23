@@ -1,0 +1,41 @@
+name: Builder APK
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: JDK Setup
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      - name: Setup Java
+        run: echo "JAVA_HOME=$JAVA_HOME_17_X64" >> $GITHUB_ENV
+
+      - name: Build project
+        run: ./gradlew assemble
+
+      - name: Build APK
+        run: ./gradlew assembleRelease
+
+      - name: Upload Debug app to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'MicroG Debug'
+          path: play-services-core/build/outputs/apk/default/debug/*.apk
+      
+      - name: Upload Signed app to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'MicroG Signed'
+          path: play-services-core/build/outputs/apk/default/release/*.apk

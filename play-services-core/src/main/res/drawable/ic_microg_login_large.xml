@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path
+        android:fillColor="#FFEA4335"
+        android:pathData="M62.83 33.17c8.2 8.2 8.2 21.5 0 29.7-4.1 4.1-4.1 10.76 0 14.83 4.1 4.1 10.76 4.1 14.87 0 16.4-16.41 16.4-42.99 0-59.4L62.83 33.17Z"/>
+    <path
+        android:pathData="M77.66 18.3c-16.4-16.4-42.95-16.4-59.36 0-16.4 16.41-16.4 42.99 0 59.4l14.87-14.84c-8.2-8.2-8.2-21.49 0-29.7 8.2-8.2 21.5-8.2 29.7 0 4.1 4.11 10.76 4.11 14.86 0 4.03-4.1 4.03-10.75-0.07-14.86Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="6"
+                android:startY="3590.76"
+                android:endX="7480.6"
+                android:endY="3590.76">
+                <item
+                    android:color="#FF246FDB"
+                    android:offset="0"/>
+                <item
+                    android:color="#FF2973DF"
+                    android:offset="0.06"/>
+                <item
+                    android:color="#FF377DEB"
+                    android:offset="0.28"/>
+                <item
+                    android:color="#FF3F83F2"
+                    android:offset="0.55"/>
+                <item
+                    android:color="#FF4285F4"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFBBC04"
+        android:pathData="M77.66 77.7L62.8 62.86c-8.2 8.2-21.5 8.2-29.7 0L18.24 77.7c16.47 16.4 43.02 16.4 59.42 0Z"/>
+    <path
+        android:fillColor="#FFEA4335"
+        android:pathData="M62.83 62.86c4.1-4.1 10.73-4.1 14.83 0s4.1 10.77 0 14.87-10.73 4.1-14.83 0-4.1-10.76 0-14.87Z"/>
+    <path
+        android:fillColor="#FF34A853"
+        android:pathData="M18.3 62.86c4.1-4.1 10.73-4.1 14.84 0 4.1 4.1 4.1 10.77 0 14.87s-10.73 4.1-14.84 0c-4.1-4.1-4.1-10.76 0-14.87Z"/>
+</vector>

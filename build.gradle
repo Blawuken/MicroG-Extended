@@ -1,0 +1,96 @@
+/*
+ * SPDX-FileCopyrightText: 2013 microG Project Team
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+buildscript {
+    ext.applicationNamespace = "com.google.android.gms"
+    ext.basePackageName = "com.mgoogle"
+
+    ext.cronetVersion = '102.5005.125'
+    ext.wearableVersion = '0.1.1'
+
+    ext.kotlinVersion = '1.7.22'
+    ext.coroutineVersion = '1.6.4'
+
+    ext.annotationVersion = '1.6.0'
+    ext.appcompatVersion = '1.6.1'
+    ext.biometricVersion = '1.1.0'
+    ext.coreVersion = '1.9.0'
+    ext.fragmentVersion = '1.5.5'
+    ext.lifecycleVersion = '2.6.1'
+    ext.materialVersion = '1.9.0'
+    ext.loaderVersion = '1.1.0'
+    ext.mediarouterVersion = '1.4.0'
+    ext.multidexVersion = '2.0.1'
+    ext.navigationVersion = '2.6.0'
+    ext.preferenceVersion = '1.2.0'
+    ext.recyclerviewVersion = '1.2.0'
+    ext.webkitVersion = '1.7.0'
+
+    ext.slf4jVersion = '1.7.36'
+    ext.volleyVersion = '1.2.1'
+    ext.wireVersion = '4.8.0'
+
+    ext.androidBuildGradleVersion = '8.0.2'
+
+    ext.androidBuildVersionTools = '33.0.2'
+
+    ext.androidMinSdk = 23
+    ext.androidTargetSdk = 30
+    ext.androidCompileSdk = 33
+
+    ext.localProperties = new Properties()
+    
+    ext.includeProjects = [
+            ':play-services-base-core',
+            ':play-services-cast-core',
+            ':play-services-cast-framework-core',
+            ':play-services-conscrypt-provider-core',
+            ':play-services-core-proto', // deprecated
+            ':play-services-core:microg-ui-tools',
+            ':play-services-api',
+            ':play-services-tasks-ktx',
+            ':play-services-auth'
+    ]
+
+    try {
+        var stream = rootProject.file('local.properties').newDataInputStream()
+        ext.localProperties.load(stream)
+        stream.close()
+    } catch (ignored) {
+        // Ignore
+    }
+
+    ext.hasModule = (String name, boolean enabledByDefault) -> {
+        return ext.localProperties.getProperty("modules." + name, enabledByDefault.toString()).toBoolean()
+    }
+
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$androidBuildGradleVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.squareup.wire:wire-gradle-plugin:$wireVersion"
+    }
+}
+
+allprojects {
+    apply plugin: 'idea'
+
+    group = 'org.microg.gms'
+    ext.appVersionCode = 234523000
+    ext.baseVersion = ext.appVersionCode.toString()[0..1] + '.' + ext.appVersionCode.toString()[2..3] + '.' + ext.appVersionCode.toString()[4..5]
+    version = "4.1 GMS."+ext.baseVersion.replaceAll("\\.", "")
+    ext.isReleaseVersion = false
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}

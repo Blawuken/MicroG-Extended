@@ -1,0 +1,137 @@
+/*
+ * SPDX-FileCopyrightText: 2013 microG Project Team
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+configurations {
+    defaultRuntimeOnly
+}
+
+dependencies {
+    implementation "com.squareup.wire:wire-runtime:$wireVersion"
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    includeProjects.each { projectName ->
+        implementation project(projectName)
+    }
+
+    // AndroidX UI
+    implementation "androidx.multidex:multidex:$multidexVersion"
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.mediarouter:mediarouter:$mediarouterVersion"
+    implementation "androidx.preference:preference-ktx:$preferenceVersion"
+    implementation "androidx.webkit:webkit:$webkitVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    implementation "com.android.volley:volley:$volleyVersion"
+
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycleVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+}
+
+android {
+    namespace "$applicationNamespace"
+
+    compileSdkVersion androidCompileSdk
+    buildToolsVersion "$androidBuildVersionTools"
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    defaultConfig {
+        applicationId "${basePackageName}.android.gms"
+
+        versionName version
+        versionCode appVersionCode
+
+        minSdkVersion androidMinSdk
+        targetSdkVersion androidTargetSdk
+
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex-keep.pro')
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+
+        buildConfigField "String", "APPLICATION_NAMESPACE", "\"${android.namespace}\""
+        buildConfigField "String", "BASE_PACKAGE_NAME", "\"$basePackageName\""
+        buildConfigField "String", "INCLUDED_PROJECTS", "\"${includeProjects.join(",")}\""
+        manifestPlaceholders = [
+                basePackageName: "$basePackageName"
+        ]
+
+        // provide package name to xml resources
+        resValue "string", "var_authenticator_account_type", "$basePackageName"
+        resValue "string", "var_contact_syncadapter_account_type", "$basePackageName"
+        resValue "string", "var_pref_auth_action_security_settings", "${basePackageName}.android.gms.accountsettings.SECURITY_SETTINGS"
+        resValue "string", "var_pref_auth_action_privacy_settings", "${basePackageName}.android.gms.accountsettings.PRIVACY_SETTINGS"
+        resValue "string", "var_pref_auth_action_preferences_settings", "${basePackageName}.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
+        resValue "string", "var_pref_start_gms_package", "${basePackageName}.android.gms"
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+        }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation', 'InvalidPackage', 'BatteryLife', 'ImpliedQuantity', 'MissingQuantity', 'InvalidWakeLockTag', 'UniquePermission'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions = ['target']
+    productFlavors {
+        "default" {
+            dimension 'target'
+        }
+        "huawei" {
+            dimension 'target'
+            versionNameSuffix "-hw"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+}
+
+if (file('user.gradle').exists()) {
+    apply from: 'user.gradle'
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.each { output ->
+        output.outputFileName = variant.applicationId + "-" + variant.versionCode + variant.versionName.substring(version.length()) + ".apk"
+    }
+}
