@@ -38,4 +38,5 @@
     <color name="uwu_bg">#ffe5e8f5</color>
     <color name="uwu_bg_card">#ffffffff</color>
     <color name="colorText">#ff191c1b</color>
+    <color name="uwu_accent">@color/extended_color</color>
 </resources>

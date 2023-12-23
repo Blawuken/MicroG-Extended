@@ -36,6 +36,9 @@ dependencies {
 
     // Cardview
     implementation "androidx.cardview:cardview:1.0.0"
+    
+    // Switch Button
+    implementation 'com.kyleduo.switchbutton:library:2.1.0'
 
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])
