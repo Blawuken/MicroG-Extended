@@ -15,56 +15,64 @@
   ~ limitations under the License.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-        <Preference
-            android:icon="@drawable/ic_self_check"
-            android:summary="@string/self_check_desc"
-            android:title="@string/self_check_title">
-            <intent
-                android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity"
-                android:targetPackage="@string/var_pref_start_gms_package" />
-        </Preference>
-    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="prefcat_google_services">
+    <Preference
+        android:layout="@layout/uwu_banner"
+        android:selectable="false" />
+    <Preference
+        android:layout="@layout/uwu_banner_bottom"
+        android:selectable="false" />
+    <Preference
+        android:icon="@drawable/uwu_check"
+        android:layout="@layout/uwu_maintainer"
+        android:title="@string/self_check_title"
+        android:summary="@string/self_check_desc">
+        <intent
+            android:targetPackage="@string/var_pref_start_gms_package"
+            android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/prefcat_google_services">
         <Preference
             android:icon="@drawable/ic_add_account"
+            android:layout="@layout/card_top"
+            android:title="@string/pref_add_account_title"
             android:key="pref_accounts"
-            android:summary="@string/pref_accounts_summary"
-            android:title="@string/pref_add_account_title" />
+            android:summary="@string/pref_accounts_summary" />
         <Preference
             android:icon="@drawable/ic_device_login"
-            android:key="pref_checkin"
-            android:title="@string/service_name_checkin" />
+            android:layout="@layout/card_middle"
+            android:title="@string/service_name_checkin"
+            android:key="pref_checkin" />
         <Preference
             android:icon="@drawable/ic_cloud_bell"
-            android:key="pref_gcm"
-            android:title="@string/service_name_mcs" />
-        <SwitchPreference
-            android:key="pref_hide_launcher_icon"
-            android:icon="@drawable/ic_hide_launcher_icon"
-            android:title="@string/pref_hide_launcher_icon"
-            android:defaultValue="true"/>
+            android:layout="@layout/card_bottom"
+            android:title="@string/service_name_mcs"
+            android:key="pref_gcm" />
     </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="prefcat_footer">
-        <Preference
-            android:icon="@drawable/ic_developer"
-            android:summary="@string/developer"
-            android:title="@string/wstxda">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="@string/developer_link" />
-        </Preference>
+    <PreferenceCategory
+        android:title="@string/extended_misc">
+        <SwitchPreference
+            android:icon="@drawable/ic_hide_launcher_icon"
+            android:layout="@layout/card_top"
+            android:title="@string/pref_hide_launcher_icon"
+            android:key="pref_hide_launcher_icon"
+            android:defaultValue="true" />
         <Preference
             android:icon="@drawable/ic_github"
-            android:summary="@string/github_source"
-            android:title="@string/github">
+            android:layout="@layout/card_middle"
+            android:title="@string/github"
+            android:summary="@string/github_source">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="@string/github_link" />
         </Preference>
         <Preference
             android:icon="@drawable/ic_info_outline"
-            android:key="pref_about"
-            android:title="@string/pref_about_title" />
+            android:layout="@layout/card_bottom"
+            android:title="@string/pref_about_title"
+            android:key="pref_about" />
     </PreferenceCategory>
 </PreferenceScreen>

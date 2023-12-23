@@ -28,16 +28,31 @@
         <item name="android:windowIsFloating">true</item>
     </style>
 
-    <style name="AppThemeBase" parent="Theme.AppCompat.DayNight">
-        <item name="actionBarStyle">@style/ActionBarTheme</item>
-        <item name="colorBackgroundFloating">@color/theme_foreground_light</item>
-        <item name="android:colorBackground">@color/theme_background_light</item>
-        <item name="android:actionBarSize">48dip</item>
-        <item name="android:colorAccent">@color/theme_accent_light</item>
-        <item name="android:statusBarColor">?android:colorBackground</item>
-        <item name="android:navigationBarColor">?android:colorBackground</item>
-        <item name="android:windowLightStatusBar">true</item>
+    <style name="AppThemeBase" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowBackground">@color/uwu_bg</item>
+        <item name="android:scrollbarSize">0.0dip</item>
+        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">true</item>
+        <item name="colorAccent">@color/uwu_accent_light</item>
+        <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
+        <item name="colorMainText">@color/colorText</item>
+        <item name="colorPrimary">@color/uwu_primary_light</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="elevation">0.0dip</item>
+        <item name="colorIcon">@android:color/white</item>
+        <item name="colorText">@android:color/white</item>
+        <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/uwu_primary_light</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -49,6 +64,47 @@
         <item name="colorPrimaryDark">?android:colorBackground</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="xd_pref_card_firmware_header">
+        <item name="android:background">@drawable/drawable_7f0801e2</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
+    </style>
+
+    <style name="Preference.xd.Category" parent="@style/Preference.Category">
+        <item name="android:layout">@layout/xd_preference_category_material</item>
+        <item name="android:selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+        <item name="allowDividerBelow">false</item>
+    </style>
+
+    <style name="XdPreferenceCategoryTitleTextStyle">
+        <item name="android:textAppearance">?preferenceCategoryTitleTextAppearance</item>
+        <item name="android:textColor">@color/extended_color</item>
+        <item name="android:background">@drawable/xd_pref_card</item>
+    </style>
+    
+    <style name="xd_pref_card_sin">
+        <item name="android:background">@drawable/xd_pref_card_sin</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
+    </style>
+
+    <style name="xd_text_primary">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">@font/virgoo</item>
+    </style>
+
+    <style name="xd_text_secondary">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
     </style>
 
 </resources>

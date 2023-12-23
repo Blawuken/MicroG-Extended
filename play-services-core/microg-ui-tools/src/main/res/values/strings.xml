@@ -25,8 +25,8 @@
 
     <string name="prefcat_setup">Setup</string>
 
-    <string name="self_check_title">Self-Check</string>
-    <string name="self_check_desc">Check if the system is correctly set up to use MicroG</string>
+    <string name="self_check_title">This app is under maintenance</string>
+    <string name="self_check_desc">AnGgIt86</string>
 
     <string name="self_check_cat_permissions">Permissions granted</string>
     <string name="self_check_name_permission">Permission to %1$s:</string>

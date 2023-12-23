@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/xd_preference_category_padding_top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/xd_preference_category_height"
+    android:paddingStart="?android:listPreferredItemPaddingStart"
+    android:paddingEnd="?android:listPreferredItemPaddingEnd"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/image_frame" />
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5.0dip"
+        android:paddingEnd="5.0dip"
+        style="@style/XdPreferenceCategoryTitleTextStyle" />
+    <View
+        android:background="?android:colorAccent"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginStart="@dimen/xd_preference_category_line_margin_start" />
+</LinearLayout>

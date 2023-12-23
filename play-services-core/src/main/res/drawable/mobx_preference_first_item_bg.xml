@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/mobx_card_view" />
+    <corners
+        android:topLeftRadius="@dimen/mobx_card_rounded2"
+        android:topRightRadius="@dimen/mobx_card_rounded2"
+        android:bottomLeftRadius="@dimen/mobx_card_rounded1"
+        android:bottomRightRadius="@dimen/mobx_card_rounded1" />
+</shape>

@@ -33,6 +33,12 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-service:$lifecycleVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    // Cardview
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // Anu
+    implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])
 }
 
 android {

@@ -15,15 +15,12 @@
   -->
 
 <resources>
-    <dimen name="maps_watermark_margin">5.0dip</dimen>
 
-    <dimen name="xd_pref_card_horizontal_padding">16.0dip</dimen>
-    <dimen name="xd_preference_category_height">45.0dip</dimen>
-    <dimen name="xd_preference_category_line_margin_start">2.0dip</dimen>
-    <dimen name="xd_preference_category_padding_top">0.0dip</dimen>
-    <dimen name="mobx_card_rounded1">0.0dip</dimen>
-    <dimen name="mobx_card_rounded2">24.0dip</dimen>
-    <dimen name="xd_pref_card_radius">24.0dip</dimen>
-    <dimen name="xd_about_phone_ill_height">275.0dip</dimen>
-    <dimen name="xd_about_phone_ill_width">125.0dip</dimen>
+    <color name="colorText">#ffffffff</color>
+    <color name="uwu_bg">#ff151419</color>
+    <color name="uwu_bg_card">@color/mobx_card_view</color>
+    <color name="mobx_card_view">#ff212227</color>
+    <color name="extended_color">@color/uwu_primary_dark</color>
+    <color name="xd_pref_card_color">@color/uwu_bg_card</color>
+
 </resources>

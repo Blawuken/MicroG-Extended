@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppThemeBase" parent="Theme.AppCompat.DayNight">
-        <item name="actionBarStyle">@style/ActionBarTheme</item>
-        <item name="colorBackgroundFloating">@color/theme_foreground_dark</item>
-        <item name="android:colorBackground">@color/theme_background_dark</item>
-        <item name="android:actionBarSize">48dip</item>
-        <item name="android:colorAccent">@color/theme_accent_dark</item>
-        <item name="android:statusBarColor">?android:colorBackground</item>
-        <item name="android:navigationBarColor">?android:colorBackground</item>
-        <item name="android:windowLightStatusBar">false</item>
+    <style name="Theme.Material3.DayNight" parent="Theme.Material3.Dark">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="AppThemeBase" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowBackground">@color/uwu_bg</item>
+        <item name="android:scrollbarSize">0.0dip</item>
+        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">false</item>
+        <item name="colorAccent">@color/uwu_accent_dark</item>
+        <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
+        <item name="colorIcon">@android:color/white</item>
+        <item name="colorMainText">@color/colorText</item>
+        <item name="colorPrimary">@color/uwu_primary_dark</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="colorText">@android:color/white</item>
+        <item name="elevation">0.0dip</item>
+        <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:tint">@android:color/black</item>
+        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorPrimary">@color/uwu_primary_dark</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
