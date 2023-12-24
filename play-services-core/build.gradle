@@ -73,6 +73,7 @@ android {
         buildConfigField "String", "APPLICATION_NAMESPACE", "\"${android.namespace}\""
         buildConfigField "String", "BASE_PACKAGE_NAME", "\"$basePackageName\""
         buildConfigField "String", "INCLUDED_PROJECTS", "\"${includeProjects.join(",")}\""
+        
         manifestPlaceholders = [
                 basePackageName: "$basePackageName"
         ]
@@ -84,6 +85,11 @@ android {
         resValue "string", "var_pref_auth_action_privacy_settings", "${basePackageName}.android.gms.accountsettings.PRIVACY_SETTINGS"
         resValue "string", "var_pref_auth_action_preferences_settings", "${basePackageName}.android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
         resValue "string", "var_pref_start_gms_package", "${basePackageName}.android.gms"
+        resValue "string", "extended_build_date", "${getDate()}"
+        resValue "string", "extended_build_min_sdk", "$androidMinSdk"
+        resValue "string", "extended_build_target_sdk", "$androidTargetSdk"
+        resValue "string", "extended_build_app_version_code", "$appVersionCode"
+        resValue "string", "extended_build_app_version_release", "$version"
     }
 
     buildFeatures {
@@ -143,6 +149,10 @@ android {
             useLegacyPackaging true
         }
     }
+}
+
+def getDate() {
+    return new Date().format('dd, MMMM YYYY')
 }
 
 if (file('user.gradle').exists()) {
