@@ -9,11 +9,13 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.util.AttributeSet
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 import org.microg.gms.base.core.R
+import java.util.Locale
 
 abstract class AppPreference : Preference {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes)
@@ -76,6 +78,7 @@ abstract class AppPreference : Preference {
 
         val packageNameTextView: TextView? = holder.itemView.findViewById(R.id.package_name)
         val appVersionTextView: TextView? = holder.itemView.findViewById(R.id.version_name)
+        val appPatcherTextView: TextView? = holder.itemView.findViewById(R.id.patcher_name)
 
         if (packageNameTextView != null && packageNameField != null) {
             packageNameTextView.text = packageNameField
@@ -87,6 +90,24 @@ abstract class AppPreference : Preference {
             appVersionTextView.text = appVersion
         } else {
             appVersionTextView?.text = ""
+        }
+
+        val packageName = packageNameField.orEmpty().lowercase(Locale.ROOT)
+
+        val patcherText = when {
+            packageName.contains("revanced") -> "ReVanced"
+            packageName.contains("rvx") -> "ReVanced Extended"
+            packageName.contains("rex") -> "YouTube Advanced"
+            else -> ""
+        }
+
+        appPatcherTextView?.let {
+            if (patcherText.isNotEmpty()) {
+                it.visibility = View.VISIBLE
+                it.text = patcherText
+            } else {
+                it.visibility = View.GONE
+            }
         }
     }
 }
