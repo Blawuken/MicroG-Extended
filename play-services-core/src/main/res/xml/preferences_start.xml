@@ -86,7 +86,7 @@
             android:summary="@string/opsi_pengembang_summary">
             <intent
                 android:targetPackage="@string/var_pref_start_gms_package"
-                android:targetClass="org.microg.gms.ui.OpsiPengembang$AsActivity" />
+                android:targetClass="org.microg.gms.ui.DevOption$AsActivity" />
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

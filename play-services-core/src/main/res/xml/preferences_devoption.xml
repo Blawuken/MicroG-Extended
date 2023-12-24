@@ -15,6 +15,19 @@
   ~ limitations under the License.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/uwu_dashboard_main"
+        android:title="@string/uwu_header_title"
+        android:selectable="false" />
+    <Preference
+            android:icon="@drawable/uwu_neko"
+            android:layout="@layout/uwu_sin"
+            android:title="@string/uwu_credits"
+            android:summary="@string/uwu_tap_credit_summary">
+            <intent
+                android:targetPackage="@string/var_pref_start_gms_package"
+                android:targetClass="org.microg.gms.ui.Credits$AsActivity" />
+        </Preference>
 </PreferenceScreen>

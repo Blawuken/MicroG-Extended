@@ -15,6 +15,431 @@
   ~ limitations under the License.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/uwu_dashboard_credit"
+        android:title="@string/uwu_about_title"
+        android:selectable="false"
+        android:summary="@string/uwu_about_summary"
+        android:defaultValue="false" />
+    <Preference
+        android:layout="@layout/uwu_banner_bottom"
+        android:selectable="false" />
+    <PreferenceCategory
+        android:title="@string/uwu_controller_cat" />
+    <SwitchPreference
+        android:icon="@drawable/uwu_on_of"
+        android:layout="@layout/uwu_sin_switch"
+        android:title="@string/uwu_switch_title"
+        android:key="AKTIF_PROFILE"
+        android:summary="@string/uwu_switch_info"
+        android:widgetLayout="@layout/preference_widget_switch"
+        android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/uwu_modder_cat" />
+    <Preference
+        android:icon="@drawable/uwu_modder"
+        android:layout="@layout/uwu_top"
+        android:title="AnGgIt86"
+        android:key="PROFILE"
+        android:summary="Developer of this application"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/anggit0817" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_modder"
+        android:layout="@layout/uwu_mid"
+        android:title="DensPlay [M•R•T] 🇲🇨"
+        android:key="PROFILE"
+        android:summary="My lord 🤭"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Dens_play89" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_modder"
+        android:layout="@layout/uwu_mid"
+        android:title="Akazaa~"
+        android:key="PROFILE"
+        android:summary="My lord 🤭"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/mobxprjkt" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_modder"
+        android:layout="@layout/uwu_mid"
+        android:title="Milim Nava"
+        android:key="PROFILE"
+        android:summary="Developer guide"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/milimnavaUwU" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="UWU SOURCE GUIDE ID"
+        android:key="PROFILE"
+        android:summary="channel"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/uwuresourceguide" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_bot"
+        android:title="YOUTUBE EXTENDED"
+        android:key="PROFILE"
+        android:summary="Telegram Channel"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/ExtendedApps" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/uwu_material_design_cat" />
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_sin"
+        android:title="xdroidOSS° newsletter"
+        android:key="PROFILE"
+        android:summary="mnmlist"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/xdroidOSS" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/uwu_microg" />
+    <Preference
+        android:icon="@drawable/ic_github"
+        android:layout="@layout/uwu_top"
+        android:title="microg"
+        android:key="PROFILE"
+        android:summary="Github source gmscore update"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/microg" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_github"
+        android:layout="@layout/uwu_mid"
+        android:title="inotia00"
+        android:key="PROFILE"
+        android:summary="Revanced Extended"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/inotia00" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_github"
+        android:layout="@layout/uwu_mid"
+        android:title="ReVanced"
+        android:key="PROFILE"
+        android:summary="ReVanced Patch Template"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ReVanced" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_github"
+        android:layout="@layout/uwu_mid"
+        android:title="WSTxda"
+        android:key="PROFILE"
+        android:summary="Microg-RE"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/WSTxda" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_github"
+        android:layout="@layout/uwu_bot"
+        android:title="cuynu"
+        android:key="PROFILE"
+        android:summary="Vanced+ microG"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://gitlab.com/cuynu" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/uwu_resources_guides_cat" />
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_top"
+        android:title="@string/uwu_title_7"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_7"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/AlliveeCh" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_25"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_25"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/AlliveeNitip" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_15"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_15"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Allivee2nd" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_8"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_8"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/anubarengch" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_16"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_16"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/anubareng" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_24"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_24"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/forumprojen" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_18"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_18"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/projenxfmly" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_19"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_19"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/bancitobat20" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_20"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_20"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/t4dikamesra" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_21"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_21"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/tadikamesranew" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_22"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_22"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/nabilaba000" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_23"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_23"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/evilliumprjct" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_29"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_29"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/droidresID" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_30"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_30"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/AResourcesID" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_31"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_31"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/shitUp_tj" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_bot"
+        android:title="@string/uwu_title_32"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_32"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/clvtrash" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/uwu_big_thanks_cat" />
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_top"
+        android:title="@string/uwu_title_9"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_9"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Cyber404heart" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_11"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_11"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Crystalllz" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_26"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_26"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/abuminarohman" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_27"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_27"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/saefulawr007" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_10"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_10"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/iirzzxx" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_34"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_34"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Unzarii" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="@string/uwu_title_33"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_33"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/weeabooify" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_bot"
+        android:title="@string/uwu_title_12"
+        android:key="PROFILE"
+        android:summary="@string/uwu_info_12"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Amikura_Yuki" />
+    </Preference>
 </PreferenceScreen>

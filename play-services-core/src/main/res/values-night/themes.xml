@@ -11,7 +11,7 @@
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
         <item name="android:statusBarColor">?colorPrimary</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="colorAccent">@color/uwu_accent_dark</item>
         <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
@@ -24,10 +24,10 @@
         <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:tint">@android:color/black</item>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:tint">@android:color/white</item>
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
-        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/white</item>
         <item name="colorPrimary">@color/uwu_primary_dark</item>
         <item name="colorPrimaryDark">?colorPrimary</item>
     </style>
