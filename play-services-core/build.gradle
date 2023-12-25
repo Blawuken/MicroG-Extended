@@ -17,6 +17,7 @@ dependencies {
         implementation project(projectName)
     }
 
+    implementation project(':fake-signature')
     implementation project(':play-services-base-core-package')
     implementation project(':play-services-fitness')
 
