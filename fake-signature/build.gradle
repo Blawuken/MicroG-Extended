@@ -1,0 +1,26 @@
+/*
+ * SPDX-FileCopyrightText: 2023 microG Project Team
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace "org.microg.signature.fake"
+
+    compileSdkVersion androidCompileSdk
+    buildToolsVersion androidBuildVersionTools
+
+    defaultConfig {
+        minSdkVersion androidMinSdk
+        targetSdkVersion androidTargetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+}
