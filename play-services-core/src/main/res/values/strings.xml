@@ -347,4 +347,12 @@ This can take a couple of minutes"</string>
     <string name="uwu_info_33">User interface reference</string>
     <string name="uwu_title_34">スクロース</string>
     <string name="uwu_info_34">Sepuh</string>
+
+    <string name="uwu_information_cat">Information</string>
+    <string name="uwu_neko_version">Extended version</string>
+    <string name="uwu_build_date">Build date</string>
+    <string name="uwu_recommended_os_cat">Recommended OS</string>
+    <string name="uwu_version_sdk_minimum">Min SDK version</string>
+    <string name="uwu_version_sdk_target">Target SDK version</string>
+    <string name="uwu_build_version_code">Version Code</string>
 </resources>

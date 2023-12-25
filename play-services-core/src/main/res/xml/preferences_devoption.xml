@@ -22,12 +22,46 @@
         android:title="@string/uwu_header_title"
         android:selectable="false" />
     <Preference
-            android:icon="@drawable/uwu_neko"
-            android:layout="@layout/uwu_sin"
-            android:title="@string/uwu_credits"
-            android:summary="@string/uwu_tap_credit_summary">
-            <intent
-                android:targetPackage="@string/var_pref_start_gms_package"
-                android:targetClass="org.microg.gms.ui.Credits$AsActivity" />
-        </Preference>
+        android:icon="@drawable/uwu_about"
+        android:layout="@layout/uwu_sin"
+        android:title="@string/uwu_credits"
+        android:summary="@string/uwu_tap_credit_summary">
+        <intent
+            android:targetPackage="@string/var_pref_start_gms_package"
+            android:targetClass="org.microg.gms.ui.Credits$AsActivity" />
+    </Preference>
+    <PreferenceCategory
+        android:title="@string/uwu_information_cat" />
+    <Preference
+        android:icon="@drawable/uwu_neko"
+        android:layout="@layout/uwu_top_no_arrow"
+        android:title="@string/uwu_neko_version"
+        android:selectable="false"
+        android:summary="@string/extended_build_app_version_release" />
+    <Preference
+        android:icon="@drawable/uwu_payload"
+        android:layout="@layout/uwu_mid_no_arrow"
+        android:title="@string/uwu_build_version_code"
+        android:selectable="false"
+        android:summary="@string/extended_build_app_version_code" />
+    <Preference
+        android:icon="@drawable/uwu_build_date"
+        android:layout="@layout/uwu_bot_no_arrow"
+        android:title="@string/uwu_build_date"
+        android:selectable="false"
+        android:summary="@string/extended_build_date" />
+    <PreferenceCategory
+        android:title="@string/uwu_recommended_os_cat" />
+    <Preference
+        android:icon="@drawable/uwu_android"
+        android:layout="@layout/uwu_top_no_arrow"
+        android:title="@string/uwu_version_sdk_minimum"
+        android:selectable="false"
+        android:summary="@string/extended_build_min_sdk" />
+    <Preference
+        android:icon="@drawable/uwu_android"
+        android:layout="@layout/uwu_bot_no_arrow"
+        android:title="@string/uwu_version_sdk_target"
+        android:selectable="false"
+        android:summary="@string/extended_build_target_sdk" />
 </PreferenceScreen>
