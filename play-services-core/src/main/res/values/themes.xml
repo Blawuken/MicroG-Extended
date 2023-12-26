@@ -66,34 +66,11 @@
         <item name="android:windowLightNavigationBar">true</item>
     </style>
 
-    <style name="xd_pref_card_firmware_header">
-        <item name="android:background">@drawable/drawable_7f0801e2</item>
-        <item name="android:clipToPadding">false</item>
-        <item name="android:layout_marginTop">4.0dip</item>
-        <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
-        <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
-    </style>
-
     <style name="Preference.xd.Category" parent="@style/Preference.Category">
         <item name="android:layout">@layout/xd_preference_category_material</item>
         <item name="android:selectable">false</item>
         <item name="android:shouldDisableView">false</item>
         <item name="allowDividerBelow">false</item>
-    </style>
-
-    <style name="XdPreferenceCategoryTitleTextStyle">
-        <item name="android:textAppearance">?preferenceCategoryTitleTextAppearance</item>
-        <item name="android:textColor">@color/extended_color</item>
-        <item name="android:background">@drawable/xd_pref_card</item>
-    </style>
-    
-    <style name="xd_pref_card_sin">
-        <item name="android:background">@drawable/xd_pref_card_sin</item>
-        <item name="android:clipToPadding">false</item>
-        <item name="android:layout_marginTop">4.0dip</item>
-        <item name="android:layout_marginBottom">4.0dip</item>
-        <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
-        <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
     </style>
 
     <style name="xd_text_primary">
