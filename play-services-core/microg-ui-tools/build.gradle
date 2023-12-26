@@ -39,7 +39,7 @@ android {
 
     lintOptions {
         // TODO: Remove MissingTranslation once we have stable strings and proper translations.
-        disable 'MissingTranslation'
+        disable 'MissingTranslation', 'GetLocales'
     }
 }
 
