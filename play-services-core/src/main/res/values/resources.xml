@@ -11,4 +11,6 @@
     <string name="xd_battery_type" translatable="false">Battery</string>
     <string name="xd_battery_type_summary" translatable="false">Li-Ion 4230 mAh</string>
     <string name="uwu_core" translatable="false">Octa-core 1.8 GHz Cortex-A53</string>
+    <string name="xd_screen_type" translatable="false">Screen</string>
+    <string name="xd_screen_type_summary" translatable="false">IPS LCD 6.2 inc</string>
 </resources>
