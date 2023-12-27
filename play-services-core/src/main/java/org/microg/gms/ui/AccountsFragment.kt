@@ -42,6 +42,8 @@ class AccountsFragment : PreferenceFragmentCompat() {
             preferenceCategory?.isVisible = true
             preferenceCategory?.removeAll()
 
+            var isFirstAccount = true
+
             accounts.forEach { account ->
                 val newPreference = Preference(requireContext()).apply {
                     title = account.name
@@ -53,6 +55,12 @@ class AccountsFragment : PreferenceFragmentCompat() {
                         true
                     }
                 }
+
+                if (isFirstAccount) {
+                    isFirstAccount = false
+                    newPreference.summary = getString(R.string.pref_accounts_default)
+                }
+
                 preferenceCategory?.addPreference(newPreference)
             }
         }
