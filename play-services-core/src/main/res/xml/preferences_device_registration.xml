@@ -13,41 +13,49 @@
         android:title="@string/checkin_enable_switch" />
 
     <PreferenceCategory
-        android:key="prefcat_device_profile"
-        android:layout="@layout/preference_category"
-        android:title="@string/pref_device_registration_device_profile_category">
+        android:title="@string/pref_device_registration_device_profile_category"
+        android:key="prefcat_device_profile">
         <ListPreference
             android:icon="@drawable/ic_profile"
-            android:key="pref_device_profile"
+            android:layout="@layout/uwu_top"
             android:persistent="false"
             android:title="@string/pref_device_registration_select_profile_title"
-            tools:summary="Automatic (Google Pixel 3, Android 11)" />
+            android:key="pref_device_profile" />
+
         <Preference
             android:icon="@drawable/ic_import"
+            android:layout="@layout/uwu_mid"
+            android:title="@string/pref_device_registration_import_custom_profile_title"
             android:key="pref_device_profile_import"
-            android:summary="@string/pref_device_registration_import_custom_profile_summary"
-            android:title="@string/pref_device_registration_import_custom_profile_title" />
+            android:summary="@string/pref_device_registration_import_custom_profile_summary" />
+
         <Preference
             android:enabled="false"
-            android:key="pref_device_serial"
+            android:icon="@drawable/uwu_copyright"
+            android:layout="@layout/uwu_bot_no_arrow"
             android:title="@string/pref_device_registration_serial_title"
-            tools:summary="123456" />
+            android:key="pref_device_serial" />
     </PreferenceCategory>
+
     <PreferenceCategory
-        android:key="prefcat_device_registration_status"
-        android:layout="@layout/preference_category_no_label">
+        android:layout="@layout/preference_category_no_label"
+        android:key="prefcat_device_registration_status">
         <Preference
             android:icon="@drawable/ic_status"
-            android:key="pref_device_registration_status"
+            android:layout="@layout/uwu_top_no_arrow"
             android:title="@string/pref_info_status"
-            tools:summary="Last registration: 13 hours ago" />
+            android:key="pref_device_registration_status" />
+
         <Preference
             android:enabled="false"
-            android:key="pref_device_registration_android_id"
+            android:icon="@drawable/uwu_tls"
+            android:layout="@layout/uwu_mid_no_arrow"
             android:title="@string/pref_device_registration_android_id"
-            tools:summary="1953a59d1c1b7e4b" />
+            android:key="pref_device_registration_android_id" />
+
         <org.microg.gms.ui.TextPreference
             android:icon="@drawable/ic_info_outline"
+            android:layout="@layout/uwu_bot_no_arrow"
             android:selectable="false"
             android:summary="@string/pref_checkin_enable_summary" />
     </PreferenceCategory>
