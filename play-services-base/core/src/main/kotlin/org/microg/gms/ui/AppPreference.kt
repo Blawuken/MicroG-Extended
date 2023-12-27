@@ -95,9 +95,11 @@ abstract class AppPreference : Preference {
         val packageName = packageNameField.orEmpty().lowercase(Locale.ROOT)
 
         val patcherText = when {
-            packageName.contains("revanced") -> "ReVanced"
-            packageName.contains("rvx") -> "ReVanced Extended"
-            packageName.contains("rex") -> "YouTube Advanced"
+            packageName.contains(".google.") -> "Default"
+            packageName.contains(".vanced.") -> "Vanced"
+            packageName.contains(".revanced.") -> "ReVanced"
+            packageName.contains(".rvx.") -> "ReVanced Extended"
+            packageName.contains(".rex.") -> "YouTube Advanced"
             else -> ""
         }
 
