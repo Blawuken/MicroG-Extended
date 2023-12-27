@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        versionName version
+        versionName project.version as String
         minSdkVersion androidMinSdk
         targetSdkVersion androidTargetSdk
     }
