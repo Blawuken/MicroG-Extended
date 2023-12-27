@@ -22,9 +22,6 @@
         android:layout="@layout/uwu_banner"
         android:selectable="false" />
     <Preference
-        android:layout="@layout/uwu_banner_bottom"
-        android:selectable="false" />
-    <Preference
         android:icon="@drawable/uwu_check"
         android:layout="@layout/uwu_maintainer"
         android:title="@string/self_check_title"
