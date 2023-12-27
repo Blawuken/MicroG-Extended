@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.1.0...v1.2.0) (2023-12-27)
+
+
+### Features
+
+* Relayout banner logo and preference category ([da597bd](https://github.com/Blawuken/MicroG-Extended/commit/da597bd3ef9d81e54be0e54cd0ee938ed9c06dd2))
+
 # [1.1.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.0.0...v1.1.0) (2023-12-27)
 
 
