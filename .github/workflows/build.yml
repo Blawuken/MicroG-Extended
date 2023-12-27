@@ -15,6 +15,16 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
+      - name: Cache Node modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache Gradle
+        uses: burrunan/gradle-cache-action@v1
+
       - name: Setup Java
         run: echo "JAVA_HOME=$JAVA_HOME_17_X64" >> $GITHUB_ENV
 
@@ -24,14 +34,8 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleRelease
 
-      - name: Upload Debug app to Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: 'MicroG Debug'
-          path: play-services-core/build/outputs/apk/default/debug/*.apk
-      
-      - name: Upload Signed app to Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: 'MicroG Signed'
-          path: play-services-core/build/outputs/apk/default/release/*.apk
+      - name: Setup semantic-release
+        run: npm install
+
+      - name: Release
+        run: npm exec semantic-release
