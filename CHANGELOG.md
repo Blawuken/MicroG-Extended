@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.0.0...v1.1.0) (2023-12-27)
+
+
+### Bug Fixes
+
+* Fixe version string ([9e5e7e5](https://github.com/Blawuken/MicroG-Extended/commit/9e5e7e575a9670f1014ed77e898772d9360d943b))
+
+
+### Features
+
+* Redesign layout preferences push notifications ([a97ee9d](https://github.com/Blawuken/MicroG-Extended/commit/a97ee9df03ce4abb1c44ad508ca6603539fd69cd))
+
 # 1.0.0 (2023-12-27)
 
 
