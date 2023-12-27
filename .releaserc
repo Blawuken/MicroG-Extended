@@ -12,7 +12,7 @@
       {
         "assets": [
           "CHANGELOG.md",
-          "gradle.properties"
+          "build.gradle"
         ]
       }
     ],
