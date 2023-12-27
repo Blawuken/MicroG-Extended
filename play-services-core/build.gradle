@@ -57,7 +57,7 @@ android {
     defaultConfig {
         applicationId "${basePackageName}.android.gms"
 
-        versionName version
+        versionName project.version as String
         versionCode appVersionCode
 
         minSdkVersion androidMinSdk
@@ -73,6 +73,7 @@ android {
         buildConfigField "String", "APPLICATION_NAMESPACE", "\"${android.namespace}\""
         buildConfigField "String", "BASE_PACKAGE_NAME", "\"$basePackageName\""
         buildConfigField "String", "INCLUDED_PROJECTS", "\"${includeProjects.join(",")}\""
+        buildConfigField "String", "VERSION_NAME", "\"${defaultConfig.versionName}\""
         
         manifestPlaceholders = [
                 basePackageName: "$basePackageName"
