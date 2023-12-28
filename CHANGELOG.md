@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Blawuken/MicroG-Extended/compare/v1.4.0...v1.4.1) (2023-12-28)
+
+
+### Bug Fixes
+
+* Doble icon ([53e9aa9](https://github.com/Blawuken/MicroG-Extended/commit/53e9aa936cf6184e3528234f29425a2185292620))
+
 # [1.4.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.3.0...v1.4.0) (2023-12-28)
 
 
