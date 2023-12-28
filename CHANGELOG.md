@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.4.1...v1.5.0) (2023-12-28)
+
+
+### Features
+
+* **Dialog:** Redesign ask gcm dialog ([e4874e3](https://github.com/Blawuken/MicroG-Extended/commit/e4874e3cb22f6b88482b89527ed9e65f71b703bf))
+
 ## [1.4.1](https://github.com/Blawuken/MicroG-Extended/compare/v1.4.0...v1.4.1) (2023-12-28)
 
 
