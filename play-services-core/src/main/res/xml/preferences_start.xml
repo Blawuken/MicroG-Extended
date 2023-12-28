@@ -56,7 +56,7 @@
             android:layout="@layout/uwu_top_switch"
             android:title="@string/pref_hide_launcher_icon"
             android:key="pref_hide_launcher_icon"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:summaryOn="@string/service_status_enabled_short"
             android:summaryOff="@string/service_status_disabled_short" />
         <Preference
