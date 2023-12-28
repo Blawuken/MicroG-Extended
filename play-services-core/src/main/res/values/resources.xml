@@ -13,4 +13,75 @@
     <string name="uwu_core" translatable="false">Octa-core 1.8 GHz Cortex-A53</string>
     <string name="xd_screen_type" translatable="false">Screen</string>
     <string name="xd_screen_type_summary" translatable="false">IPS LCD 6.2 inc</string>
+    
+    <string name="uwu_title_0" translatable="false">Telegram</string>
+    <string name="uwu_info_0" translatable="false">Telegram account</string>
+    <string name="uwu_title_1" translatable="false">Kentang Injector</string>
+    <string name="uwu_info_1" translatable="false">Channel</string>
+    <string name="uwu_title_2" translatable="false">Kentang Injector</string>
+    <string name="uwu_info_2" translatable="false">Group</string>
+    <string name="uwu_title_3" translatable="false">Facebook</string>
+    <string name="uwu_info_3" translatable="false">Facebook account</string>
+    <string name="uwu_title_4" translatable="false">Instagram</string>
+    <string name="uwu_info_4" translatable="false">Instagram account</string>
+    <string name="uwu_title_5" translatable="false">Villain Anti Hero</string>
+    <string name="uwu_info_5" translatable="false">Channel</string>
+    <string name="uwu_title_6" translatable="false">Open Net</string>
+    <string name="uwu_info_6" translatable="false">Group</string>
+    <string name="uwu_title_7" translatable="false">Allive Prjct Update</string>
+    <string name="uwu_info_7" translatable="false">Channel</string>
+    <string name="uwu_title_8" translatable="false">Anu Bareng Channel</string>
+    <string name="uwu_info_8" translatable="false">Channel</string>
+    <string name="uwu_title_9" translatable="false">GIAT DUNXTENX</string>
+    <string name="uwu_info_9" translatable="false">Tester</string>
+    <string name="uwu_title_10" translatable="false">Hitori Gotō</string>
+    <string name="uwu_info_10" translatable="false">Helping</string>
+    <string name="uwu_title_11" translatable="false">Yaddy KAKKOII</string>
+    <string name="uwu_info_11" translatable="false">Tester</string>
+    <string name="uwu_title_12" translatable="false">Yuki🌿</string>
+    <string name="uwu_info_12" translatable="false">Fixed mistranslations</string>
+    <string name="uwu_title_13" translatable="false">WhatsApp</string>
+    <string name="uwu_info_13" translatable="false">WhatsApp account</string>
+    <string name="uwu_title_14" translatable="false">Milim Nava</string>
+    <string name="uwu_info_14" translatable="false">True Demon Lord</string>
+    <string name="uwu_title_15" translatable="false">Allive</string>
+    <string name="uwu_info_15" translatable="false">Group</string>
+    <string name="uwu_title_16" translatable="false">Anu Bareng</string>
+    <string name="uwu_info_16" translatable="false">Group</string>
+    <string name="uwu_title_17" translatable="false">xdroidOSS° newsletter</string>
+    <string name="uwu_info_17" translatable="false">mnmlist</string>
+    <string name="uwu_title_18" translatable="false">PROJEN | TALK, REPORT &amp; DISCUSS</string>
+    <string name="uwu_info_18" translatable="false">Group</string>
+    <string name="uwu_title_19" translatable="false">iDanX</string>
+    <string name="uwu_info_19" translatable="false">Channel</string>
+    <string name="uwu_title_20" translatable="false">TADIKA MESRA CHANNEL</string>
+    <string name="uwu_info_20" translatable="false">Channel</string>
+    <string name="uwu_title_21" translatable="false">TADIKA MESRA</string>
+    <string name="uwu_info_21" translatable="false">Group</string>
+    <string name="uwu_title_22" translatable="false">Newbie Permanen | Angeldust</string>
+    <string name="uwu_info_22" translatable="false">Channel</string>
+    <string name="uwu_title_23" translatable="false">evillium prjct°</string>
+    <string name="uwu_info_23" translatable="false">Channel</string>
+    <string name="uwu_title_24" translatable="false">PROJEN | ANNOUNCEMENT</string>
+    <string name="uwu_info_24" translatable="false">Channel</string>
+    <string name="uwu_title_25" translatable="false">Allive Nitip File</string>
+    <string name="uwu_info_25" translatable="false">Channel</string>
+    <string name="uwu_title_26" translatable="false">ABu</string>
+    <string name="uwu_info_26" translatable="false">Tester</string>
+    <string name="uwu_title_27" translatable="false">S A I T A M A</string>
+    <string name="uwu_info_27" translatable="false">Tester</string>
+    <string name="uwu_info_28" translatable="false">Channel</string>
+    <string name="uwu_info_29" translatable="false">Channel</string>
+    <string name="uwu_info_30" translatable="false">Group</string>
+    <string name="uwu_info_31" translatable="false">Channel</string>
+    <string name="uwu_title_28" translatable="false">UWU RESOURCE GUIDE ID</string>
+    <string name="uwu_title_29" translatable="false">ANDROID RESOURCE ID</string>
+    <string name="uwu_title_30" translatable="false">ANDROID RESOURCE ID (discussion)</string>
+    <string name="uwu_title_31" translatable="false">TJ</string>
+    <string name="uwu_info_32" translatable="false">Channel</string>
+    <string name="uwu_title_32" translatable="false">⚡</string>
+    <string name="uwu_title_33" translatable="false">Weeabooify</string>
+    <string name="uwu_info_33" translatable="false">User interface reference</string>
+    <string name="uwu_title_34" translatable="false">スクロース</string>
+    <string name="uwu_info_34" translatable="false">Sepuh</string>
 </resources>
