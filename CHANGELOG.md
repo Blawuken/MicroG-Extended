@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.5.0...v1.6.0) (2023-12-28)
+
+
+### Features
+
+* **Translation:** Indonesian language update ([4cc7d27](https://github.com/Blawuken/MicroG-Extended/commit/4cc7d2716e1e5136af8b58d49b04b6a42b9c8a35))
+
 # [1.5.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.4.1...v1.5.0) (2023-12-28)
 
 
