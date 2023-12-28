@@ -24,8 +24,10 @@
         <item name="android:background">?android:colorBackground</item>
     </style>
 
-    <style name="AppTheme.Dialog" parent="AppTheme">
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.DayNight">
         <item name="android:windowIsFloating">true</item>
+        <item name="android:dialogCornerRadius">18dp</item>
+        <item name="colorBackgroundFloating">@color/theme_background_light</item>
     </style>
 
     <style name="AppThemeBase" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
