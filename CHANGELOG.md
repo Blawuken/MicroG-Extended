@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.2.0...v1.3.0) (2023-12-28)
+
+
+### Features
+
+* Show icon by default ([08cdb3c](https://github.com/Blawuken/MicroG-Extended/commit/08cdb3cf84206ea4a15b69bedbe0a86eb2f6d1af))
+
 # [1.2.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.1.0...v1.2.0) (2023-12-27)
 
 
