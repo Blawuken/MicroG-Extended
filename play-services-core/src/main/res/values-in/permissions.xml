@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013-2017 microG Project Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="permission_service_all_label">Semua layanan Google</string>
+    <string name="permission_service_all_description">Mengizinkan aplikasi mengakses semua layanan Google melalui akun Google apa pun yang terkait.</string>
+
+    <string name="permission_service_android_label">Layanan Android</string>
+    <string name="permission_service_android_description">Mengizinkan aplikasi mengakses layanan Android melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_adsense_label">AdSense</string>
+    <string name="permission_service_adsense_description">Mengizinkan aplikasi mengakses AdSense melalui akun apa pun akun Google terkait.</string>
+    <string name="permission_service_adwords_label">AdWords</string>
+    <string name="permission_service_adwords_description">Mengizinkan aplikasi mengakses AdWords melalui akun Google terkait.</string>
+    <string name="permission_service_ah_label">Google App Engine</string>
+    <string name="permission_service_ah_description">Memungkinkan aplikasi mengakses Google App Engine melalui akun Google terkait.</string>
+    <string name="permission_service_blogger_label">Blogger</string>
+    <string name="permission_service_blogger_description">Mengizinkan aplikasi untuk mengakses Blogger melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_cl_label">Google Kalender</string>
+    <string name="permission_service_cl_description">Memungkinkan aplikasi mengakses Google Kalender melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_cp_label">Kontak</string>
+    <string name="permission_service_cp_description">Memungkinkan aplikasi mengakses Kontak melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_dodgeball_label">Dodgeball</string>
+    <string name="permission_service_dodgeball_description">Mengizinkan aplikasi mengakses Dodgeball melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_finance_label">Google Finance</string>
+    <string name="permission_service_finance_description">Mengizinkan aplikasi mengakses Google Finance melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_gbase_label">Google Base</string>
+    <string name="permission_service_gbase_description">Mengizinkan aplikasi mengakses Google Base melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_grandcentral_label">Google Voice</string>
+    <string name="permission_service_grandcentral_description">Mengizinkan aplikasi mengakses Google Voice melalui akun Google terkait.</string>
+    <string name="permission_service_groups2_label">Google Grup</string>
+    <string name="permission_service_groups2_description">Mengizinkan aplikasi mengakses Google Grup melalui akun Google terkait.</string>
+    <string name="permission_service_health_label">Google Health</string>
+    <string name="permission_service_health_description">Mengizinkan aplikasi mengakses Google Kesehatan melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_ig_label">iGoogle</string>
+    <string name="permission_service_ig_description">Memungkinkan aplikasi mengakses iGoogle melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_jotspot_label">JotSpot</string>
+    <string name="permission_service_jotspot_description">Memungkinkan aplikasi mengakses JotSpot melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_knol_label">Knol</string>
+    <string name="permission_service_knol_description">Memungkinkan aplikasi untuk mengakses Knol melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_lh2_label">Album Web Picasa</string>
+    <string name="permission_service_lh2_description">Memungkinkan aplikasi mengakses Album Web Picasa melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_local_label">Google Maps</string>
+    <string name="permission_service_local_description">Memungkinkan aplikasi mengakses Google Maps melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_mail_label">Google Mail</string>
+    <string name="permission_service_mail_description">Mengizinkan aplikasi mengakses Google Mail melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_news_label">Google Berita</string>
+    <string name="permission_service_news_description">Memungkinkan aplikasi mengakses Google Berita melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_notebook_label">Google Notebook</string>
+    <string name="permission_service_notebook_description">Memungkinkan aplikasi mengakses Google Notebook melalui akun Google mana pun yang terkait.</string>
+    <string name="permission_service_orkut_label">Orkut</string>
+    <string name="permission_service_orkut_description">Mengizinkan aplikasi mengakses Orkut melalui akun Google mana pun yang terkait.</string>
+    <string name="permission_service_print_label">Penelusuran Buku Google</string>
+    <string name="permission_service_print_description">Memungkinkan aplikasi mengakses Penelusuran Buku Google melalui akun Google mana pun yang terkait.</string>
+    <string name="permission_service_sierra_label">Akun Google Checkout</string>
+    <string name="permission_service_sierra_description">Mengizinkan aplikasi mengakses akun Google Checkout melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_sierraqa_label">Akun QA Google Checkout</string>
+    <string name="permission_service_sierraqa_description">Mengizinkan aplikasi mengakses akun QA Google Checkout melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_sierrasandbox_label">Akun Google Checkout Sandbox</string>
+    <string name="permission_service_sierrasandbox_description">Mengizinkan aplikasi mengakses Akun Google Checkout Sandbox melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_sitemaps_label">Alat Webmaster Google</string>
+    <string name="permission_service_sitemaps_description">Mengizinkan aplikasi mengakses Alat Webmaster Google melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_speech_label">Penelusuran Suara</string>
+    <string name="permission_service_speech_description">Memungkinkan aplikasi mengakses Penelusuran Suara melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_speechpersonalization_label">Pengenalan Ucapan yang Dipersonalisasi</string>
+    <string name="permission_service_speechpersonalization_description">Mengizinkan aplikasi mengakses Pengenalan Ucapan yang Dipersonalisasi melalui akun Google mana pun yang terkait.</string>
+    <string name="permission_service_talk_label">Google Talk</string>
+    <string name="permission_service_talk_description">Memungkinkan aplikasi mengakses Google Talk melalui akun Google mana pun yang terkait.</string>
+    <string name="permission_service_wifi_label">Google Wi-Fi</string>
+    <string name="permission_service_wifi_description">Mengizinkan aplikasi untuk mengakses Google Wi-Fi melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_wise_label">Google Spreadsheets</string>
+    <string name="permission_service_wise_description">Memungkinkan aplikasi mengakses Google Spreadsheet melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_writely_label">Google Dokumen</string>
+    <string name="permission_service_writely_description">Memungkinkan aplikasi mengakses Google Dokumen melalui akun Google apa pun yang terkait .</string>
+    <string name="permission_service_youtube_label">YouTube</string>
+    <string name="permission_service_youtube_description">Mengizinkan aplikasi mengakses YouTube melalui akun Google apa pun yang terkait.</string>
+    <string name="permission_service_YouTubeUser_label">Nama pengguna YouTube</string>
+    <string name="permission_service_YouTubeUser_description">Memungkinkan aplikasi mengakses nama pengguna YouTube yang digunakan dengan akun Google terkait apa pun.</string>
+
+    <string name="permission_scope_www.googleapis.com_auth_activity">Melihat riwayat aktivitas Anda Google Apps</string>
+    <string name="permission_scope_www.googleapis.com_auth_adexchange.buyer">Mengelola konfigurasi akun pembeli Ad Exchange Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_adexchange.seller.readonly">Melihat data Ad Exchange</string>
+    <string name="permission_scope_www.googleapis.com_auth_adexchange.seller">Melihat dan mengelola data Ad Exchange Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_adsensehost">Melihat dan mengelola data host AdSense dan akun terkait</string>
+    <string name="permission_scope_www.googleapis.com_auth_adsense.readonly">Melihat data AdSense Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_adsense">Melihat dan mengelola data AdSense Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_analytics.readonly">Lihat data Google Analytics Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_analytics">Melihat dan mengelola data Google Analytics Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_androidpublisher">Akses ke Pengembang Android Google Play</string>
+    <string name="permission_scope_www.googleapis.com_auth_appengine.admin">Cakupan admin mesin aplikasi.</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps.groups.migration">Akses baca dan tulis ke API Migrasi Grup.</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps.groups.settings">Melihat dan mengelola setelan Grup Google Apps</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps.licensing">Akses baca/tulis ke API Pengelola Lisensi.</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps.order">Untuk administrator pengecer dan pengguna akses baca/tulis saat menguji di kotak pasir API, atau akses baca/tulis saat menelepon operasi API secara langsung.</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps.order.readonly">Selain cakupan OAuth baca/tulis secara keseluruhan, gunakan cakupan OAuth hanya baca saat mengambil data pelanggan.</string>
+    <string name="permission_scope_www.googleapis.com_auth_apps_reporting_audit.readonly">Akses ke ReadOnly API Audit Admin</string>
+    <string name="permission_scope_www.googleapis.com_auth_appstate">Cakupan untuk menggunakan Layanan App State.</string>
+    <string name="permission_scope_www.googleapis.com_auth_bigquery.readonly">Melihat data Anda di Google BigQuery</string>
+    <string name="permission_scope_www.googleapis.com_auth_bigquery">Melihat dan mengelola data Anda di Google BigQuery</string>
+    <string name="permission_scope_www.googleapis.com_auth_blogger">Mengelola akun Blogger Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_blogger.readonly">Melihat akun Blogger Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_books">Mengelola buku Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_calendar">Mengelola kalender Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_calendar.readonly">Melihat kalender Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_cloudprint">Melihat dan mengelola data Google Cloud Print Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_compute.readonly">Melihat sumber daya Google Compute Engine Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_compute">Melihat dan mengelola sumber daya Google Compute Engine Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_coordinate.readonly">Melihat pekerjaan Google Koordinasi Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_coordinate">Melihat dan mengelola pekerjaan Google Maps Koordinasi Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_devstorage.full_control">Kelola data dan izin Anda di Google Cloud Storage</string>
+    <string name="permission_scope_www.googleapis.com_auth_devstorage.read_only">Lihat data Anda di Google Cloud Storage</string>
+    <string name="permission_scope_www.googleapis.com_auth_devstorage.read_write">Kelola data Anda di Google Cloud Storage</string>
+    <string name="permission_scope_www.googleapis.com_auth_dfareporting">Melihat dan mengelola laporan DoubleClick for Advertisers</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.appdata">Mengizinkan akses ke folder Data Aplikasi</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.apps.readonly">Lihat Google Anda Aplikasi Drive</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.file">Melihat dan mengelola file Google Drive yang telah Anda buka atau buat dengan aplikasi ini</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.install">Cakupan khusus yang digunakan untuk memungkinkan pengguna menyetujui pemasangan aplikasi</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.metadata.readonly">Melihat metadata untuk file dan dokumen di Google Drive Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.readonly">Melihat file dan dokumen di Google Drive Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive.scripts">Ubah perilaku skrip Google Apps Script Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive">Melihat dan mengelola file dan dokumen di Google Drive Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_freebase.readonly">melihat akun Freebase Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_freebase">Masuk ke Freebase dengan akun Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_fusiontables">Kelola Tabel Fusion Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_fusiontables.readonly">Lihat Tabel Fusion Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_games">Cakupan untuk mengakses data dari Google Play Game.</string>
+    <string name="permission_scope_www.googleapis.com_auth_gan">Kelola data GAN Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_gan.readonly">Lihat data GAN Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_gcm_for_chrome">CloudMessaging untuk chrome</string>
+    <string name="permission_scope_www.googleapis.com_auth_glass.timeline">Cakupan garis waktu kaca</string>
+    <string name="permission_scope_www.googleapis.com_auth_gmail.compose">Membuat, membaca, memperbarui, dan menghapus konsep. Kirim pesan dan draf.</string>
+    <string name="permission_scope_www.googleapis.com_auth_gmail.modify">Semua operasi baca/tulis kecuali penghapusan segera dan permanen pada rangkaian pesan dan pesan, melewati Sampah.</string>
+    <string name="permission_scope_www.googleapis.com_auth_gmail.readonly">Baca semua sumber daya dan metadatanya—tidak ada operasi tulis.</string>
+    <string name="permission_scope_www.googleapis.com_auth_latitude.all.best">Kelola lokasi terbaik yang tersedia dan riwayat lokasi</string>
+    <string name="permission_scope_www.googleapis.com_auth_latitude.all.city">Kelola lokasi tingkat kota dan riwayat lokasi</string>
+    <string name="permission_scope_www.googleapis.com_auth_latitude.current.best">Kelola lokasi terbaik yang tersedia</string>
+    <string name="permission_scope_www.googleapis.com_auth_latitude.current.city">Kelola lokasi tingkat kota</string>
+    <string name="permission_scope_www.googleapis.com_auth_mapsengine">Melihat dan mengelola data Google Maps Engine Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_mapsengine.readonly">Melihat data Google Maps Engine Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_mobilemaps.firstparty">Lihat dan mengelola pengalaman Google Maps untuk seluler Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_orkut">Mengelola aktivitas Orkut Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_orkut.readonly">Melihat data Orkut Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_plus.login">Ketahui nama Anda, info dasar, dan daftar orang yang terhubung dengan Anda di Google+</string>
+    <string name="permission_scope_www.googleapis.com_auth_plus.me">Kenali siapa Anda di Google</string>
+    <string name="permission_scope_www.googleapis.com_auth_prediction">Kelola data Anda di Google Prediction API</string>
+    <string name="permission_scope_www.googleapis.com_auth_shoppingapi">Lihat data produk Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_siteverification">Kelola daftar situs dan domain yang Anda kontrol</string>
+    <string name="permission_scope_www.googleapis.com_auth_siteverification.verify_only">Kelola verifikasi situs baru Anda dengan Google</string>
+    <string name="permission_scope_www.googleapis.com_auth_structuredcontent">Akses baca/tulis ke API Konten Belanja.</string>
+    <string name="permission_scope_www.googleapis.com_auth_taskqueue.consumer">Konsumsi Tugas dari Antrean Tugas Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_taskqueue">Kelola Tugas Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_tasks">Kelola tugas Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_tasks.readonly">Lihat tugas Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_tracks">Google Maps Tracks API, Cakupan ini memungkinkan akses baca dan tulis ke data proyek Anda.</string>
+    <string name="permission_scope_www.googleapis.com_auth_urlshortener">Kelola singkat goo.gl Anda URL</string>
+    <string name="permission_scope_www.googleapis.com_auth_userinfo.email">Lihat alamat email Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_userinfo.profile">Lihat informasi dasar tentang akun Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_youtube">Kelola akun YouTube Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_youtubepartner">Lihat dan kelola aset Anda serta konten terkait di YouTube</string>
+    <string name="permission_scope_www.googleapis.com_auth_youtube.readonly">Lihat akun YouTube Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_youtube.upload">Kelola video YouTube Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_yt_analytics_monetary.readonly">Lihat YouTube Analytics laporan moneter untuk konten YouTube Anda</string>
+    <string name="permission_scope_www.googleapis.com_auth_yt_analytics.readonly">Lihat laporan YouTube Analytics untuk konten YouTube Anda</string>
+
+</resources>
