@@ -83,6 +83,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
+        android:name="com.neko.crash.App"
         android:allowBackup="true"
         android:forceQueryable="true"
         android:fullBackupOnly="true"
@@ -471,6 +472,15 @@
             android:name="org.microg.gms.ui.DevOption$AsActivity"
             android:process=":ui"
             android:taskAffinity="org.microg.gms.settings" />
+
+        <activity
+            android:theme="@style/uwu_crash_logger_theme"
+            android:label="CrashLogger"
+            android:name="com.neko.crash.CrashLogger"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
             android:name="org.microg.gms.accountsettings.ui.MainActivity"
