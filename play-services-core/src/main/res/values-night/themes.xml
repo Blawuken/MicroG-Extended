@@ -28,6 +28,10 @@
         <item name="colorText">@android:color/white</item>
         <item name="elevation">0.0dip</item>
         <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
+        <item name="android:dialogTheme">@style/uwu_dialog</item>
+        <item name="android:alertDialogTheme">@style/uwu_alert_dialog</item>
+        <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
+        <item name="android:dialogCornerRadius">28.0dip</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -47,6 +51,22 @@
         <item name="colorPrimaryDark">?android:colorBackground</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="uwu_dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:buttonStyle">@style/uwu_button_borderless</item>
+        <item name="android:windowBackground">@drawable/uwu_dialog_bg</item>
+        <item name="android:windowAnimationStyle">@style/uwu_modder_app_anim</item>
+        <item name="android:windowMinWidthMajor">75.0%</item>
+        <item name="android:windowMinWidthMinor">75.0%</item>
+        <item name="android:colorControlHighlight">@color/uwu_ripple</item>
+        <item name="android:colorAccent">@color/uwu_accent</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/uwu_button_borderless_dialog</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/uwu_button_borderless_dialog</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/uwu_button_borderless_dialog</item>
+        <item name="android:windowElevation">0.0dip</item>
+        <item name="android:colorEdgeEffect">@color/uwu_accent</item>
     </style>
 
 </resources>
