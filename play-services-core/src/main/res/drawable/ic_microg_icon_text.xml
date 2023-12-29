@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="18"
+    android:viewportHeight="18">
+    <group>
+        <path
+            android:fillColor="#FFEA4335"
+            android:pathData="M12.18 5.82c1.76 1.76 1.76 4.6 0 6.37-0.88 0.87-0.88 2.3 0 3.17 0.88 0.88 2.3 0.88 3.18 0 3.52-3.51 3.52-9.2 0-12.72l-3.18 3.18Z"/>
+        <path
+            android:pathData="M15.36 2.64c-3.52-3.52-9.2-3.52-12.72 0-3.52 3.51-3.52 9.2 0 12.72l3.18-3.17c-1.76-1.76-1.76-4.61 0-6.37 1.76-1.76 4.6-1.76 6.37 0 0.87 0.88 2.3 0.88 3.18 0 0.87-0.88 0.87-2.3-0.01-3.18Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="0"
+                    android:startY="768.16"
+                    android:endX="1601.7"
+                    android:endY="768.16">
+                    <item
+                        android:color="#FF246FDB"
+                        android:offset="0"/>
+                    <item
+                        android:color="#FF2973DF"
+                        android:offset="0.06"/>
+                    <item
+                        android:color="#FF377DEB"
+                        android:offset="0.28"/>
+                    <item
+                        android:color="#FF3F83F2"
+                        android:offset="0.55"/>
+                    <item
+                        android:color="#FF4285F4"
+                        android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FFFBBC04"
+            android:pathData="M15.36 15.36l-3.19-3.17c-1.76 1.75-4.6 1.75-6.36 0l-3.19 3.17c3.53 3.52 9.22 3.52 12.74 0Z"/>
+        <path
+            android:fillColor="#FFEA4335"
+            android:pathData="M12.18 12.19c0.88-0.88 2.3-0.88 3.18 0 0.88 0.87 0.88 2.3 0 3.18-0.88 0.88-2.3 0.88-3.18 0-0.88-0.88-0.88-2.3 0-3.18Z"/>
+        <path
+            android:fillColor="#FF34A853"
+            android:pathData="M2.64 12.19c0.88-0.88 2.3-0.88 3.17 0 0.88 0.87 0.88 2.3 0 3.18-0.87 0.88-2.3 0.88-3.17 0-0.88-0.88-0.88-2.3 0-3.18Z"/>
+    </group>
+</vector>

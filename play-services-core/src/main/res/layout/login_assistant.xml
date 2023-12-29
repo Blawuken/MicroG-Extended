@@ -82,13 +82,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="8dip"
+                android:layout_marginStart="18dip"
+                android:background="@drawable/button_background_neutral"
                 android:paddingLeft="32dip"
                 android:paddingRight="32dip"
                 android:singleLine="true"
                 android:textAllCaps="false"
+                android:text="Huawei"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="?android:colorAccent" />
+                android:textColor="?android:textColorPrimary" />
 
             <Button
                 android:id="@+id/next_button"
@@ -97,11 +99,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="18dip"
-                android:background="@drawable/button_background"
+                android:background="@drawable/button_background_positive"
                 android:paddingLeft="32dip"
                 android:paddingRight="32dip"
                 android:singleLine="true"
                 android:textAllCaps="false"
+                android:text="@string/auth_sign_in"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimaryInverse" />
         </RelativeLayout>
