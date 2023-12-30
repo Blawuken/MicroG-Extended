@@ -88,7 +88,6 @@
                 android:paddingRight="32dip"
                 android:singleLine="true"
                 android:textAllCaps="false"
-                android:text="Huawei"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimary" />
 
@@ -104,7 +103,6 @@
                 android:paddingRight="32dip"
                 android:singleLine="true"
                 android:textAllCaps="false"
-                android:text="@string/auth_sign_in"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimaryInverse" />
         </RelativeLayout>

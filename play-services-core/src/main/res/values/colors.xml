@@ -19,8 +19,8 @@
     <color name="theme_background_dark">#ff0f0f0f</color>
     <color name="theme_foreground_light">#fff2f2f2</color>
     <color name="theme_foreground_dark">#ff212121</color>
-    <color name="theme_accent_light">#ff065dd0</color>
-    <color name="theme_accent_dark">#ff3da3fa</color>
+    <color name="theme_accent_light">#ff065fd4</color>
+    <color name="theme_accent_dark">#ff3ea6ff</color>
 
     <color name="ic_launcher_background">#ffffffff</color>
     <color name="dialog_border_color">#88CCCCCC</color>

@@ -95,18 +95,6 @@
                 android:textColor="?android:textColorPrimary">
             </Button>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:layout_gravity="center"
-                android:gravity="center_vertical"
-                android:drawablePadding="8dp"
-                android:text="@string/gms_app_name"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                app:drawableStartCompat="@drawable/ic_microg_icon_text">
-        </TextView>
-
         </LinearLayout>
 
     </LinearLayout>
