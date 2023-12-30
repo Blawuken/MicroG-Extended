@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelableCreatorAndWriter;
-import org.microg.gms.utils.ToStringHelper;
 
 @SafeParcelable.Class
 public class Feature extends AbstractSafeParcelable {
@@ -37,12 +36,6 @@ public class Feature extends AbstractSafeParcelable {
     public long getVersion() {
         if (version == -1) return oldVersion;
         return version;
-    }
-
-    @NonNull
-    @Override
-    public String toString() {
-        return ToStringHelper.name("Feature").value(name).value(getVersion()).end();
     }
 
     @Override

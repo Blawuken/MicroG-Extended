@@ -169,7 +169,6 @@ public enum GmsService {
     OCR(279, BuildConfig.BASE_PACKAGE_NAME + ".android.gms.ocr.service.START"),
     POTOKENS(285, BuildConfig.BASE_PACKAGE_NAME + ".android.gms.potokens.service.START"),
     OCR_INTERNAL(281, BuildConfig.BASE_PACKAGE_NAME + ".android.gms.ocr.service.internal.START"),
-    MODULE_INSTALL(308, "com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START"),
     IN_APP_REACH(315, BuildConfig.BASE_PACKAGE_NAME + ".android.gms.inappreach.service.START"),
     APP_ERRORS(334, BuildConfig.BASE_PACKAGE_NAME + ".android.gms.apperrors.service.START_APP_ERROR"),
     ;
