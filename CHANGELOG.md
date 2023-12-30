@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.6.0...v1.7.0) (2023-12-30)
+
+
+### Features
+
+* **Feature:** Import crash log dialog notification ([4cc5adf](https://github.com/Blawuken/MicroG-Extended/commit/4cc5adfc0905948ec725e5f721d900167286e4fa))
+* Update buttons ([f13df0b](https://github.com/Blawuken/MicroG-Extended/commit/f13df0bc7012fc75fead67b8f5d4e5cbbc2401ab))
+* Update colors to match YouTube changes ([122597a](https://github.com/Blawuken/MicroG-Extended/commit/122597a09476b117c0fae13ed93a550ab1b01623))
+
 # [1.6.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.5.0...v1.6.0) (2023-12-28)
 
 
