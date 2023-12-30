@@ -1,3 +1,22 @@
+# [1.8.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.7.0...v1.8.0) (2023-12-30)
+
+
+### Features
+
+* Add license headers to new files ([13217a6](https://github.com/Blawuken/MicroG-Extended/commit/13217a6bfc76780c010b446e9039fd2405a1db7a))
+* Add missing license information ([ff49858](https://github.com/Blawuken/MicroG-Extended/commit/ff49858257ef57b7edb6711f9876791cee01a488))
+* Add ModuleInstall API stub ([5d28c95](https://github.com/Blawuken/MicroG-Extended/commit/5d28c95a817128cb7d4eb179c6da5582aa9ca0b1))
+* Add preference for play licensing ([8cdfbeb](https://github.com/Blawuken/MicroG-Extended/commit/8cdfbeb5b77d040896d47364dd2813bcca29aa0d))
+* Expose device profile as content provider ([b3c59be](https://github.com/Blawuken/MicroG-Extended/commit/b3c59be5ad9b282fd9763186929fe7b4a88bbecf))
+* Expose settings via signature level permission ([179fc86](https://github.com/Blawuken/MicroG-Extended/commit/179fc8604e3fd8df4ddb98f62f7be3645539e746))
+* Move profile provider to `play-services-base-core-package` ([a6d6d91](https://github.com/Blawuken/MicroG-Extended/commit/a6d6d91df424996373910f52c91c15bd4ac612b3))
+* Move profile provider to `play-services-core-package` ([fa43936](https://github.com/Blawuken/MicroG-Extended/commit/fa43936bd4361beea8c818e1f7fe7fc206387816))
+
+
+### Reverts
+
+* Revert "feat: Add ModuleInstall API stub" ([a092b00](https://github.com/Blawuken/MicroG-Extended/commit/a092b00d6164401a74b23ff783ac373fc9fb234f))
+
 # [1.7.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.6.0...v1.7.0) (2023-12-30)
 
 
