@@ -28,6 +28,6 @@
         android:summary="@string/uwu_tap_credit_summary">
         <intent
             android:targetPackage="@string/var_pref_start_gms_package"
-            android:targetClass="org.microg.gms.ui.Credits$AsActivity" />
+            android:targetClass="org.microg.gms.ui.Credits" />
     </Preference>
 </PreferenceScreen>

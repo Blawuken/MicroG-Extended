@@ -153,4 +153,32 @@
         <item name="android:popupElevation">5.0dip</item>
     </style>
 
+    <style name="CollapsingToolbarTitle.Collapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CollapsingToolbarTitle.Expanded" parent="@style/CollapsingToolbarTitle.Collapsed">
+        <item name="android:textSize">36.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="BasePreferenceThemeOverlay" parent="@style/AppThemeBase">
+        <item name="android:scrollbars">vertical</item>
+        <item name="checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference.Material</item>
+        <item name="dialogPreferenceStyle">@style/Preference.DialogPreference.Material</item>
+        <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
+        <item name="editTextPreferenceStyle">@style/Preference.DialogPreference.EditTextPreference.Material</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.Material</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList.Material</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.Material</item>
+        <item name="preferenceScreenStyle">@style/Preference.PreferenceScreen.Material</item>
+        <item name="preferenceStyle">@style/Preference.Material</item>
+        <item name="seekBarPreferenceStyle">@style/Preference.SeekBarPreference.Material</item>
+        <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat.Material</item>
+        <item name="switchPreferenceStyle">@style/Preference.SwitchPreference.Material</item>
+    </style>
+
 </resources>
