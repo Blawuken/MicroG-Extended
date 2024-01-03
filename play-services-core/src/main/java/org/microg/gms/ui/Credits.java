@@ -16,15 +16,21 @@
 
 package org.microg.gms.ui;
 
+import android.os.Bundle;
+import android.content.Context;
+import android.view.MenuItem;
 import com.google.android.gms.R;
+import com.neko.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-import org.microg.tools.ui.AbstractSettingsActivity;
+public class Credits extends CollapsingToolbarBaseActivity {
+    protected void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        Context applicationContext = getApplicationContext();
+        setContentView(getResources("layout/uwu_layout_content"));
+        getFragmentManager().beginTransaction().replace(R.id.uwu_content, new CreditsFragment()).commit();
+    }
 
-public class Credits {
-    public static class AsActivity extends AbstractSettingsActivity {
-        public AsActivity() {
-            showHomeAsUp = true;
-            preferencesResource = R.xml.preferences_credits;
-        }
+    public int getResources(String str) {
+        return getApplicationContext().getResources().getIdentifier(str, null, getApplicationContext().getPackageName());
     }
 }

@@ -26,8 +26,7 @@
                 android:gravity="start|center"
                 android:layout_width="27.0dip"
                 android:layout_height="27.0dip"
-                android:src="@drawable/ic_version_name"
-                app:tint="?android:textColorPrimary" />
+                android:src="@drawable/ic_version_name" />
             <LinearLayout
                 android:gravity="center"
                 android:orientation="vertical"
@@ -73,8 +72,7 @@
                 android:gravity="start|center"
                 android:layout_width="27.0dip"
                 android:layout_height="27.0dip"
-                android:src="@drawable/ic_core"
-                app:tint="?android:textColorPrimary" />
+                android:src="@drawable/ic_core" />
             <LinearLayout
                 android:gravity="center"
                 android:orientation="vertical"
