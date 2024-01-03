@@ -8,6 +8,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <org.microg.gms.ui.SwitchBarPreference
+        android:icon="@drawable/uwu_on_of"
+        android:layout="@layout/uwu_sin_switch"
+        android:widgetLayout="@layout/preference_widget_switch"
         android:key="pref_checkin_enabled"
         android:persistent="false"
         android:title="@string/checkin_enable_switch" />
