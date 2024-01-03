@@ -9,6 +9,9 @@
     android:title="Push notifications">
 
     <org.microg.gms.ui.SwitchBarPreference
+        android:icon="@drawable/uwu_on_of"
+        android:layout="@layout/uwu_sin_switch"
+        android:widgetLayout="@layout/preference_widget_switch"
         android:key="pref_push_enabled"
         android:persistent="false"
         android:title="@string/gcm_enable_switch" />
