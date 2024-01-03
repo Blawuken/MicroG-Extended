@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.8.0...v1.9.0) (2024-01-03)
+
+
+### Features
+
+* Keystore update ([47c419b](https://github.com/Blawuken/MicroG-Extended/commit/47c419b708653f59f4b87140a1a199fd72671238))
+* Redesign Developer Option with collapsing toolbar ([d3ee0b1](https://github.com/Blawuken/MicroG-Extended/commit/d3ee0b18435d62d26f772bee2c4d7f3baf568f57))
+* Redesign SwitchBarPreference ([154b5bc](https://github.com/Blawuken/MicroG-Extended/commit/154b5bcdf843a5c4b9f790578b45f27e3df1d92b))
+
 # [1.8.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.7.0...v1.8.0) (2023-12-30)
 
 
