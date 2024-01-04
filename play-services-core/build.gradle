@@ -42,6 +42,9 @@ dependencies {
     // Switch Button
     implementation 'com.kyleduo.switchbutton:library:2.1.0'
 
+    // Lottie
+    implementation 'com.airbnb.android:lottie:6.3.0'
+
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])
 }

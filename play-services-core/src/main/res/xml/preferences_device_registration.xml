@@ -7,6 +7,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <Preference
+        android:layout="@layout/uwu_lonte_registration"
+        android:selectable="false" />
+
     <org.microg.gms.ui.SwitchBarPreference
         android:icon="@drawable/uwu_on_of"
         android:layout="@layout/uwu_sin_switch"

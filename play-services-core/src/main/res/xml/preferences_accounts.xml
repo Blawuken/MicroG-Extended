@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/uwu_lonte_google"
+        android:selectable="false" />
+
     <PreferenceCategory
         android:key="prefcat_current_accounts"
         android:title="@string/prefcat_accounts_login_accounts_title"
