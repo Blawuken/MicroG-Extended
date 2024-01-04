@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.9.0...v1.10.0) (2024-01-04)
+
+
+### Features
+
+* Add identity sign-in service ([#2130](https://github.com/Blawuken/MicroG-Extended/issues/2130)) ([2e38e63](https://github.com/Blawuken/MicroG-Extended/commit/2e38e63750fb2c96233e13e90ef76437aa343438))
+* Add Lottie Animation ([036f240](https://github.com/Blawuken/MicroG-Extended/commit/036f2403000ef7e769d00384380a36d28fd8cc4b))
+
 # [1.9.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.8.0...v1.9.0) (2024-01-03)
 
 
