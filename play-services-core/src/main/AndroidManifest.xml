@@ -357,6 +357,12 @@
             android:name="org.microg.gms.auth.signin.SignInConfigurationService"
             android:exported="false" />
 
+        <service android:name="org.microg.gms.auth.credentials.identity.IdentitySignInService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.identity.service.signin.START" />
+            </intent-filter>
+        </service>
+
         <!-- microG Settings activity -->
         <activity
             android:name="org.microg.gms.ui.MainSettingsActivity"
@@ -534,7 +540,6 @@
                 <action android:name="com.google.android.gms.cast.firstparty.START" />
                 <action android:name="com.google.android.gms.cast_mirroring.service.START" />
                 <action android:name="com.google.android.gms.cast.remote_display.service.START" />
-                <action android:name="com.google.android.gms.auth.api.credentials.service.START" />
                 <action android:name="com.google.android.gms.common.service.START" />
                 <action android:name="com.google.android.gms.identity.service.BIND" />
             </intent-filter>
