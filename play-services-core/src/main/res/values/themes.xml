@@ -61,6 +61,9 @@
         <item name="colorControlNormal">@android:color/white</item>
         <item name="colorPrimary">@color/uwu_primary_light</item>
         <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="elevationOverlayEnabled">true</item>
+        <item name="elevationOverlayColor">?attr/colorPrimary</item>
+        <item name="colorAccent">@color/uwu_accent_light</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">

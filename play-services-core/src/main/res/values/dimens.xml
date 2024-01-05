@@ -27,7 +27,7 @@
     <dimen name="xd_about_phone_ill_height">275.0dip</dimen>
     <dimen name="xd_about_phone_ill_width">125.0dip</dimen>
 
-    <dimen name="settingslib_toolbar_layout_height">179.0dip</dimen>
+    <dimen name="settingslib_toolbar_layout_height">159.0dip</dimen>
     <dimen name="expanded_title_margin_end">24.0dip</dimen>
     <dimen name="expanded_title_margin_start">24.0dip</dimen>
     <dimen name="settingslib_scrim_visible_height_trigger">137.0dip</dimen>
