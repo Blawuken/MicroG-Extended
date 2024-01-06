@@ -297,4 +297,9 @@ This can take a couple of minutes"</string>
     <string name="uwu_build_sum">Manage By AnGgIt86</string>
     <string name="uwu_title_dashboard_tools">Hello there...</string>
     <string name="uwu_summary_dashboard_tools">Welcome to the MicroG Extended settings menu</string>
+    
+    <string name="uwu_network_switcher_title">Network Switcher</string>
+    <string name="uwu_network_switcher_summary">Set preferred network type here.</string>
+    <string name="uwu_band_switcher_title">Bandwitch Options</string>
+    <string name="uwu_band_switcher_summary">Set preferred bandwitch type here.</string>
 </resources>

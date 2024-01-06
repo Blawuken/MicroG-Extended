@@ -480,6 +480,18 @@
             android:taskAffinity="org.microg.gms.settings" />
 
         <activity
+            android:label="@string/uwu_network_switcher_title"
+            android:name="com.neko.other.NetworkSwitcher"
+            android:process=":ui"
+            android:taskAffinity="org.microg.gms.settings" />
+        
+        <activity
+            android:label="@string/uwu_band_switcher_title"
+            android:name="com.neko.other.BandwitchSwitcher"
+            android:process=":ui"
+            android:taskAffinity="org.microg.gms.settings" />
+
+        <activity
             android:theme="@style/uwu_crash_logger_theme"
             android:label="CrashLogger"
             android:name="com.neko.crash.CrashLogger"
