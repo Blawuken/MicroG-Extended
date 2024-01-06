@@ -184,4 +184,12 @@
         <item name="switchPreferenceStyle">@style/Preference.SwitchPreference.Material</item>
     </style>
 
+    <style name="uwu_speed_test" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorBackground">@color/uwu_bg_speed</item>
+        <item name="android:statusBarColor">@color/uwu_bg_speed</item>
+        <item name="android:navigationBarColor">@color/uwu_bg_speed</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
 </resources>
