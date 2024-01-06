@@ -501,6 +501,13 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
+            android:label="SpeedTest"
+            android:theme="@style/uwu_speed_test"
+            android:name="com.neko.speedtest.SpeedTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name="org.microg.gms.accountsettings.ui.MainActivity"
             android:process=":ui"
             android:exported="false"

@@ -40,4 +40,5 @@
     <color name="colorText">#ff191c1b</color>
     <color name="uwu_accent">@color/extended_color</color>
     <color name="uwu_ripple">@color/uwu_accent_alpha1</color>
+    <color name="uwu_bg_speed">#ffdee5f8</color>
 </resources>
