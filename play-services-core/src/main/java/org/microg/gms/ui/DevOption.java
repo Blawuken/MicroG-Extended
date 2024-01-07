@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.content.Context;
 import android.view.MenuItem;
 import com.google.android.gms.R;
+import com.oseamiya.deviceinformation.DeviceInformation;
 import com.neko.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 public class DevOption extends CollapsingToolbarBaseActivity {
