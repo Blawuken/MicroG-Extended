@@ -1,0 +1,24 @@
+env:
+  CIRRUS_CLONE_DEPTH: 1
+  GITHUB_TOKEN: ENCRYPTED[293751db0bf6b0f6cede29f1828d2807a4a1f43f5e4c2bbcbcc123ce61e29a4ddba27b5e483685f97ab71bd352a1c75e]
+
+task:
+  name: "Gradle"
+  stateful: true
+  timeout_in: 120m
+  container:
+    image: anggit86/android-sdk:latest
+    cpu: 8
+    memory: 32G
+
+  Build_project_script:
+    - ./gradlew assemble
+
+  Build_APK_script:
+    - ./gradlew assembleRelease
+
+  Setup_semantic_release_script:
+    - npm install
+
+  Release_script:
+    - npm exec semantic-release
