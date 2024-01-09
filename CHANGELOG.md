@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.10.0...v1.11.0) (2024-1-9)
+
+
+### Features
+
+* Add feature network and bandwitch switcher ([4e1ecf2](https://github.com/Blawuken/MicroG-Extended/commit/4e1ecf2ae5e7403e06323a95ff0ff59e17c2ad49))
+* Add SpeedTest network ([d586963](https://github.com/Blawuken/MicroG-Extended/commit/d586963345151c5d92a381f6c474e449e52f8aed))
+
 # [1.10.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.9.0...v1.10.0) (2024-01-04)
 
 
