@@ -10,7 +10,7 @@
     android:paddingStart="?attr/listPreferredItemPaddingStart"
     android:paddingTop="32dp"
     android:paddingEnd="?attr/listPreferredItemPaddingEnd"
-    android:paddingBottom="32dp">
+    android:paddingBottom="16dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -64,5 +64,42 @@
             android:textColor="?android:colorAccent"
             android:visibility="gone"
             tools:text="ReVanced" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/uninstall_button"
+                style="?attr/buttonBarNeutralButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_neutral"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:layout_marginEnd="8dp"
+                android:singleLine="true"
+                android:text="@string/uninstall_app"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="?android:textColorPrimary" />
+
+            <Button
+                android:id="@+id/open_button"
+                style="?attr/buttonBarPositiveButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_positive"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="@string/open_app"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="?android:textColorPrimaryInverse" />
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

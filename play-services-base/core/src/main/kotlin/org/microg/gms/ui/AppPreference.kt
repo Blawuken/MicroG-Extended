@@ -6,10 +6,13 @@
 package org.microg.gms.ui
 
 import android.content.Context
+import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.util.AttributeSet
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.preference.Preference
@@ -18,8 +21,14 @@ import org.microg.gms.base.core.R
 import java.util.Locale
 
 abstract class AppPreference : Preference {
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes)
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
+    constructor(
+        context: Context, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int
+    ) : super(context, attrs, defStyleAttr, defStyleRes)
+
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context, attrs, defStyleAttr
+    )
+
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context) : super(context)
 
@@ -39,8 +48,10 @@ abstract class AppPreference : Preference {
                 appVersion = null
             } else if (value != null) {
                 val pm = context.packageManager
-                title = value.loadLabel(pm) ?: value.packageName
-                icon = value.loadIcon(pm) ?: AppCompatResources.getDrawable(context, android.R.mipmap.sym_def_app_icon)
+                title = value.loadLabel(pm)
+                icon = value.loadIcon(pm) ?: AppCompatResources.getDrawable(
+                    context, android.R.mipmap.sym_def_app_icon
+                )
 
                 appVersion = try {
                     pm.getPackageInfo(value.packageName, 0)?.versionName
@@ -62,7 +73,9 @@ abstract class AppPreference : Preference {
                 val pm = context.packageManager
                 val applicationInfo = pm.getApplicationInfoIfExists(value)
                 title = applicationInfo?.loadLabel(pm)?.toString() ?: value
-                icon = applicationInfo?.loadIcon(pm) ?: AppCompatResources.getDrawable(context, android.R.mipmap.sym_def_app_icon)
+                icon = applicationInfo?.loadIcon(pm) ?: AppCompatResources.getDrawable(
+                    context, android.R.mipmap.sym_def_app_icon
+                )
 
                 appVersion = try {
                     pm.getPackageInfo(value, 0)?.versionName
@@ -79,6 +92,8 @@ abstract class AppPreference : Preference {
         val packageNameTextView: TextView? = holder.itemView.findViewById(R.id.package_name)
         val appVersionTextView: TextView? = holder.itemView.findViewById(R.id.version_name)
         val appPatcherTextView: TextView? = holder.itemView.findViewById(R.id.patcher_name)
+        val uninstallButton: Button? = holder.itemView.findViewById(R.id.uninstall_button)
+        val openButton: Button? = holder.itemView.findViewById(R.id.open_button)
 
         if (packageNameTextView != null && packageNameField != null) {
             packageNameTextView.text = packageNameField
@@ -109,6 +124,25 @@ abstract class AppPreference : Preference {
                 it.text = patcherText
             } else {
                 it.visibility = View.GONE
+            }
+        }
+
+        openButton?.setOnClickListener {
+            packageNameField?.let { packageName ->
+                val launchIntent = context.packageManager.getLaunchIntentForPackage(packageName)
+                if (launchIntent != null) {
+                    context.startActivity(launchIntent)
+                } else {
+                    // Cannot open app
+                }
+            }
+        }
+
+        uninstallButton?.setOnClickListener {
+            packageNameField?.let { packageName ->
+                val intent = Intent(Intent.ACTION_UNINSTALL_PACKAGE)
+                intent.data = Uri.parse("package:$packageName")
+                context.startActivity(intent)
             }
         }
     }
