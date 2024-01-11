@@ -61,7 +61,7 @@
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:src="@drawable/ic_generic_man"
+                android:src="@drawable/ic_google_logo"
                 android:id="@+id/account_photo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

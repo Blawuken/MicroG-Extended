@@ -38,7 +38,7 @@
 
     <permission-tree
         android:name="${basePackageName}.android.googleapps.permission.GOOGLE_AUTH"
-        android:icon="@drawable/proprietary_auth_ic_scope_icon_default" />
+        android:icon="@drawable/ic_google_logo" />
 
     <permission
         android:name="${basePackageName}.gms.STATUS_BROADCAST"
