@@ -41,5 +41,14 @@
     <string name="about_android_support_v7_appcompat">v7 appcompat Support Library</string>
     <string name="about_android_support_v7_preference">v7 preference Support Library</string>
     <string name="about_android_support_license">Apache License 2.0, The Android Open Source Project</string>
+
+    <!-- UpdateChecker tag controller-->
+
+    <string name="github_tag_version">4.2</string>
+
+    <!-- Updater strings-->
+
     <string name="check_updates">Check updates</string>
+    <string name="update_available">New version available!</string>
+    <string name="no_update_available">You are on latest version.</string>
 </resources>

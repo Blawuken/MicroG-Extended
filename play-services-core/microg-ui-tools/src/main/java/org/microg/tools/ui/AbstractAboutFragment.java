@@ -17,10 +17,8 @@
 package org.microg.tools.ui;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -34,6 +32,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import org.microg.tools.updater.UpdateChecker;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -112,10 +112,7 @@ public abstract class AbstractAboutFragment extends Fragment {
 
         Button btnCheckUpdates = aboutRoot.findViewById(R.id.btnCheckUpdates);
         btnCheckUpdates.setOnClickListener(v -> {
-            String url = "https://github.com/Blawuken/MicroG-Extended/releases/latest";
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
+            new UpdateChecker(getContext()).execute();
         });
 
         return aboutRoot;
