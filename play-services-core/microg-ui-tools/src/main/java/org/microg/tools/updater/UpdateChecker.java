@@ -32,9 +32,7 @@ public class UpdateChecker extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         OkHttpClient client = new OkHttpClient();
-        Request request = new Request.Builder()
-                .url(GITHUB_API_URL)
-                .build();
+        Request request = new Request.Builder().url(GITHUB_API_URL).build();
 
         try (Response response = client.newCall(request).execute()) {
             if (response.isSuccessful()) {
@@ -70,7 +68,7 @@ public class UpdateChecker extends AsyncTask<Void, Void, String> {
 
         String appVersion = context.getString(R.string.github_tag_version);
 
-        if (!latestVersion.equals(appVersion)) {
+        if (appVersion.compareTo(latestVersion) < 0) {
             showUpdateToast(context);
             openGitHubReleaseLink(context);
         } else {
