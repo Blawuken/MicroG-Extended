@@ -79,7 +79,6 @@
                 android:background="@drawable/button_background_neutral"
                 android:paddingLeft="32dip"
                 android:paddingRight="32dip"
-                android:layout_marginEnd="8dp"
                 android:singleLine="true"
                 android:text="@string/uninstall_app"
                 android:textAllCaps="false"
@@ -88,18 +87,17 @@
 
             <Button
                 android:id="@+id/open_button"
-                style="?attr/buttonBarPositiveButtonStyle"
+                style="?attr/buttonBarNeutralButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_background_positive"
+                android:background="@drawable/button_background_neutral"
                 android:paddingLeft="32dip"
                 android:paddingRight="32dip"
-                android:layout_marginStart="8dp"
                 android:singleLine="true"
                 android:text="@string/open_app"
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="?android:textColorPrimaryInverse" />
+                android:textColor="?android:textColorPrimary" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
