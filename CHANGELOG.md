@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.12.0...v1.13.0) (2024-01-11)
+
+
+### Features
+
+* Add uninstall and open button in app heading ([65612cf](https://github.com/Blawuken/MicroG-Extended/commit/65612cf63ec1e98ace8ee5951a8a50b0f5167192))
+
 # [1.12.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.11.0...v1.12.0) (2024-01-11)
 
 
