@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.11.0...v1.12.0) (2024-01-11)
+
+
+### Features
+
+* Relayout SpeedTest and Banner Button ([5e3f6c6](https://github.com/Blawuken/MicroG-Extended/commit/5e3f6c6720baf1a4c4c5aee78d5041455732ddb6))
+
 # [1.11.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.10.0...v1.11.0) (2024-1-9)
 
 
