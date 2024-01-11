@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="xd_camera_mp" translatable="false">Camera</string>
-    <string name="xd_camera_mp_summary" translatable="false">13MP + 5MP</string>
-    <string name="xd_chipset_type" translatable="false">Chipset</string>
-    <string name="xd_chipset_type_summary" translatable="false">SDM 450</string>
-    <string name="xd_device_name" translatable="false">Device name</string>
-    <string name="xd_device_name_summary" translatable="false">CPH1803</string>
-    <string name="xd_gpu" translatable="false">GPU</string>
-    <string name="xd_gpu_summary" translatable="false">Adreno 506</string>
-    <string name="xd_battery_type" translatable="false">Battery</string>
-    <string name="xd_battery_type_summary" translatable="false">Li-Ion 4230 mAh</string>
-    <string name="uwu_core" translatable="false">Octa-core 1.8 GHz Cortex-A53</string>
-    <string name="xd_screen_type" translatable="false">Screen</string>
-    <string name="xd_screen_type_summary" translatable="false">IPS LCD 6.2 inc</string>
-    
     <string name="uwu_title_0" translatable="false">Telegram</string>
     <string name="uwu_info_0" translatable="false">Telegram account</string>
     <string name="uwu_title_1" translatable="false">Kentang Injector</string>

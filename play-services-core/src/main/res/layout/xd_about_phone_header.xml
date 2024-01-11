@@ -82,9 +82,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12.0dip"
-                android:text="@string/xd_device_name"
+                android:text="Device Name"
                 android:singleLine="true" />
-            <TextView
+            <com.neko.marquee.deviceinfo.Device
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -95,7 +95,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_device_name_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_name_title"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -106,11 +105,11 @@
                 android:id="@+id/uwu_developer"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/xd_chipset_type"
+                android:text="Board"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_name_title_summary"
                 android:layout_alignStart="@+id/uwu_name_title_summary" />
-            <TextView
+            <com.neko.marquee.deviceinfo.Board
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -121,7 +120,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_chipset_type_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_developer"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -132,11 +130,11 @@
                 android:id="@+id/uwu_modder"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/xd_gpu"
+                android:text="OS Version"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_developer_summary"
                 android:layout_alignStart="@+id/uwu_developer_summary" />
-            <TextView
+            <com.neko.marquee.deviceinfo.OsVersion
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -147,7 +145,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_gpu_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_modder"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -158,11 +155,11 @@
                 android:id="@+id/uwu_version_name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/xd_camera_mp"
+                android:text="Brand"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_modder_summary"
                 android:layout_alignStart="@+id/uwu_modder_summary" />
-            <TextView
+            <com.neko.marquee.deviceinfo.Brand
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -173,7 +170,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_camera_mp_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_version_name"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -184,11 +180,11 @@
                 android:id="@+id/uwu_version_code"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/xd_battery_type"
+                android:text="Build ID"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_version_name_summary"
                 android:layout_alignStart="@+id/uwu_version_name_summary" />
-            <TextView
+            <com.neko.marquee.deviceinfo.BuildID
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -199,7 +195,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_battery_type_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_version_code"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -210,11 +205,11 @@
                 android:id="@+id/uwu_package_name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/xd_screen_type"
+                android:text="Serial"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_version_code_summary"
                 android:layout_alignStart="@+id/uwu_version_code_summary" />
-            <TextView
+            <com.neko.marquee.deviceinfo.Serial
                 android:textSize="14.0sp"
                 android:textColor="?android:textColorSecondary"
                 android:ellipsize="marquee"
@@ -225,7 +220,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.0dip"
-                android:text="@string/xd_screen_type_summary"
                 android:singleLine="true"
                 android:layout_below="@+id/uwu_package_name"
                 android:marqueeRepeatLimit="marquee_forever"

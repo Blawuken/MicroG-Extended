@@ -14,15 +14,15 @@
         android:layout_marginEnd="16.0dip">
         <LinearLayout
             android:gravity="start|center"
-            android:background="@drawable/uwu_card_accent_update"
             android:orientation="horizontal"
+            android:background="@drawable/uwu_card_accent_update"
             android:layout_width="0.0dip"
             android:layout_height="60.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="10.0dip"
             android:layout_weight="1.0"
             android:paddingStart="16.0dip"
             android:paddingEnd="16.0dip"
-            android:layout_marginTop="10.0dip"
-            android:layout_marginBottom="10.0dip"
             android:layout_marginStart="16.0dip"
             android:layout_marginEnd="2.0dip">
             <ImageView
@@ -63,15 +63,15 @@
             android:layout_marginBottom="10.0dip" />
         <LinearLayout
             android:gravity="start|center"
-            android:background="@drawable/uwu_card_accent_update"
             android:orientation="horizontal"
+            android:background="@drawable/uwu_card_accent_update"
             android:layout_width="0.0dip"
             android:layout_height="60.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="10.0dip"
             android:layout_weight="1.0"
             android:paddingStart="16.0dip"
             android:paddingEnd="16.0dip"
-            android:layout_marginTop="10.0dip"
-            android:layout_marginBottom="10.0dip"
             android:layout_marginStart="2.0dip"
             android:layout_marginEnd="16.0dip">
             <ImageView
@@ -92,14 +92,13 @@
                     android:ellipsize="end"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Core" />
-                <com.neko.marquee.text.AutoMarqueeTextView
+                    android:text="Hardware" />
+                <com.neko.marquee.deviceinfo.Hardware
                     android:textSize="14.0sp"
                     android:textColor="@android:color/white"
                     android:ellipsize="marquee"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/uwu_core"
                     android:singleLine="true"
                     android:marqueeRepeatLimit="marquee_forever" />
             </LinearLayout>
