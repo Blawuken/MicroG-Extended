@@ -51,6 +51,16 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleRelease
 
+      - name: Sign APK
+        id: sign_apk
+        uses: ilharp/sign-android-release@v1
+        with:
+          releaseDir: play-services-core/build/outputs/apk/default/release
+          signingKey: ${{ secrets.SIGNING_KEY }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyAlias: ${{ secrets.ALIAS }}
+          keyPassword: ${{ secrets.KEY_STORE_PASSWORD }}
+
       - name: Setup semantic-release
         run: npm install
 
