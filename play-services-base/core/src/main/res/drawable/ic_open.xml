@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ SPDX-FileCopyrightText: 2019, The Android Open Source Project
   ~ SPDX-FileCopyrightText: 2020, microG Project Team
   ~ SPDX-License-Identifier: Apache-2.0
@@ -11,12 +10,7 @@
     android:tint="?attr/colorAccent"
     android:viewportWidth="24"
     android:viewportHeight="24">
-    <group>
-        <clip-path android:pathData="M0 0H24V24H0z" />
-        <group>
-            <path
-                android:fillColor="#FF000000"
-                android:pathData="M5.62 20c-0.46 0-0.85-0.15-1.16-0.46C4.16 19.23 4 18.84 4 18.38V5.62c0-0.46 0.15-0.85 0.46-1.16C4.77 4.16 5.16 4 5.62 4h5.61v1H5.62c-0.16 0-0.3 0.06-0.43 0.2C5.06 5.31 5 5.45 5 5.61v12.76c0 0.16 0.06 0.3 0.2 0.43C5.31 18.94 5.45 19 5.61 19h12.76c0.16 0 0.3-0.06 0.43-0.2 0.13-0.12 0.19-0.26 0.19-0.42v-5.61h1v5.61c0 0.46-0.15 0.85-0.46 1.16-0.31 0.3-0.7 0.46-1.16 0.46H5.62Zm4.12-5.03l-0.7-0.7L18.28 5H14V4h6v6h-1V5.7l-9.26 9.27Z" />
-        </group>
-    </group>
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M21,21H3V3h9v1H4v16h16v-8h1V21zM15,3v1h4.32l-8.03,8.03L12,12.74l8,-8V9h1V3H15z" />
 </vector>

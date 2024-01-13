@@ -5,12 +5,7 @@
     android:tint="?android:textColorPrimary"
     android:viewportWidth="24"
     android:viewportHeight="24">
-    <group>
-        <clip-path android:pathData="M0 0H24V24H0z" />
-        <group>
-            <path
-                android:fillColor="#FF000000"
-                android:pathData="M11.5 12.5H3v-1h4.25 4.25V3h1v8.5H21v1h-8.5V21h-1v-8.5Z" />
-        </group>
-    </group>
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M20,12h-8v8h-1v-8H3v-1h8V3h1v8h8V12z" />
 </vector>

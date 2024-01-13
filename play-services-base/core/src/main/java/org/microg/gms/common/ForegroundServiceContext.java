@@ -96,7 +96,7 @@ public class ForegroundServiceContext extends ContextWrapper {
         Log.d(TAG, notifyTitle + " // " + firstLine + " // " + secondLine);
         return new Notification.Builder(context, channel.getId())
                 .setOngoing(true)
-                .setSmallIcon(R.drawable.ic_background_notify)
+                .setSmallIcon(R.drawable.ic_notification)
                 .setContentTitle(notifyTitle)
                 .setContentText(firstLine)
                 .setStyle(new Notification.BigTextStyle().bigText(firstLine + "\n" + secondLine))

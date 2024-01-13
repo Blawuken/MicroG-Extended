@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~ Copyright (C) 2015-2017 microG Project Team
   ~
@@ -22,12 +21,7 @@
     android:tint="?android:textColorPrimary"
     android:viewportWidth="24"
     android:viewportHeight="24">
-    <group>
-        <clip-path android:pathData="M0 0H24V24H0z" />
-        <group>
-            <path
-                android:fillColor="#ff000000"
-                android:pathData="M12 14.7L6.7 9.4l0.7-0.71 4.6 4.6 4.6-4.6 0.7 0.7L12 14.7Z" />
-        </group>
-    </group>
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M18 9.28l-6.35 6.35-6.37-6.35L6 8.57l5.64 5.65 5.65-5.65L18 9.28Z" />
 </vector>
