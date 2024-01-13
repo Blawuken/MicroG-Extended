@@ -20,8 +20,8 @@ import okhttp3.ResponseBody;
 
 public class UpdateChecker extends AsyncTask<Void, Void, String> {
 
-    private static final String GITHUB_API_URL = "https://api.github.com/repos/WSTxda/MicroG-RE/releases/latest";
-    private static final String GITHUB_RELEASE_LINK = "https://github.com/WSTxda/MicroG-RE/releases/latest";
+    private static final String GITHUB_API_URL = "https://api.github.com/repos/Blawuken/MicroG-Extended/releases/latest";
+    private static final String GITHUB_RELEASE_LINK = "https://github.com/Blawuken/MicroG-Extended/releases/latest";
 
     private final WeakReference<Context> contextRef;
 

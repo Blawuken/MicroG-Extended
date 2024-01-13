@@ -28,6 +28,8 @@ android {
         targetSdkVersion androidTargetSdk
 
         buildConfigField "String", "GMS_APPLICATION_NAMESPACE", "\"$applicationNamespace\""
+
+        resValue "string", "github_tag_version", "v$version"
     }
 
     compileOptions {

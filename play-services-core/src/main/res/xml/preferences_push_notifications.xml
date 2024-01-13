@@ -44,6 +44,7 @@
             android:icon="@drawable/ic_status"
             android:layout="@layout/uwu_top_no_arrow"
             android:title="@string/pref_info_status"
+            android:selectable="false"
             android:key="pref_push_status" />
 
         <org.microg.gms.ui.TextPreference
