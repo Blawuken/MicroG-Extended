@@ -1,3 +1,29 @@
+# [1.13.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.12.0...v1.13.0) (2024-01-13)
+
+
+### Bug Fixes
+
+* Fixed Self-Check layout gravity and padding ([0008789](https://github.com/Blawuken/MicroG-Extended/commit/0008789e3630d92318ac84c158c003614fb91917))
+* Fixed updater tag loop ([c2c626a](https://github.com/Blawuken/MicroG-Extended/commit/c2c626a41b88e7c3b32d47625bcd0a6d50c7784a))
+
+
+### Features
+
+* Add uninstall and open button in app heading ([65612cf](https://github.com/Blawuken/MicroG-Extended/commit/65612cf63ec1e98ace8ee5951a8a50b0f5167192))
+* Added patchers package installation in self-check ([193c568](https://github.com/Blawuken/MicroG-Extended/commit/193c568583976dfdf93e9dc72ff8905d990d3afd))
+* Bump GMS version to 23.49.55 ([ec267d1](https://github.com/Blawuken/MicroG-Extended/commit/ec267d1b2b6affeda71f4fb57363314c7a8bac9e))
+* Cleaning MicroG vector drawable icons ([9044bbd](https://github.com/Blawuken/MicroG-Extended/commit/9044bbd39cda70279374e5c4bbc61264fc034b27))
+* Fix missing and little change ([337daa9](https://github.com/Blawuken/MicroG-Extended/commit/337daa92e3ee2ffc02667dddad639b377cd0d9c5))
+* Improvement check updates button with new UpdateChecker ([8b06336](https://github.com/Blawuken/MicroG-Extended/commit/8b06336e4d1e1da41fd00ce7f25c31f1172c9bbb))
+* Relayout about phone ([286c900](https://github.com/Blawuken/MicroG-Extended/commit/286c900d8c6f1d83ab71e26c693356855c87bd79))
+* Resources cleaning ([19d368b](https://github.com/Blawuken/MicroG-Extended/commit/19d368b3ae0e05771cea06db1a71d22119c6e1c6))
+* Update app heading buttons ([3f1a22b](https://github.com/Blawuken/MicroG-Extended/commit/3f1a22b564fbd67cb04949f4a06b3e009b0ab133))
+
+
+### Reverts
+
+* Revert "Add badge status build from cirrus" [skip ci] ([1b98a72](https://github.com/Blawuken/MicroG-Extended/commit/1b98a72b93e93fea5050f9a9f0ebb6821720f987))
+
 # [1.13.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.12.0...v1.13.0) (2024-01-11)
 
 
