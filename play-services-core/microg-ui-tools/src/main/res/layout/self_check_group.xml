@@ -32,7 +32,7 @@
         android:paddingEnd="?android:listPreferredItemPaddingEnd"
         android:paddingRight="?attr/listPreferredItemPaddingRight"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="?android:textColorPrimary" />
+        android:textColor="?android:colorAccent" />
 
     <LinearLayout
         android:id="@+id/group_content"
