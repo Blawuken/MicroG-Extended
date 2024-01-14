@@ -47,10 +47,10 @@ public class InstalledPackagesChecks implements SelfCheckGroup {
 //        addPackageInstalledAndSignedResult(context, collector, context.getString(R.string.self_check_pkg_gms), Constants.GMS_PACKAGE_NAME, Constants.GMS_PACKAGE_SIGNATURE_SHA1);
 //        addPackageInstalledResult(context, collector, context.getString(R.string.self_check_pkg_vending), "com.android.vending");
 //        addPackageInstalledResult(context, collector, context.getString(R.string.self_check_pkg_gsf), Constants.GSF_PACKAGE_NAME);
-        checkInstalledPackage(context, collector, context.getString(R.string.self_check_pkg_revanced), ".revanced.");
-        checkInstalledPackage(context, collector, context.getString(R.string.self_check_pkg_revanced_extended), ".rvx.");
-        checkInstalledPackage(context, collector, context.getString(R.string.self_check_pkg_youtube_advanced), ".rex.");
-        checkInstalledPackage(context, collector, context.getString(R.string.self_check_pkg_vanced), ".vanced.");
+        checkInstalledPackage(context, collector, context.getString(R.string.revanced), ".revanced.android");
+        checkInstalledPackage(context, collector, context.getString(R.string.revanced_extended), ".rvx.android");
+        checkInstalledPackage(context, collector, context.getString(R.string.youtube_advanced), ".rex.android");
+        checkInstalledPackage(context, collector, context.getString(R.string.vanced), ".vanced.android");
         addPackageInstalledResult(context, collector, context.getString(R.string.self_check_pkg_gms), Constants.GMS_PACKAGE_NAME);
         addPackageInstalledAndSignedResult(context, collector, context.getString(R.string.self_check_pkg_vending), "com.android.vending", Constants.GMS_PACKAGE_SIGNATURE_SHA1);
     }
