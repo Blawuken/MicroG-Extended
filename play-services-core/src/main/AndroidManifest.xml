@@ -540,6 +540,15 @@
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.neko.webview.About.AboutWebviewActivity"
+            android:exported="true" />
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="com.neko.webview.Changelog.ChangelogWebviewActivity"
+            android:exported="true" />
 
         <!-- Other -->
 

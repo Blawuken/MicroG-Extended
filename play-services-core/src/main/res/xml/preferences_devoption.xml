@@ -25,6 +25,9 @@
         android:layout="@layout/uwu_menu_tools"
         android:selectable="false" />
     <Preference
+        android:layout="@layout/uwu_menu_tools2"
+        android:selectable="false" />
+    <Preference
         android:icon="@drawable/uwu_about"
         android:layout="@layout/uwu_sin"
         android:title="@string/uwu_credits"
