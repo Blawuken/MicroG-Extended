@@ -15,6 +15,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.SwitchPreference
 import com.google.android.gms.R
+import kotlinx.coroutines.launch
 import org.microg.gms.checkin.CheckinPreferences
 import org.microg.gms.gcm.GcmDatabase
 import org.microg.gms.gcm.GcmPrefs
@@ -26,10 +27,18 @@ import org.microg.tools.ui.ResourceSettingsFragment
 class SettingsFragment : ResourceSettingsFragment() {
     private val createdPreferences = mutableListOf<Preference>()
 
+    companion object {
+        const val PREF_ABOUT = "pref_about"
+        const val PREF_GCM = "pref_gcm"
+        const val PREF_CHECKIN = "pref_checkin"
+        const val PREF_ACCOUNTS = "pref_accounts"
+        const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
+        const val PREF_PLAY = "pref_play"
+        
+    }
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         super.onCreatePreferences(savedInstanceState, rootKey)
-
-        val pm = requireActivity().packageManager
 
         findPreference<Preference>(PREF_ACCOUNTS)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
             findNavController().navigate(requireContext(), R.id.accountManagerFragment)
@@ -53,17 +62,10 @@ class SettingsFragment : ResourceSettingsFragment() {
         }
         findPreference<SwitchPreference>(PREF_CAST_HIDE_LAUNCHER_ICON)?.apply {
             setOnPreferenceChangeListener { _, newValue ->
-                pm.setComponentEnabledSetting(
-                    ComponentName.createRelative(requireActivity(), "org.microg.gms.ui.SettingsActivityLauncher"),
-                    when (newValue) {
-                        true -> PackageManager.COMPONENT_ENABLED_STATE_DISABLED
-                        else -> PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-                    },
-                    PackageManager.DONT_KILL_APP
-                )
+                val isEnabled = newValue as Boolean
+                updateLauncherIconVisibility(isEnabled)
                 true
             }
-
         }
         findPreference<Preference>(PREF_ABOUT)!!.summary = getString(org.microg.tools.ui.R.string.about_version_str, AboutFragment.getSelfVersion(context))
 
@@ -106,6 +108,23 @@ class SettingsFragment : ResourceSettingsFragment() {
         return this
     }
 
+    private fun updateLauncherIconVisibility(isEnabled: Boolean) {
+        val mainSettingsComponent = ComponentName(requireActivity(), "org.microg.gms.ui.MainSettingsActivity")
+        val launcherSettingsComponent = ComponentName(requireActivity(), "org.microg.gms.ui.SettingsActivityLauncher")
+
+        requireActivity().packageManager.setComponentEnabledSetting(mainSettingsComponent,
+            if (isEnabled) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+            PackageManager.DONT_KILL_APP
+        )
+
+        requireActivity().packageManager.setComponentEnabledSetting(launcherSettingsComponent,
+            if (isEnabled) PackageManager.COMPONENT_ENABLED_STATE_DISABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+            PackageManager.DONT_KILL_APP
+        )
+    }
+
     override fun onResume() {
         super.onResume()
         val context = requireContext()
@@ -121,7 +140,7 @@ class SettingsFragment : ResourceSettingsFragment() {
         findPreference<Preference>(PREF_CHECKIN)!!.setSummary(if (CheckinPreferences.isEnabled(requireContext())) org.microg.gms.base.core.R.string.service_status_enabled_short else org.microg.gms.base.core.R.string.service_status_disabled_short)
         findPreference<Preference>(PREF_PLAY)!!.setSummary(if (PlayPreferences.isLicensingEnabled(requireContext())) R.string.pref_play_summary_licensing_on else R.string.pref_play_summary_licensing_off)
 
-        lifecycleScope.launchWhenResumed {
+        lifecycleScope.launch {
             val entries = getAllSettingsProviders(requireContext()).flatMap { it.getEntriesDynamic(requireContext()) }
             for (preference in createdPreferences) {
                 if (!entries.any { it.key == preference.key }) preference.isVisible = false
@@ -132,15 +151,6 @@ class SettingsFragment : ResourceSettingsFragment() {
                 else entry.createPreference()
             }
         }
-    }
-
-    companion object {
-        const val PREF_ABOUT = "pref_about"
-        const val PREF_GCM = "pref_gcm"
-        const val PREF_CHECKIN = "pref_checkin"
-        const val PREF_ACCOUNTS = "pref_accounts"
-        const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
-        const val PREF_PLAY = "pref_play"
     }
 
     init {

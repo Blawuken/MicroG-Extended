@@ -414,9 +414,10 @@
         <!-- microG Settings embedded in System Settings on SDK 23 and newer -->
         <activity-alias
             android:name="org.microg.gms.ui.SettingsActivityLink"
-            android:icon="@drawable/ic_launcher_monochrome"
+            android:icon="@mipmap/ic_launcher"
             android:label="@string/gms_settings_name"
             android:process=":ui"
+            android:roundIcon="@mipmap/ic_launcher_round"
             android:targetActivity="org.microg.gms.ui.MainSettingsActivity"
             android:taskAffinity="org.microg.gms.settings">
             <intent-filter>
