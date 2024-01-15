@@ -1,3 +1,14 @@
+# [1.14.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.13.0...v1.14.0) (2024-01-15)
+
+
+### Features
+
+* Bump GMS version to `23.50.14` ([9c61df9](https://github.com/Blawuken/MicroG-Extended/commit/9c61df934b05b08966293840288b8c34db650fe6))
+* Improved `SettingsFragment` ([53dbe19](https://github.com/Blawuken/MicroG-Extended/commit/53dbe1915501ddb5a75928b31359b9df7e416f62))
+* Improved layout and Add new Dev option ([e77e368](https://github.com/Blawuken/MicroG-Extended/commit/e77e368f13ae00d05b15d38042d178700a977d78))
+* Improvement patchers package detection ([6bedd1e](https://github.com/Blawuken/MicroG-Extended/commit/6bedd1e1c50a97fad5342ca3a447c8a3c504f075))
+* Update UI icons to match better YouTube ([e1c9cd6](https://github.com/Blawuken/MicroG-Extended/commit/e1c9cd6188ced0c93ba7a6a2f17f6943688ccd46))
+
 # [1.13.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.12.0...v1.13.0) (2024-01-13)
 
 
