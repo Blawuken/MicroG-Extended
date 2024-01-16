@@ -17,7 +17,9 @@
         android:widgetLayout="@layout/preference_widget_switch"
         android:key="pref_push_enabled"
         android:persistent="false"
-        android:title="@string/gcm_enable_switch" />
+        android:title="@string/gcm_enable_switch"
+        android:summaryOn="@string/service_status_enabled_short"
+        android:summaryOff="@string/service_status_disabled_short" />
 
     <PreferenceCategory
         android:title="@string/prefcat_push_apps_title"

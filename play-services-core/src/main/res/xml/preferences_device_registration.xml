@@ -17,7 +17,9 @@
         android:widgetLayout="@layout/preference_widget_switch"
         android:key="pref_checkin_enabled"
         android:persistent="false"
-        android:title="@string/checkin_enable_switch" />
+        android:title="@string/checkin_enable_switch"
+        android:summaryOn="@string/service_status_enabled_short"
+        android:summaryOff="@string/service_status_disabled_short" />
 
     <PreferenceCategory
         android:title="@string/pref_device_registration_device_profile_category"
