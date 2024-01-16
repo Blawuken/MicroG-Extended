@@ -31,4 +31,26 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorPrimary">@color/uwu_primary_light</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="elevationOverlayEnabled">true</item>
+        <item name="elevationOverlayColor">?attr/colorPrimary</item>
+        <item name="colorAccent">@color/uwu_accent_light</item>
+    </style>
+
+    <style name="CollapsingToolbarTitle.Collapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CollapsingToolbarTitle.Expanded" parent="@style/CollapsingToolbarTitle.Collapsed">
+        <item name="android:textSize">36.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
 </resources>

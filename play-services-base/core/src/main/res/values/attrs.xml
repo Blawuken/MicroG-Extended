@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright (C) 2013-2017 microG Project Team
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,15 +16,11 @@
   -->
 
 <resources>
-    <dimen name="maps_watermark_margin">5.0dip</dimen>
 
-    <dimen name="xd_pref_card_horizontal_padding">16.0dip</dimen>
-    <dimen name="xd_preference_category_height">45.0dip</dimen>
-    <dimen name="xd_preference_category_line_margin_start">2.0dip</dimen>
-    <dimen name="xd_preference_category_padding_top">0.0dip</dimen>
-    <dimen name="mobx_card_rounded1">0.0dip</dimen>
-    <dimen name="mobx_card_rounded2">24.0dip</dimen>
-    <dimen name="xd_pref_card_radius">24.0dip</dimen>
-    <dimen name="xd_about_phone_ill_height">275.0dip</dimen>
-    <dimen name="xd_about_phone_ill_width">125.0dip</dimen>
+    <declare-styleable name="CollapsingCoordinatorLayout">
+        <!-- assign a title of collapsing toolbar title. -->
+        <attr name="collapsing_toolbar_title" format="string" />
+        <attr name="content_frame_height_match_parent" format="boolean" />
+    </declare-styleable>
+
 </resources>

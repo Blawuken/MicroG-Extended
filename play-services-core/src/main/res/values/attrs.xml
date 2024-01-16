@@ -17,12 +17,6 @@
 
 <resources>
 
-    <declare-styleable name="CollapsingCoordinatorLayout">
-        <!-- assign a title of collapsing toolbar title. -->
-        <attr name="collapsing_toolbar_title" format="string" />
-        <attr name="content_frame_height_match_parent" format="boolean" />
-    </declare-styleable>
-
     <attr name="colorText" format="color" />
     <attr name="colorMainText" format="color" />
     <attr name="colorIcon" format="color" />

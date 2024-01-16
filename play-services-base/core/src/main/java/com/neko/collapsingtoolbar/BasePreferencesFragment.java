@@ -20,7 +20,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.preference.PreferenceFragmentCompat;
 
 import com.neko.utils.BuildCompatUtils;
-import com.google.android.gms.R;
+import org.microg.gms.base.core.R;
 
 import com.google.android.material.appbar.AppBarLayout;
 

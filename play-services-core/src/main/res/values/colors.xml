@@ -27,18 +27,18 @@
 
     <color name="xd_pref_card_opaque">#33ffffff</color>
     <color name="xd_pref_ripple">#1f000000</color>
-    <color name="extended_color">#ffff003e</color>
     <color name="extended_background_color">#fff5f5f5</color>
     <color name="mobx_card_view">#ffffffff</color>
     <color name="xd_pref_card_color">#ffffffff</color>
-    <color name="uwu_primary_light">@color/extended_color</color>
     <color name="uwu_primary_dark">#ff6263ff</color>
-    <color name="uwu_accent_light">@color/extended_color</color>
     <color name="uwu_accent_dark">#ff6263ff</color>
     <color name="uwu_bg">#ffe5e8f5</color>
     <color name="uwu_bg_card">#ffffffff</color>
     <color name="colorText">#ff191c1b</color>
-    <color name="uwu_accent">@color/extended_color</color>
     <color name="uwu_ripple">@color/uwu_accent_alpha1</color>
     <color name="uwu_bg_speed">#ffdee5f8</color>
+    <color name="extended_color">#ffff003e</color>
+    <color name="uwu_primary_light">@color/extended_color</color>
+    <color name="uwu_accent_light">@color/extended_color</color>
+    <color name="uwu_accent">@color/extended_color</color>
 </resources>
