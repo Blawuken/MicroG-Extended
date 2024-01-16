@@ -45,7 +45,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:layout="@layout/preference_category_no_label"
+        android:title="@string/pref_device_registration_android_id"
         android:key="prefcat_device_registration_status">
         <Preference
             android:icon="@drawable/ic_status"
