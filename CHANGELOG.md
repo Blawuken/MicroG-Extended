@@ -1,3 +1,12 @@
+# [1.15.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.14.0...v1.15.0) (2024-01-18)
+
+
+### Features
+
+* Move CollapsingToolbar `to play-services-base` ([4baf999](https://github.com/Blawuken/MicroG-Extended/commit/4baf999c5ae3e82d2ed3fab6a82625787982ea60))
+* Redesign PreferenceCategory ([759c37c](https://github.com/Blawuken/MicroG-Extended/commit/759c37cf3a07c78579ea2d319d806ca812564e91))
+* Redesign switch witch sumarry on off ([d1d36a1](https://github.com/Blawuken/MicroG-Extended/commit/d1d36a1d3d086807b7fd15e0da7e55d097423716))
+
 # [1.14.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.13.0...v1.14.0) (2024-01-15)
 
 
