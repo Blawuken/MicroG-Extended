@@ -17,16 +17,20 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <Preference
         android:layout="@layout/uwu_dashboard_main"
         android:title="@string/uwu_header_title"
         android:selectable="false" />
+
     <Preference
         android:layout="@layout/uwu_menu_tools"
         android:selectable="false" />
+
     <Preference
         android:layout="@layout/uwu_menu_tools2"
         android:selectable="false" />
+
     <Preference
         android:icon="@drawable/uwu_about"
         android:layout="@layout/uwu_sin"
@@ -36,4 +40,5 @@
             android:targetPackage="@string/var_pref_start_gms_package"
             android:targetClass="org.microg.gms.ui.Credits" />
     </Preference>
+
 </PreferenceScreen>

@@ -18,53 +18,61 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <SwitchPreference
-        android:defaultValue="false"
-        android:icon="@drawable/ic_push_register"
-        android:key="gcm_confirm_new_apps"
+        android:icon="@drawable/ic_cloud_bell"
         android:persistent="false"
+        android:title="@string/pref_gcm_confirm_new_apps_title"
+        android:layout="@layout/uwu_sin_switch"
+        android:key="gcm_confirm_new_apps"
         android:summary="@string/pref_gcm_confirm_new_apps_summary"
-        android:title="@string/pref_gcm_confirm_new_apps_title" />
+        android:defaultValue="false" />
 
     <PreferenceCategory
-        android:key="prefcat_networks"
-        android:layout="@layout/preference_category"
-        android:title="@string/prefcat_push_networks_title">
+        android:title="@string/prefcat_push_networks_title"
+        android:key="prefcat_networks">
 
         <ListPreference
-            android:defaultValue="0"
+            android:icon="@drawable/uwu_signal"
+            android:layout="@layout/uwu_top"
             android:persistent="false"
             android:entries="@array/gcm_network_config_names"
-            android:entryValues="@array/gcm_network_config_values"
+            android:title="@string/network_type_mobile"
             android:key="gcm_network_mobile"
             android:summary="ON / Automatic: 13 min"
-            android:title="@string/network_type_mobile"/>
+            android:defaultValue="0"
+            android:entryValues="@array/gcm_network_config_values" />
 
         <ListPreference
-            android:defaultValue="0"
+            android:icon="@drawable/uwu_wifi"
+            android:layout="@layout/uwu_mid"
             android:persistent="false"
             android:entries="@array/gcm_network_config_names"
-            android:entryValues="@array/gcm_network_config_values"
+            android:title="@string/network_type_wifi"
             android:key="gcm_network_wifi"
             android:summary="ON / Manual: 30 min"
-            android:title="@string/network_type_wifi"/>
+            android:defaultValue="0"
+            android:entryValues="@array/gcm_network_config_values" />
 
         <ListPreference
-            android:defaultValue="0"
+            android:icon="@drawable/uwu_roaming"
+            android:layout="@layout/uwu_mid"
             android:persistent="false"
             android:entries="@array/gcm_network_config_names"
-            android:entryValues="@array/gcm_network_config_values"
+            android:title="@string/network_type_roaming"
             android:key="gcm_network_roaming"
             android:summary="OFF"
-            android:title="@string/network_type_roaming"/>
+            android:defaultValue="0"
+            android:entryValues="@array/gcm_network_config_values" />
 
         <ListPreference
-            android:defaultValue="0"
+            android:icon="@drawable/uwu_other_network"
+            android:layout="@layout/uwu_bot"
             android:persistent="false"
             android:entries="@array/gcm_network_config_names"
-            android:entryValues="@array/gcm_network_config_values"
+            android:title="@string/network_type_other"
             android:key="gcm_network_other"
             android:summary="ON / Automatic: 30 min"
-            android:title="@string/network_type_other"/>
+            android:defaultValue="0"
+            android:entryValues="@array/gcm_network_config_values" />
 
     </PreferenceCategory>
 </PreferenceScreen>

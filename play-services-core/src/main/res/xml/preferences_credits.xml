@@ -120,7 +120,7 @@
     <PreferenceCategory
         android:title="@string/uwu_microg" />
     <Preference
-        android:icon="@drawable/ic_github"
+        android:icon="@drawable/uwu_github"
         android:layout="@layout/uwu_top"
         android:title="microg"
         android:key="PROFILE"
@@ -131,7 +131,7 @@
             android:data="https://github.com/microg" />
     </Preference>
     <Preference
-        android:icon="@drawable/ic_github"
+        android:icon="@drawable/uwu_github"
         android:layout="@layout/uwu_mid"
         android:title="inotia00"
         android:key="PROFILE"
@@ -142,7 +142,7 @@
             android:data="https://github.com/inotia00" />
     </Preference>
     <Preference
-        android:icon="@drawable/ic_github"
+        android:icon="@drawable/uwu_github"
         android:layout="@layout/uwu_mid"
         android:title="ReVanced"
         android:key="PROFILE"
@@ -153,7 +153,7 @@
             android:data="https://github.com/ReVanced" />
     </Preference>
     <Preference
-        android:icon="@drawable/ic_github"
+        android:icon="@drawable/uwu_github"
         android:layout="@layout/uwu_mid"
         android:title="WSTxda"
         android:key="PROFILE"
@@ -164,7 +164,7 @@
             android:data="https://github.com/WSTxda" />
     </Preference>
     <Preference
-        android:icon="@drawable/ic_github"
+        android:icon="@drawable/uwu_github"
         android:layout="@layout/uwu_bot"
         android:title="cuynu"
         android:key="PROFILE"
