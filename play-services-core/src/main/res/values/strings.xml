@@ -14,22 +14,12 @@
     <string name="ask_service_permission_title"><xliff:g example="F-Droid">%1$s</xliff:g> would like to use:</string>
     <string name="account_manager_title">Google Account Manager</string>
     <string name="sorry">Sorry…</string>
-    <string name="auth_before_connect">"An app on your device is trying to sign in to a Google account.
-
-If this was intentional, use the <b>Sign in</b> button to connect to Google sign-in page. Press <b>Huawei</b> to sign-in to a device from this manufacturer"</string>
+    <string name="auth_before_connect">"An app on your device is trying to sign in to a Google account. If this was intentional, use the <b>Sign in</b> button to connect to Google sign-in page. Press <b>Huawei</b> to sign-in to a device from this manufacturer"</string>
     <string name="auth_sign_in">Sign in</string>
-    <string name="auth_connecting">"Your device is establishing a connection to Google’s servers to sign you in.
-
-This can take a few seconds"</string>
-    <string name="no_network_error_desc">"You don’t have a network connection.
-
-This could be a temporary problem or your Android device may not be provisioned for data services. Try again when connected to a mobile network, or connect to a Wi-Fi network"</string>
-    <string name="auth_general_error_desc">"There was a problem communicating with Google servers.
-
-Try again later"</string>
-    <string name="auth_finalize">"Your device is contacting Google to save information to your account.
-
-This can take a couple of minutes"</string>
+    <string name="auth_connecting">"Your device is establishing a connection to Google’s servers to sign you in. This can take a few seconds"</string>
+    <string name="no_network_error_desc">"You don’t have a network connection. This could be a temporary problem or your Android device may not be provisioned for data services. Try again when connected to a mobile network, or connect to a Wi-Fi network"</string>
+    <string name="auth_general_error_desc">"There was a problem communicating with Google servers. Try again later"</string>
+    <string name="auth_finalize">"Your device is contacting Google to save information to your account. This can take a couple of minutes"</string>
     <string name="allow">Allow</string>
     <string name="deny">Deny</string>
     <string name="auth_notification_title">Authentication required</string>
@@ -65,11 +55,11 @@ This can take a couple of minutes"</string>
     <string name="self_check_cat_gms_packages">Installed packages</string>
     <string name="self_check_cat_system">System</string>
 
-    <string name="self_check_name_fake_sig_perm">System has signature spoofing support: </string>
+    <string name="self_check_name_fake_sig_perm">System has signature spoofing support:</string>
     <string name="self_check_resolution_fake_sig_perm">Your ROM has no native support for signature spoofing. You can still use Xposed or other systems to spoof signature. Please check the documentation on which ROMs do support signature spoofing and how to use MicroG on ROMs that do not</string>
-    <string name="self_check_name_perm_granted">System grants signature spoofing permission: </string>
+    <string name="self_check_name_perm_granted">System grants signature spoofing permission:</string>
     <string name="self_check_resolution_perm_granted">This is a strong indicator that the ROM does support signature spoofing, but requires further action to activate it. Please check the documentation on which steps might be required</string>
-    <string name="self_check_name_system_spoofs">System spoofs signature: </string>
+    <string name="self_check_name_system_spoofs">System spoofs signature:</string>
     <string name="self_check_resolution_system_spoofs">Please check the documentation on which steps might be required</string>
 
     <string name="self_check_pkg_gms">Play Services</string>
