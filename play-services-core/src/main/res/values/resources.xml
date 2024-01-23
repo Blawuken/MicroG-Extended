@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="gms_app_name">MicroG</string>
     <string name="uwu_title_0" translatable="false">Telegram</string>
     <string name="uwu_info_0" translatable="false">Telegram account</string>
     <string name="uwu_title_1" translatable="false">Kentang Injector</string>
