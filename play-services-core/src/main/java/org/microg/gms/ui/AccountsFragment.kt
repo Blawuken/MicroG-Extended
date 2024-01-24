@@ -15,6 +15,7 @@ import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.gms.R
 import org.microg.gms.auth.AuthConstants
+import org.microg.gms.auth.login.LoginActivity
 
 class AccountsFragment : PreferenceFragmentCompat() {
 
@@ -116,6 +117,15 @@ class AccountsFragment : PreferenceFragmentCompat() {
                 startActivity(Intent(Settings.ACTION_SYNC_SETTINGS))
             } catch (activityNotFoundException: ActivityNotFoundException) {
                 Log.e(TAG, "Failed to launch sync settings", activityNotFoundException)
+            }
+            true
+        }
+
+        findPreference<Preference>("pref_add_account")?.setOnPreferenceClickListener {
+            try {
+                startActivity(Intent(requireContext(), LoginActivity::class.java))
+            } catch (activityNotFoundException: ActivityNotFoundException) {
+                Log.e(TAG, "Failed to launch login activity", activityNotFoundException)
             }
             true
         }
