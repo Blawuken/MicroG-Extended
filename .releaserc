@@ -21,7 +21,7 @@
       {
         "assets": [
           {
-            "path": "play-services-core/build/outputs/apk/default/release/*-signed.apk"
+            "path": "play-services-core/build/outputs/apk/default/release/*.apk"
           }
         ],
         successComment: false

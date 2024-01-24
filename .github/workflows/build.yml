@@ -52,14 +52,9 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Sign APK
-        id: sign_apk
-        uses: ilharp/sign-android-release@v1
-        with:
-          releaseDir: play-services-core/build/outputs/apk/default/release
-          signingKey: ${{ secrets.SIGNING_KEY }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyAlias: ${{ secrets.ALIAS }}
-          keyPassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        run: |
+          sudo apt-get -y install apksigner
+          apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/release/*.apk
 
       - name: Setup semantic-release
         run: npm install

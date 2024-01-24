@@ -171,6 +171,6 @@ if (file('user.gradle').exists()) {
 
 android.applicationVariants.all { variant ->
     variant.outputs.each { output ->
-        output.outputFileName = variant.applicationId + "-" + variant.versionCode + variant.versionName.substring(version.length()) + ".apk"
+        output.outputFileName = "MicroG-Extended" + "-" + variant.versionCode + variant.versionName.substring(version.length()) + ".apk"
     }
 }
