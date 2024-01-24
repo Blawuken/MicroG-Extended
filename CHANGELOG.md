@@ -1,3 +1,18 @@
+# [1.16.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.15.0...v1.16.0) (2024-01-24)
+
+
+### Features
+
+* Add translation indonesian language ([8b6cfdb](https://github.com/Blawuken/MicroG-Extended/commit/8b6cfdb0ca47bacd502ae5c5bd41f578d03d521d))
+* Improvement login assistant layout ([935e915](https://github.com/Blawuken/MicroG-Extended/commit/935e915cd114ada4c87af42818a1505ffd34d292))
+* Replace alarm permission to SCHEDULE_EXACT_ALARM ([bb966c0](https://github.com/Blawuken/MicroG-Extended/commit/bb966c0689e91efd0ea8a399dec3f0dd9bbf86d9))
+* Update icon and Little change ([7ed8b56](https://github.com/Blawuken/MicroG-Extended/commit/7ed8b560987d35f160d992a56b5365d5bd6b9f8f))
+* Update launcher icon from MicroG RE ([bc29371](https://github.com/Blawuken/MicroG-Extended/commit/bc29371aa8a0e669dcd1c66d86a9e257f41e7771))
+* Update settings link icons ([0f372a6](https://github.com/Blawuken/MicroG-Extended/commit/0f372a68ea63e331b911b3e2d52518543e2eb6a8))
+* Update strings ([c6bc5e6](https://github.com/Blawuken/MicroG-Extended/commit/c6bc5e64dc69a6d30c3067e328ab7ca64bb55dc2))
+* Update strings resource ([b8b6009](https://github.com/Blawuken/MicroG-Extended/commit/b8b6009e29c050fac2ed86a46b97ca567b23144f))
+* Use findPreference to open login activity ([ae3227f](https://github.com/Blawuken/MicroG-Extended/commit/ae3227f7a8ef2b7e89f103e9dfd322ca6ae6b344))
+
 # [1.15.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.14.0...v1.15.0) (2024-01-18)
 
 
