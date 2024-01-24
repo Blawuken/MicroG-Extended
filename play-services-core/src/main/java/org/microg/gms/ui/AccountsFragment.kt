@@ -14,12 +14,16 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.gms.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.microg.gms.auth.AuthConstants
 import org.microg.gms.auth.login.LoginActivity
 
 class AccountsFragment : PreferenceFragmentCompat() {
 
-    private val TAG = AccountsFragment::class.java.simpleName
+    private val tag = AccountsFragment::class.java.simpleName
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.preferences_accounts)
@@ -89,24 +93,25 @@ class AccountsFragment : PreferenceFragmentCompat() {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
-    private fun removeAccount(accountName: String): Boolean {
-        val accountManager = AccountManager.get(requireContext())
-        val accounts = accountManager.getAccountsByType(AuthConstants.DEFAULT_ACCOUNT_TYPE)
+    private fun removeAccount(accountName: String) {
+        CoroutineScope(Dispatchers.Main).launch {
+            val accountManager = AccountManager.get(requireContext())
+            val accounts = accountManager.getAccountsByType(AuthConstants.DEFAULT_ACCOUNT_TYPE)
 
-        val accountToRemove = accounts.firstOrNull { it.name == accountName }
-        accountToRemove?.let {
-            return try {
-                val removedSuccessfully = accountManager.removeAccount(it, null, null).result
-                if (removedSuccessfully) {
-                    updateAccountList()
+            val accountToRemove = accounts.firstOrNull { it.name == accountName }
+            accountToRemove?.let {
+                try {
+                    val removedSuccessfully = withContext(Dispatchers.IO) {
+                        accountManager.removeAccountExplicitly(it)
+                    }
+                    if (removedSuccessfully) {
+                        updateAccountList()
+                    }
+                } catch (e: Exception) {
+                    Log.e(tag, "Error removing account: $accountName", e)
                 }
-                removedSuccessfully
-            } catch (e: Exception) {
-                Log.e(TAG, "Error removing account: $accountName", e)
-                false
             }
         }
-        return false
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
