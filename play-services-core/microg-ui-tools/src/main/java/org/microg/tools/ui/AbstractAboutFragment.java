@@ -112,7 +112,8 @@ public abstract class AbstractAboutFragment extends Fragment {
 
         Button btnCheckUpdates = aboutRoot.findViewById(R.id.btnCheckUpdates);
         btnCheckUpdates.setOnClickListener(v -> {
-            new UpdateChecker(getContext()).execute();
+            UpdateChecker updateChecker = new UpdateChecker(getContext());
+            updateChecker.checkForUpdates();
         });
 
         return aboutRoot;

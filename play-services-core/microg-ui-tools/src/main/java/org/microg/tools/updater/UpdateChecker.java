@@ -3,7 +3,8 @@ package org.microg.tools.updater;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -12,13 +13,16 @@ import org.microg.tools.ui.R;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-public class UpdateChecker extends AsyncTask<Void, Void, String> {
+public class UpdateChecker {
 
     private static final String GITHUB_API_URL = "https://api.github.com/repos/Blawuken/MicroG-Extended/releases/latest";
     private static final String GITHUB_RELEASE_LINK = "https://github.com/Blawuken/MicroG-Extended/releases/latest";
@@ -29,8 +33,21 @@ public class UpdateChecker extends AsyncTask<Void, Void, String> {
         this.contextRef = new WeakReference<>(context);
     }
 
-    @Override
-    protected String doInBackground(Void... voids) {
+    public void checkForUpdates() {
+        Executor executor = Executors.newSingleThreadExecutor();
+        FutureTask<String> futureTask = new FutureTask<>(this::doInBackground);
+
+        executor.execute(futureTask);
+
+        try {
+            String latestVersion = futureTask.get();
+            onPostExecute(latestVersion);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String doInBackground() {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(GITHUB_API_URL).build();
 
@@ -59,8 +76,7 @@ public class UpdateChecker extends AsyncTask<Void, Void, String> {
         return "";
     }
 
-    @Override
-    protected void onPostExecute(String latestVersion) {
+    private void onPostExecute(String latestVersion) {
         Context context = contextRef.get();
         if (context == null) {
             return;
@@ -78,12 +94,16 @@ public class UpdateChecker extends AsyncTask<Void, Void, String> {
 
     private void showUpdateToast(Context context) {
         String message = context.getString(R.string.update_available);
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+        showToast(context, message);
     }
 
     private void showUpToDateToast(Context context) {
         String message = context.getString(R.string.no_update_available);
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+        showToast(context, message);
+    }
+
+    private void showToast(Context context, String message) {
+        new Handler(Looper.getMainLooper()).post(() -> Toast.makeText(context, message, Toast.LENGTH_LONG).show());
     }
 
     private void openGitHubReleaseLink(Context context) {
