@@ -180,7 +180,7 @@
 
     <string name="github">GitHub</string>
     <string name="github_source">Repositori kode sumber</string>
-    <string name="github_link">https://github.com/Blawuken/MicroG-Exended</string>
+    <string name="github_link">https://github.com/Blawuken/MicroG-Extended</string>
     <string name="pref_hide_launcher_icon">Sembunyikan ikon di peluncur</string>
     <string name="pref_network_google_enabled_summary">Jika dinonaktifkan, semua koneksi ke server Google yang biasanya dilakukan oleh MicroG akan ditolak. Ini mengesampingkan pengaturan khusus layanan</string>
     <string name="pref_network_google_enabled">Izinkan koneksi ke server Google</string>
