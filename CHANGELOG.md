@@ -1,3 +1,22 @@
+# [1.17.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.16.0...v1.17.0) (2024-01-25)
+
+
+### Bug Fixes
+
+* Fixed IllegalStateException (deadlock) in removeAccount ([2387cc2](https://github.com/Blawuken/MicroG-Extended/commit/2387cc20e0cdf3e9ba90923e45b19379dd5ee0cf))
+* Fixed typo github resource strings of indonesian language ([e938122](https://github.com/Blawuken/MicroG-Extended/commit/e938122e550cf9a5cbc6c63f22dc6ab605c14cf0))
+
+
+### Features
+
+* Add QUERY_ALL_PACKAGES to resolve getPackageInfo in PackageSpoofUtils ([ea705f3](https://github.com/Blawuken/MicroG-Extended/commit/ea705f3ea24ab8f29e2677bb6d65e39e1b0c6e25))
+* Replace AsyncTask to Executors/FutureTask in UpdateChecker ([2b38227](https://github.com/Blawuken/MicroG-Extended/commit/2b382278c7ddbc6091b20fe4724d411b3381dde3))
+
+
+### Reverts
+
+* Revert "Update gradle and buildtools" ([5202bf2](https://github.com/Blawuken/MicroG-Extended/commit/5202bf2b007611a4b28724c01d56d17068d0a119))
+
 # [1.16.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.15.0...v1.16.0) (2024-01-24)
 
 
