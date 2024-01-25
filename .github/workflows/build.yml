@@ -3,7 +3,6 @@ name: Builder APK
 on:
   push:
   workflow_dispatch:
-  pull_request:
     branches:
       - main
 
