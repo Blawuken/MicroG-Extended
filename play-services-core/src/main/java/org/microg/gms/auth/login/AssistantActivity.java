@@ -22,7 +22,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.Button;
+import com.skydoves.elasticviews.ElasticButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -64,7 +64,7 @@ public abstract class AssistantActivity extends AppCompatActivity {
             findViewById(R.id.spoof_button).setVisibility(View.GONE);
         } else {
             findViewById(R.id.spoof_button).setVisibility(View.VISIBLE);
-            ((Button) findViewById(R.id.spoof_button)).setText(text);
+            ((ElasticButton) findViewById(R.id.spoof_button)).setText(text);
         }
     }
 
@@ -77,7 +77,7 @@ public abstract class AssistantActivity extends AppCompatActivity {
             findViewById(R.id.next_button).setVisibility(View.GONE);
         } else {
             findViewById(R.id.next_button).setVisibility(View.VISIBLE);
-            ((Button) findViewById(R.id.next_button)).setText(text);
+            ((ElasticButton) findViewById(R.id.next_button)).setText(text);
         }
     }
 

@@ -25,7 +25,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import com.skydoves.elasticviews.ElasticButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -110,7 +110,7 @@ public abstract class AbstractAboutFragment extends Fragment {
         Collections.sort(libraries);
         ((ListView) aboutRoot.findViewById(android.R.id.list)).setAdapter(new LibraryAdapter(getContext(), libraries.toArray(new Library[libraries.size()])));
 
-        Button btnCheckUpdates = aboutRoot.findViewById(R.id.btnCheckUpdates);
+        ElasticButton btnCheckUpdates = aboutRoot.findViewById(R.id.btnCheckUpdates);
         btnCheckUpdates.setOnClickListener(v -> {
             UpdateChecker updateChecker = new UpdateChecker(getContext());
             updateChecker.checkForUpdates();

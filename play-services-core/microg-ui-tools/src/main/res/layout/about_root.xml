@@ -15,6 +15,7 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         android:textColor="?android:textColorSecondary" />
 
-    <Button
+    <com.skydoves.elasticviews.ElasticButton
         android:id="@+id/btnCheckUpdates"
         style="?attr/buttonBarPositiveButtonStyle"
         android:layout_width="wrap_content"
@@ -70,7 +71,10 @@
         android:background="@drawable/button_background_positive"
         android:text="@string/check_updates"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="?android:textColorPrimaryInverse" />
+        android:textColor="?android:textColorPrimaryInverse"
+        app:button_cornerRadius="28dp"
+        app:button_duration="250"
+        app:button_scale="0.87" />
 
     <TextView
         android:id="@android:id/title"

@@ -45,6 +45,9 @@ dependencies {
     // Lottie
     implementation 'com.airbnb.android:lottie:6.3.0'
 
+    // skydoves ElasticViews
+    implementation 'com.github.skydoves:elasticviews:2.1.0'
+
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])
 }

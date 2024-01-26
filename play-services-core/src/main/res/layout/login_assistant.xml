@@ -14,7 +14,9 @@
   ~ limitations under the License.
   -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/auth_root"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -78,7 +80,7 @@
             android:layout_margin="10dip"
             android:orientation="vertical">
 
-            <Button
+            <com.skydoves.elasticviews.ElasticButton
                 android:id="@+id/next_button"
                 style="?attr/buttonBarPositiveButtonStyle"
                 android:layout_width="fill_parent"
@@ -89,9 +91,12 @@
                 android:background="@drawable/button_background_positive"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimaryInverse"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                app:button_cornerRadius="28dp"
+                app:button_duration="250"
+                app:button_scale="0.87" />
 
-            <Button
+            <com.skydoves.elasticviews.ElasticButton
                 android:id="@+id/spoof_button"
                 style="?attr/buttonBarPositiveButtonStyle"
                 android:layout_width="fill_parent"
@@ -103,7 +108,10 @@
                 android:background="@drawable/button_background_spoof"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimaryInverse"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                app:button_cornerRadius="28dp"
+                app:button_duration="250"
+                app:button_scale="0.87" />
         </LinearLayout>
     </LinearLayout>
 
