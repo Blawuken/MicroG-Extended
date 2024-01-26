@@ -71,13 +71,12 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/permission_allow_button"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dip"
+                android:paddingRight="24dip"
                 android:background="@drawable/button_background_positive"
                 android:textColor="?android:textColorPrimaryInverse"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textAllCaps="false"
                 android:text="@string/allow">
             </Button>
 
@@ -85,12 +84,11 @@
                 android:id="@+id/permission_deny_button"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dip"
+                android:paddingRight="24dip"
                 android:background="@drawable/button_background_neutral"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
                 android:text="@string/deny"
-                android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="?android:textColorPrimary">
             </Button>
