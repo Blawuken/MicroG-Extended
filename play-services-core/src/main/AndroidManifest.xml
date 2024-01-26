@@ -561,6 +561,12 @@
             </intent-filter>
         </service>
 
+        <service android:name="com.google.android.gms.audit.internal.AuditApiService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.audit.service.START" />
+            </intent-filter>
+        </service>
+
         <service android:name="org.microg.gms.DummyService">
             <intent-filter>
                 <action android:name="com.google.android.contextmanager.service.ContextManagerService.START" />

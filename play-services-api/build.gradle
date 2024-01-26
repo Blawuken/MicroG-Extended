@@ -40,4 +40,6 @@ android {
 
 dependencies {
     api project(':play-services-base')
+
+    annotationProcessor project(':safe-parcel-processor')
 }
