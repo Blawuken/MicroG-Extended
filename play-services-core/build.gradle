@@ -18,6 +18,7 @@ dependencies {
     }
 
     implementation project(':play-services-base-core-package')
+    implementation project(':play-services-fitness')
 
     // AndroidX UI
     implementation "androidx.multidex:multidex:$multidexVersion"

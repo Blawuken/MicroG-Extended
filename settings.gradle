@@ -27,6 +27,7 @@ include ':play-services-gcm'
 include ':play-services-gmscompliance'
 include ':play-services-iid'
 include ':play-services-tasks'
+include ':play-services-fitness'
 include ':play-services-api'
 include ':play-services'
 
