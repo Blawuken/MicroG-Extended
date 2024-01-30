@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <ImageView
         android:gravity="bottom"
         android:layout_gravity="bottom"
@@ -16,6 +17,7 @@
         android:layout_marginStart="16.0dip"
         android:layout_marginEnd="16.0dip"
         android:backgroundTint="@color/uwu_accent" />
+
     <LinearLayout
         android:gravity="center"
         android:layout_gravity="center"
@@ -24,15 +26,19 @@
         android:layout_height="fill_parent"
         android:layout_marginStart="16.0dip"
         android:layout_marginEnd="16.0dip">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="300.0dip"
                 android:src="@drawable/uwu_banner_image_4"
                 android:adjustViewBounds="true" />
+
         </LinearLayout>
+
         <com.neko.oneclick.CardView
             android:targetPackage="com.mgoogle.android.gms"
             android:targetClass="org.microg.gms.ui.OpsiPengembang"
@@ -40,21 +46,25 @@
             android:layout_gravity="bottom|center"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-5.0dip"
             android:layout_marginBottom="16.0dip"
             android:layout_marginStart="16.0dip"
             android:layout_marginEnd="16.0dip"
             app:cardBackgroundColor="#00000000"
             app:cardCornerRadius="28.0dip"
             app:cardElevation="0.0dip">
+
             <FrameLayout
                 android:background="@drawable/uwu_bg_menu"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
+
                 <LinearLayout
                     android:gravity="center_vertical"
                     android:clipToPadding="false"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:gravity="center"
                         android:layout_width="wrap_content"
@@ -63,11 +73,13 @@
                         android:layout_marginBottom="16.0dip"
                         android:layout_marginStart="16.0dip"
                         android:layout_marginEnd="8.0dip">
+
                         <LinearLayout
                             android:background="@drawable/uwu_google_shape"
                             android:layout_width="45.0dip"
                             android:layout_height="45.0dip"
                             android:backgroundTint="@color/uwu_accent">
+
                             <ImageView
                                 android:gravity="center"
                                 android:layout_width="25.0dip"
@@ -75,8 +87,11 @@
                                 android:layout_marginTop="10.0dip"
                                 android:src="@drawable/uwu_tools"
                                 android:layout_marginStart="10.0dip" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                     <RelativeLayout
                         android:paddingTop="16.0dip"
                         android:paddingBottom="16.0dip"
@@ -85,10 +100,12 @@
                         android:layout_weight="1.0"
                         android:layout_marginStart="8.0dip"
                         android:layout_marginEnd="8.0dip">
+
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content">
+
                             <TextView
                                 android:textSize="17.0sp"
                                 android:textColor="?android:textColorPrimary"
@@ -97,6 +114,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/prefcat_about"
                                 android:singleLine="false" />
+
                             <TextView
                                 android:textSize="14.0sp"
                                 android:textColor="?android:textColorSecondary"
@@ -105,8 +123,11 @@
                                 android:layout_height="wrap_content"
                                 android:text="MicroG Extended"
                                 android:singleLine="false" />
+
                         </LinearLayout>
+
                     </RelativeLayout>
+
                     <LinearLayout
                         android:gravity="center"
                         android:layout_width="wrap_content"
@@ -115,11 +136,13 @@
                         android:layout_marginBottom="16.0dip"
                         android:layout_marginStart="8.0dip"
                         android:layout_marginEnd="16.0dip">
+
                         <LinearLayout
                             android:background="@drawable/uwu_bg_circle"
                             android:layout_width="28.0dip"
                             android:layout_height="28.0dip"
                             android:backgroundTint="@color/uwu_bg">
+
                             <ImageView
                                 android:layout_width="25.0dip"
                                 android:layout_height="25.0dip"
@@ -127,10 +150,16 @@
                                 android:src="@drawable/uwu_arrow"
                                 android:tint="?android:textColorPrimary"
                                 android:layout_marginStart="2.0dip" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </FrameLayout>
+
         </com.neko.oneclick.CardView>
+
     </LinearLayout>
 </RelativeLayout>

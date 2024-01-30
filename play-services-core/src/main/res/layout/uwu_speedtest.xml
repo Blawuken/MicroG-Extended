@@ -11,6 +11,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="16.0dip"
+            android:layout_marginBottom="16.0dip"
             android:layout_marginStart="16.0dip"
             android:layout_marginEnd="16.0dip"
             app:cardBackgroundColor="@android:color/transparent"
