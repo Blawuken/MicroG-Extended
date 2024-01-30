@@ -19,10 +19,13 @@ package org.microg.gms.auth.login;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.Configuration;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import com.skydoves.elasticviews.ElasticButton;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -34,11 +37,16 @@ import com.google.android.gms.R;
 public abstract class AssistantActivity extends AppCompatActivity {
     private static final int TITLE_MIN_HEIGHT = 64;
     private static final double TITLE_WIDTH_FACTOR = (8.0 / 18.0);
+    private FullScreenVideoView mVideoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.login_assistant);
+        mVideoView = (FullScreenVideoView) this.findViewById(R.id.videoView);
+        playVideoView();
         formatTitle();
         findViewById(R.id.spoof_button).setOnClickListener(v -> onHuaweiButtonClicked());
         findViewById(R.id.next_button).setOnClickListener(v -> onNextButtonClicked());
@@ -53,6 +61,19 @@ public abstract class AssistantActivity extends AppCompatActivity {
         } else {
             findViewById(R.id.title_container).getLayoutParams().height = dpToPx(TITLE_MIN_HEIGHT);
         }
+    }
+
+    private void playVideoView() {
+        mVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video));
+        //播放
+        mVideoView.start();
+        //循环播放
+        mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mVideoView.start();
+            }
+        });
     }
 
     public void setSpoofButtonText(@StringRes int res) {
@@ -99,6 +120,20 @@ public abstract class AssistantActivity extends AppCompatActivity {
     protected void onTitleChanged(CharSequence title, int color) {
         super.onTitleChanged(title, color);
         ((TextView) findViewById(R.id.title)).setText(title);
+    }
+
+    //返回重启加载
+    @Override
+    protected void onRestart() {
+        playVideoView();
+        super.onRestart();
+    }
+
+    //防止锁屏或者切出的时候，音乐在播放
+    @Override
+    protected void onStop() {
+        mVideoView.stopPlayback();
+        super.onStop();
     }
 
     public int dpToPx(int dp) {
