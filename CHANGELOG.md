@@ -1,3 +1,25 @@
+# [1.18.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.17.0...v1.18.0) (2024-02-01)
+
+
+### Bug Fixes
+
+* Fix the problem that Tasks&Jamboard&Fitbit App cannot log in with Google ([8d6eb6b](https://github.com/Blawuken/MicroG-Extended/commit/8d6eb6b9ff8633dfc0bb53dd0ee7f560d51f69f7))
+
+
+### Features
+
+* Bump GMS version to 24.02.55 ([26a9036](https://github.com/Blawuken/MicroG-Extended/commit/26a9036581d8536f2715ad4e5ecc5992b0092af8))
+* Complete the implementation of AuditApiService numbered 154 in GmsService ([dcfb230](https://github.com/Blawuken/MicroG-Extended/commit/dcfb230723805edbdcf97d8aed3c25ad656a787f))
+* Optimizing png ([7504502](https://github.com/Blawuken/MicroG-Extended/commit/7504502209b8a0a034e3760c8bc8cfe16c968384))
+* Redesign button check update ([25b5040](https://github.com/Blawuken/MicroG-Extended/commit/25b5040cf2bad3abb9b40b9f3b26fcb099dc584d))
+* Redesign Button with Elasticviews ([f6f1d66](https://github.com/Blawuken/MicroG-Extended/commit/f6f1d66486a1622e8dfe5cca283b3fff04d96510))
+* Redesign login assistant ([6eaf214](https://github.com/Blawuken/MicroG-Extended/commit/6eaf2144fd8a8fdc668c695930c8a5489f62ab0e))
+* redesign style login activity with video background ([215aff8](https://github.com/Blawuken/MicroG-Extended/commit/215aff813b316966932b1e356507582e93219026))
+* Redesign UI v3 ([fd4d38a](https://github.com/Blawuken/MicroG-Extended/commit/fd4d38a94bf8301545fa8a3a769e472dcd4e9fb4))
+* supplementary number 57 fitness.HistoryApi implementation ([6dea56d](https://github.com/Blawuken/MicroG-Extended/commit/6dea56df4c2b4af3aa420341ac2bb8bf417c1dde))
+* Update icon launcher ([da9891c](https://github.com/Blawuken/MicroG-Extended/commit/da9891cb10cebb3b6f7b2391024a0a00f47af875))
+* Update indonesian translation language ([3961a81](https://github.com/Blawuken/MicroG-Extended/commit/3961a8178ea3c6f21d708c556f39811cd347116b))
+
 # [1.17.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.16.0...v1.17.0) (2024-01-25)
 
 
