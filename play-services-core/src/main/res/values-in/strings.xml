@@ -13,7 +13,7 @@
     <string name="ask_service_permission_title"><xliff:g example="F-Droid">%1$s</xliff:g> ingin menggunakan :</string>
     <string name="account_manager_title">Pengelola Akun Google</string>
     <string name="sorry">Maaf…</string>
-    <string name="auth_before_connect">"Aplikasi di perangkat Anda mencoba masuk ke akun Google. Jika ini disengaja, gunakan tombol <b>Masuk</b> untuk menyambung ke Laman masuk Google. Tekan <b>Huawei</b> untuk masuk ke perangkat dari produsen ini"</string>
+    <string name="auth_before_connect">"Aplikasi di perangkat Anda mencoba untuk masuk ke akun Google. Jika ini disengaja, gunakan tombol <b>Masuk</b> untuk menyambung ke halaman masuk Google. Tekan <b>Huawei</b> untuk masuk ke perangkat dari produsen tersebut"</string>
     <string name="auth_sign_in">Masuk</string>
     <string name="auth_connecting">"Perangkat Anda membuat sambungan ke server Google untuk memasukkan Anda. Ini bisa tunggu beberapa detik"</string>
     <string name="no_network_error_desc">"Anda tidak memiliki sambungan jaringan. Ini mungkin masalah sementara atau perangkat Android Anda mungkin tidak tersedia untuk layanan data. Coba lagi saat tersambung ke jaringan seluler, atau sambungkan ke Wi -Jaringan Fi"</string>
@@ -39,7 +39,7 @@
     <string name="perm_extended_access_label">Akses tambahan ke layanan Google</string>
 
     <string name="service_name_checkin">Pendaftaran perangkat Google</string>
-    <string name="service_name_mcs">Pesan Cloud</string>
+    <string name="service_name_mcs">Pesan Pemberitahuan</string>
 
     <string name="network_type_mobile">Jaringan seluler</string>
     <string name="network_type_wifi">Wi-Fi</string>
@@ -181,7 +181,7 @@
     <string name="github">GitHub</string>
     <string name="github_source">Repositori kode sumber</string>
     <string name="github_link">https://github.com/Blawuken/MicroG-Extended</string>
-    <string name="pref_hide_launcher_icon">Sembunyikan ikon di peluncur</string>
+    <string name="pref_hide_launcher_icon">Sembunyikan ikon dari beranda</string>
     <string name="pref_network_google_enabled_summary">Jika dinonaktifkan, semua koneksi ke server Google yang biasanya dilakukan oleh MicroG akan ditolak. Ini mengesampingkan pengaturan khusus layanan</string>
     <string name="pref_network_google_enabled">Izinkan koneksi ke server Google</string>
     <string name="pref_network_google_use_tor">Sambungkan ke Google melalui jaringan Tor</string>
