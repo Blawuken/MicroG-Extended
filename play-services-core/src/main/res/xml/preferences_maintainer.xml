@@ -48,6 +48,12 @@
         android:summary="@string/extended_build_app_version_release" />
 
     <Preference
+        android:icon="@drawable/uwu_build_type"
+        android:layout="@layout/uwu_mid_no_arrow"
+        android:title="@string/uwu_build_type"
+        android:summary="@string/uwu_build_type_variant" />
+
+    <Preference
         android:icon="@drawable/uwu_payload"
         android:layout="@layout/uwu_mid_no_arrow"
         android:title="@string/uwu_build_version_code"

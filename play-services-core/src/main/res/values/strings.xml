@@ -206,6 +206,7 @@
 
     <string name="uwu_information_cat">Information</string>
     <string name="uwu_neko_version">MicroG Version</string>
+    <string name="uwu_build_type">Build Type</string>
     <string name="uwu_build_date">Build Date</string>
     <string name="uwu_recommended_os_cat">Recommended OS</string>
     <string name="uwu_version_sdk_minimum">Min SDK Version</string>

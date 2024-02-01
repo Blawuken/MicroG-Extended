@@ -131,6 +131,13 @@ android {
 
     buildTypes {
         release {
+            resValue "string", "uwu_build_type_variant", "Release"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.defaultConfig
+        }
+        debug {
+            resValue "string", "uwu_build_type_variant", "Debug"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.defaultConfig
