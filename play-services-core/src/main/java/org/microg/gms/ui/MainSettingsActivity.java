@@ -1,5 +1,6 @@
 package org.microg.gms.ui;
 
+import android.annotation.support.v3.services.privacy;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -45,6 +46,8 @@ public class MainSettingsActivity extends AppCompatActivity {
 
         appBarConfiguration = new AppBarConfiguration.Builder(getNavController().getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, getNavController(), appBarConfiguration);
+
+        privacy.show(this);
     }
 
     @Override
