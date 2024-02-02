@@ -213,7 +213,7 @@
     <string name="uwu_version_sdk_target">Target SDK Version</string>
     <string name="uwu_build_version_code">GMS Version</string>
     
-    <string name="uwu_build_status">This app is not officially supported</string>
+    <string name="uwu_build_status">This application is officially supported</string>
     <string name="uwu_build_sum">Manage By AnGgIt86</string>
     <string name="uwu_title_dashboard_tools">Hello there...</string>
     <string name="uwu_summary_dashboard_tools">Welcome to the MicroG Extended settings menu</string>

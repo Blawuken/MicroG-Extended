@@ -213,7 +213,7 @@
     <string name="uwu_version_sdk_target">Versi SDK Target</string>
     <string name="uwu_build_version_code">Versi GMS</string>
     
-    <string name="uwu_build_status">Aplikasi ini tidak didukung secara resmi</string>
+    <string name="uwu_build_status">Aplikasi ini didukung secara resmi</string>
     <string name="uwu_build_sum">Di Kelola Oleh AnGgIt86</string>
     <string name="uwu_title_dashboard_tools">Halo...</string>
     <string name="uwu_summary_dashboard_tools">Selamat datang di menu pengaturan MicroG Extended</string>
