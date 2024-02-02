@@ -8,7 +8,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <FrameLayout
-        android:background="@drawable/uwu_background_lengkung"
+        android:background="@android:color/transparent"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 

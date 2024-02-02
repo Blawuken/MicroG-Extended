@@ -14,27 +14,51 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <org.microg.tools.ui.SwitchBar
         android:id="@+id/switch_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
         android:background="@color/switchbar_background_color"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"/>
 
     <FrameLayout
         android:id="@+id/custom_bar"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
-    <FrameLayout
-        android:id="@+id/content_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="28.0dip"
+        app:cardElevation="0.0dip">
+
+        <LinearLayout
+            android:background="@drawable/bg_anu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@+id/content_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="-16.0dip"
+                android:layout_marginEnd="-16.0dip"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

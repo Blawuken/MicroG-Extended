@@ -41,7 +41,7 @@
 
         <com.neko.oneclick.CardView
             android:targetPackage="com.mgoogle.android.gms"
-            android:targetClass="org.microg.gms.ui.OpsiPengembang"
+            android:targetClass="org.microg.gms.ui.OpsiPengembang$AsActivity"
             android:gravity="bottom|center"
             android:layout_gravity="bottom|center"
             android:layout_width="fill_parent"
