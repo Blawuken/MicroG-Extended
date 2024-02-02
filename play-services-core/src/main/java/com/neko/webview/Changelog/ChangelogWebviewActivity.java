@@ -19,6 +19,8 @@ public class ChangelogWebviewActivity extends Activity {
         mWebView = findViewById(R.id.uwu_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setDefaultTextEncodingName("utf-8");
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
