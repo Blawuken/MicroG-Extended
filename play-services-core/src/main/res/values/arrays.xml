@@ -55,4 +55,15 @@
         <item>Ping interval: 20 minutes</item>
         <item>Ping interval: 30 minutes</item>
     </string-array>
+
+    <string-array name="theme_options_key">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Set by battery saver</item>
+    </string-array>
+    <string-array name="theme_options_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>default</item>
+    </string-array>
 </resources>

@@ -11,11 +11,13 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.SwitchPreference
 import com.google.android.gms.R
 import kotlinx.coroutines.launch
+import org.microg.tools.ui.ThemeHelper
 import org.microg.gms.checkin.CheckinPreferences
 import org.microg.gms.gcm.GcmDatabase
 import org.microg.gms.gcm.GcmPrefs
@@ -71,6 +73,20 @@ class SettingsFragment : ResourceSettingsFragment() {
 
         for (entry in getAllSettingsProviders(requireContext()).flatMap { it.getEntriesStatic(requireContext()) }) {
             entry.createPreference()
+        }
+
+        listenAppThemeChanges()
+    }
+
+    /***
+     * applies the new theme whenever there is a change
+     */
+    private fun listenAppThemeChanges() {
+        findPreference<ListPreference>(getString(R.string.key_app_theme))?.apply {
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                ThemeHelper.applyTheme(newValue as String)
+                true
+            }
         }
     }
 

@@ -224,4 +224,5 @@
     <string name="uwu_band_switcher_summary">Tetapkan jenis bandwitch pilihan anda di sini.</string>
     <string name="uwu_speed_test_title">Tes Kecepatan</string>
     <string name="uwu_speed_test_summary">Uji kecepatan jaringan Anda di sini.</string>
+    <string name="title_choose_theme">Pilih Tema</string>
 </resources>

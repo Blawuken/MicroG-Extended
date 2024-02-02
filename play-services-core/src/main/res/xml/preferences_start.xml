@@ -74,6 +74,17 @@
             android:summaryOn="@string/service_status_enabled_short"
             android:summaryOff="@string/service_status_disabled_short" />
 
+        <ListPreference
+            android:icon="@drawable/ic_sunny"
+            android:layout="@layout/uwu_mid"
+            app:defaultValue="default"
+            app:entries="@array/theme_options_key"
+            app:entryValues="@array/theme_options_values"
+            app:iconSpaceReserved="false"
+            app:key="@string/key_app_theme"
+            app:title="@string/title_choose_theme"
+            app:useSimpleSummaryProvider="true" />
+
         <Preference
             android:icon="@drawable/uwu_about"
             android:layout="@layout/uwu_bot"

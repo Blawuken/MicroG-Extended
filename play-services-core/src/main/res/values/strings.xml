@@ -224,4 +224,5 @@
     <string name="uwu_band_switcher_summary">Set preferred bandwitch type here.</string>
     <string name="uwu_speed_test_title">Speed Test</string>
     <string name="uwu_speed_test_summary">Test your network speed here.</string>
+    <string name="title_choose_theme">Choose Theme</string>
 </resources>

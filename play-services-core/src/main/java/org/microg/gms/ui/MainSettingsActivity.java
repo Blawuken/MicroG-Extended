@@ -4,6 +4,7 @@ import android.annotation.support.v3.services.privacy;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.color.DynamicColors;
 import com.google.android.gms.R;
 import org.microg.gms.ui.settings.SettingsProvider;
+import org.microg.tools.ui.ThemeHelper;
 
 import static org.microg.gms.ui.settings.SettingsProviderKt.getAllSettingsProviders;
 
@@ -48,10 +50,20 @@ public class MainSettingsActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, getNavController(), appBarConfiguration);
 
         privacy.show(this);
+
+        applyTheme();
     }
 
     @Override
     public boolean onSupportNavigateUp() {
         return NavigationUI.navigateUp(getNavController(), appBarConfiguration) || super.onSupportNavigateUp();
+    }
+
+    private void applyTheme() {
+        String theme = PreferenceManager.getDefaultSharedPreferences(this)
+                .getString(getString(R.string.key_app_theme), ThemeHelper.DEFAULT_MODE);
+        if (theme != null) {
+            ThemeHelper.applyTheme(theme);
+        }
     }
 }
