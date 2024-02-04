@@ -1,3 +1,21 @@
+# [1.19.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.18.0...v1.19.0) (2024-02-04)
+
+
+### Features
+
+* Add buidl type variant ([a27b2f9](https://github.com/Blawuken/MicroG-Extended/commit/a27b2f914bb5e8fb7be3c40a0960d0de06b3d62a))
+* change dev preference to appcompactactivity ([257df06](https://github.com/Blawuken/MicroG-Extended/commit/257df064231c42c85e688db93e7132b66f9b5cc9))
+* Introduct add Thmee change to light and darkmode ([e9dd6f8](https://github.com/Blawuken/MicroG-Extended/commit/e9dd6f86f4f3388e34f26df476b99649fdc1e14b))
+* Introduct required password to using MicroG Extended 😎 ([b49db97](https://github.com/Blawuken/MicroG-Extended/commit/b49db97bf7d6301982597200aa1a30c07eb8f965))
+* Update preference build status ([7c8f0dc](https://github.com/Blawuken/MicroG-Extended/commit/7c8f0dc735d9e6016fd707b01e4ae2ebc6dac69e))
+* Update websettings changelog ([8a54519](https://github.com/Blawuken/MicroG-Extended/commit/8a54519bebc0d07c196abcb043a43b932c659828))
+
+
+### Reverts
+
+* Revert "Replace alarm permission to SCHEDULE_EXACT_ALARM" ([13bfdf4](https://github.com/Blawuken/MicroG-Extended/commit/13bfdf4925ef4ca9dccd64aeeaa668e1a06c0c4c))
+* Revert "Add QUERY_ALL_PACKAGES to resolve getPackageInfo in PackageSpoofUtils" ([3ae9861](https://github.com/Blawuken/MicroG-Extended/commit/3ae986185500ff486b01856a2f29e6bc729ea954))
+
 # [1.18.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.17.0...v1.18.0) (2024-02-01)
 
 
