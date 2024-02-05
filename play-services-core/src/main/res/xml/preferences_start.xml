@@ -77,13 +77,14 @@
         <ListPreference
             android:icon="@drawable/ic_sunny"
             android:layout="@layout/uwu_mid"
-            app:defaultValue="default"
-            app:entries="@array/theme_options_key"
-            app:entryValues="@array/theme_options_values"
-            app:iconSpaceReserved="false"
-            app:key="@string/key_app_theme"
-            app:title="@string/title_choose_theme"
-            app:useSimpleSummaryProvider="true" />
+            android:defaultValue="@string/pref_default_theme"
+            android:dialogTitle="@string/pref_dialog_title_theme"
+            android:entries="@array/pref_entries_theme"
+            android:entryValues="@array/pref_values_theme"
+            android:key="pref_theme"
+            android:negativeButtonText="@string/pref_negative_button"
+            android:title="@string/pref_title_theme"
+            app:useSimpleSummaryProvider="true"/>
 
         <Preference
             android:icon="@drawable/uwu_about"

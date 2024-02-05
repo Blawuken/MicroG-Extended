@@ -3,13 +3,12 @@ package org.microg.tools.ui;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractDashboardActivity extends AppCompatActivity {
+public abstract class AbstractDashboardActivity extends BaseActivity {
     protected int preferencesResource = 0;
 
     private final List<Condition> conditions = new ArrayList<Condition>();

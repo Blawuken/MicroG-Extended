@@ -39,4 +39,12 @@
     <string name="check_updates">Periksa pembaruan</string>
     <string name="update_available">Versi baru tersedia!</string>
     <string name="no_update_available">Anda sudah di versi terbaru.</string>
+
+    <!-- Settings: Theme -->
+    <string name="pref_title_theme">Tema</string>
+    <string name="pref_default_theme">MODE_NIGHT_FOLLOW_SYSTEM</string>
+    <string name="pref_dialog_title_theme">Pilih tema</string>
+    <string name="pref_entries_theme_system">Bawaan sistem</string>
+    <string name="pref_entries_theme_light">Terang</string>
+    <string name="pref_entries_theme_dark">Gelap</string>
 </resources>
