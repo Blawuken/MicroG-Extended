@@ -2,9 +2,9 @@ name: Builder APK
 
 on:
   push:
-  workflow_dispatch:
+  pull_request:
     branches:
-      - main
+      - test
 
 jobs:
   build:
@@ -48,15 +48,15 @@ jobs:
         run: ./gradlew assemble
 
       - name: Build APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleDebug
 
       - name: Sign APK
         run: |
           sudo apt-get -y install apksigner
           apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/release/*.apk
 
-      - name: Setup semantic-release
-        run: npm install
-
-      - name: Release
-        run: npm exec semantic-release
+      - name: Upload Signed app to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'MicroG Extended'
+          path: play-services-core/build/outputs/apk/default/debug/*.apk
