@@ -4,11 +4,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public abstract class AbstractSettingsActivity extends AppCompatActivity {
+public abstract class AbstractSettingsActivity extends BaseActivity {
     protected boolean showHomeAsUp = false;
     protected int preferencesResource = 0;
     private ViewGroup customBarContainer;
