@@ -373,21 +373,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <!-- microG Settings shown in Launcher -->
-        <activity-alias
-            android:name="org.microg.gms.ui.SettingsActivityLauncher"
-            android:enabled="false"
-            android:exported="true"
-            android:targetActivity="org.microg.gms.ui.MainSettingsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity-alias>
+        </activity>
 
         <!-- Allow microG Settings from opening by other applications -->
         <activity-alias
