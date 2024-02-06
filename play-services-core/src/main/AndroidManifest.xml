@@ -365,7 +365,8 @@
 
         <!-- microG Settings activity -->
         <activity
-            android:name="org.microg.gms.ui.MainSettingsActivity"
+            android:theme="@style/uwu_splash_theme"
+            android:name="com.neko.splash.app.SplashActivity"
             android:icon="@mipmap/ic_launcher"
             android:process=":ui"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -376,6 +377,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="org.microg.gms.ui.MainSettingsActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize" />
 
         <!-- Allow microG Settings from opening by other applications -->
         <activity-alias
