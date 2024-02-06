@@ -181,4 +181,11 @@
         <item name="android:windowLightNavigationBar">true</item>
     </style>
 
+    <style name="uwu_splash_theme" parent="@style/AppThemeBase">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
 </resources>
