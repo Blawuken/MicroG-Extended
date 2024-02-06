@@ -570,6 +570,12 @@
             </intent-filter>
         </service>
 
+        <service android:name="org.microg.gms.panorama.PanoramaService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.panorama.service.START" />
+            </intent-filter>
+        </service>
+
         <service android:name="org.microg.gms.DummyService">
             <intent-filter>
                 <action android:name="com.google.android.contextmanager.service.ContextManagerService.START" />
