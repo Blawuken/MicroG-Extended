@@ -44,7 +44,7 @@
                 android:layout_below="@android:id/title"
                 android:layout_alignStart="@android:id/title" />
         </LinearLayout>
-        <com.android.internal.widget.PreferenceImageView
+        <androidx.preference.internal.PreferenceImageView
             android:gravity="end|center"
             android:layout_gravity="end|center"
             android:id="@android:id/icon"
