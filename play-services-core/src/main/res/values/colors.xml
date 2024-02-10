@@ -25,6 +25,8 @@
     <color name="ic_launcher_background">#ffffffff</color>
     <color name="dialog_border_color">#88CCCCCC</color>
 
+    <color name="switchbar_background_color">#fff40d07</color>
+
     <color name="xd_pref_card_opaque">#33ffffff</color>
     <color name="xd_pref_ripple">#1f000000</color>
     <color name="extended_background_color">#fff5f5f5</color>

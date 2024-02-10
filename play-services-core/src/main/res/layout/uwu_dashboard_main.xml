@@ -16,7 +16,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16.0dip"
         android:layout_marginEnd="16.0dip"
-        android:backgroundTint="@color/uwu_accent" />
+        android:backgroundTint="?colorPrimary" />
 
     <LinearLayout
         android:gravity="center"
@@ -78,7 +78,7 @@
                             android:background="@drawable/uwu_google_shape"
                             android:layout_width="45.0dip"
                             android:layout_height="45.0dip"
-                            android:backgroundTint="@color/uwu_accent">
+                            android:backgroundTint="?colorPrimary">
 
                             <ImageView
                                 android:gravity="center"

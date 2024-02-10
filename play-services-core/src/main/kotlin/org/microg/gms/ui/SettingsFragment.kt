@@ -7,7 +7,6 @@ package org.microg.gms.ui
 
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.preference.Preference

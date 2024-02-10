@@ -26,12 +26,9 @@
     <Preference
         android:icon="@drawable/uwu_check"
         android:layout="@layout/uwu_maintainer"
-        android:title="@string/self_check_title"
-        android:summary="@string/self_check_desc">
-        <intent
-            android:targetPackage="@string/var_pref_start_gms_package"
-            android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity" />
-    </Preference>
+        android:title="@string/extended_check_title"
+        android:summary="@string/extended_check_desc"
+        android:selectable="false" />
 
     <PreferenceCategory
         android:title="@string/prefcat_google_services">
@@ -65,17 +62,15 @@
     <PreferenceCategory
         android:title="@string/extended_misc">
 
-        <ListPreference
-            android:icon="@drawable/ic_sunny"
+        <Preference
+            android:icon="@drawable/uwu_build_type"
             android:layout="@layout/uwu_top"
-            android:defaultValue="@string/pref_default_theme"
-            android:dialogTitle="@string/pref_dialog_title_theme"
-            android:entries="@array/pref_entries_theme"
-            android:entryValues="@array/pref_values_theme"
-            android:key="pref_theme"
-            android:negativeButtonText="@string/pref_negative_button"
-            android:title="@string/pref_title_theme"
-            app:useSimpleSummaryProvider="true"/>
+            android:title="@string/self_check_title"
+            android:summary="@string/self_check_desc">
+            <intent
+                android:targetPackage="@string/var_pref_start_gms_package"
+                android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity" />
+        </Preference>
 
         <Preference
             android:icon="@drawable/uwu_about"

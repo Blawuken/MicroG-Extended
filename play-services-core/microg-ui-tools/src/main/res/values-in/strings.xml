@@ -22,9 +22,11 @@
 
     <string name="prefcat_setup">Penyiapan</string>
 
-    <string name="self_check_title">Aplikasi ini sedang dalam pemeliharaan</string>
-    <string name="self_check_desc">AnGgIt86</string>
+    <string name="extended_check_title">Aplikasi ini sedang dalam pemeliharaan</string>
+    <string name="extended_check_desc">AnGgIt86</string>
 
+    <string name="self_check_title">Self-Check</string>
+    <string name="self_check_desc">Periksa apakah sistem sudah diatur dengan benar untuk menggunakan MicroG</string>
     <string name="self_check_cat_permissions">Izin diberikan</string>
     <string name="self_check_name_permission">Izin kepada %1$s:</string>
     <string name="self_check_resolution_permission">Sentuh di sini untuk memberikan izin. Tidak memberikan izin dapat mengakibatkan aplikasi berperilaku buruk</string>
@@ -41,10 +43,5 @@
     <string name="no_update_available">Anda sudah di versi terbaru.</string>
 
     <!-- Settings: Theme -->
-    <string name="pref_title_theme">Tema</string>
-    <string name="pref_default_theme">MODE_NIGHT_FOLLOW_SYSTEM</string>
     <string name="pref_dialog_title_theme">Pilih tema</string>
-    <string name="pref_entries_theme_system">Bawaan sistem</string>
-    <string name="pref_entries_theme_light">Terang</string>
-    <string name="pref_entries_theme_dark">Gelap</string>
 </resources>
