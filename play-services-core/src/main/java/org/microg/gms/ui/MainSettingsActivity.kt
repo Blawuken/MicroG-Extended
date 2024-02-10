@@ -4,6 +4,8 @@ import android.annotation.support.v3.services.privacy
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
@@ -63,6 +65,18 @@ class MainSettingsActivity : AppCompatActivity() {
                 .create()
                 .show()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.settings) {
+            SettingsFragmentTheme().show(supportFragmentManager, "Settings")
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onSupportNavigateUp(): Boolean {
