@@ -2,6 +2,6 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:color="@color/uwu_accent"
+        android:color="?colorPrimary"
         android:alpha="0.4" />
 </selector>

@@ -32,6 +32,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import com.google.android.gms.R;
 
 import org.microg.tools.updater.UpdateChecker;
 
@@ -98,6 +99,7 @@ public abstract class AbstractAboutFragment extends Fragment {
         View aboutRoot = inflater.inflate(R.layout.about_root, container, false);
         ((ImageView) aboutRoot.findViewById(android.R.id.icon)).setImageDrawable(getIcon(getContext()));
         ((TextView) aboutRoot.findViewById(android.R.id.title)).setText(getAppName());
+        ((TextView) aboutRoot.findViewById(R.id.tititle)).setText(getAppName());
         ((TextView) aboutRoot.findViewById(R.id.about_version)).setText(getString(R.string.about_version_str, getSelfVersion()));
         String summary = getSummary();
         if (summary != null) {

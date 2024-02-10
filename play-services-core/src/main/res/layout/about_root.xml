@@ -72,12 +72,13 @@
         android:text="@string/check_updates"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="?android:textColorPrimaryInverse"
+        app:backgroundTint="?colorPrimary"
         app:button_cornerRadius="28dp"
         app:button_duration="250"
         app:button_scale="0.87" />
 
     <TextView
-        android:id="@android:id/title"
+        android:id="@+id/tititle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dip"

@@ -12,7 +12,7 @@
         <item name="colorPrimaryDark">@android:color/transparent</item>
     </style>
 
-    <style name="AppThemeBase" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    <style name="AppThemeBase" parent="@style/Theme.Material3.DayNight">
         <item name="android:windowBackground">@color/uwu_bg</item>
         <item name="android:scrollbarSize">0.0dip</item>
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
@@ -20,12 +20,11 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-        <item name="colorAccent">@color/uwu_accent_dark</item>
+        <item name="colorAccent">?colorPrimary</item>
         <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
         <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
         <item name="colorIcon">@android:color/white</item>
         <item name="colorMainText">@color/colorText</item>
-        <item name="colorPrimary">@color/uwu_primary_dark</item>
         <item name="colorPrimaryDark">?colorPrimary</item>
         <item name="colorText">@android:color/white</item>
         <item name="elevation">0.0dip</item>
@@ -36,15 +35,8 @@
         <item name="android:dialogCornerRadius">28.0dip</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:tint">@android:color/white</item>
-        <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
-        <item name="colorControlNormal">@android:color/white</item>
-        <item name="colorPrimary">@color/uwu_primary_dark</item>
-        <item name="colorPrimaryDark">?colorPrimary</item>
-        <item name="elevationOverlayEnabled">true</item>
-        <item name="elevationOverlayColor">?attr/colorPrimary</item>
-        <item name="colorAccent">@color/uwu_accent_dark</item>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.Material3.Dark">
+        <item name="colorSurface">?colorPrimary</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -67,12 +59,12 @@
         <item name="android:windowMinWidthMajor">75.0%</item>
         <item name="android:windowMinWidthMinor">75.0%</item>
         <item name="android:colorControlHighlight">@color/uwu_ripple</item>
-        <item name="android:colorAccent">@color/uwu_accent</item>
+        <item name="android:colorAccent">?colorPrimary</item>
         <item name="android:buttonBarPositiveButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:buttonBarNeutralButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:buttonBarNegativeButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:windowElevation">0.0dip</item>
-        <item name="android:colorEdgeEffect">@color/uwu_accent</item>
+        <item name="android:colorEdgeEffect">?colorPrimary</item>
     </style>
 
 </resources>

@@ -22,7 +22,7 @@
             android:layout_height="fill_parent"
             android:src="@drawable/uwu_addon_logo"
             android:adjustViewBounds="true"
-            android:tint="@color/uwu_accent" />
+            android:tint="?colorPrimary" />
         <ImageView
             android:layout_gravity="end|bottom|center"
             android:layout_width="210.0dip"

@@ -38,6 +38,17 @@
 
         </LinearLayout>
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_gravity="end|bottom|center"
+            android:id="@+id/change_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.0dip"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_round_edit" />
+
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
