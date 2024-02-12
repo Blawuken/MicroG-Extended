@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,6 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.color.DynamicColors;
 import com.google.android.gms.R;
+import org.microg.tools.ui.BaseActivity;
 import org.microg.gms.ui.SettingsFragmentTheme;
 import org.microg.gms.ui.settings.SettingsProvider;
 import com.quickersilver.themeengine.ThemeChooserDialogBuilder;
@@ -24,7 +24,7 @@ import com.google.android.gms.databinding.SettingsRootActivityBinding;
 
 import static org.microg.gms.ui.settings.SettingsProviderKt.getAllSettingsProviders;
 
-public class MainSettingsActivity extends AppCompatActivity {
+public class MainSettingsActivity extends BaseActivity {
     private AppBarConfiguration appBarConfiguration;
 
     private NavController getNavController() {
@@ -40,7 +40,6 @@ public class MainSettingsActivity extends AppCompatActivity {
             settingsProvider.preProcessSettingsIntent(intent);
         }
 
-        ThemeEngine.applyToActivity(this);
         SettingsRootActivityBinding binding = SettingsRootActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         for (SettingsProvider settingsProvider : getAllSettingsProviders(this)) {
