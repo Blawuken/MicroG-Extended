@@ -112,6 +112,7 @@
     <string name="pref_gcm_confirm_new_apps_summary">Ask before registering a new app to receive push notifications</string>
 
     <string name="pref_about_title">About MicroG</string>
+    <string name="about_root_libraries">Included libraries</string>
 
     <string name="gcm_unregister_app">Unregister</string>
     <string name="gcm_no_message_yet">No messages received so far</string>

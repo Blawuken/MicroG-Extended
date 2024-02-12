@@ -34,7 +34,6 @@
     <string name="about_root_title">Demo MicroG UI</string>
     <string name="about_root_summary">Ringkasan</string>
     <string name="about_root_version">Versi v0.1.0</string>
-    <string name="about_root_libraries">Perpustakaan yang disertakan</string>
 
     <!-- Updater strings-->
 
