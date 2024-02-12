@@ -34,7 +34,6 @@
     <string name="about_root_title">MicroG UI Demo</string>
     <string name="about_root_summary">Summary</string>
     <string name="about_root_version">Version v0.1.0</string>
-    <string name="about_root_libraries">Included libraries</string>
 
     <!-- Updater strings-->
 

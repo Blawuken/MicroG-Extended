@@ -112,6 +112,7 @@
     <string name="pref_gcm_confirm_new_apps_summary">Tanyakan sebelum mendaftarkan aplikasi baru untuk menerima pemberitahuan push</string>
 
     <string name="pref_about_title">Tentang MicroG</string>
+    <string name="about_root_libraries">Perpustakaan yang disertakan</string>
 
     <string name="gcm_unregister_app">Batalkan pendaftaran</string>
     <string name="gcm_no_message_yet">Sejauh ini belum ada pesan yang diterima</string>
