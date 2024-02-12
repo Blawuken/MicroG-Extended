@@ -47,16 +47,26 @@ jobs:
       - name: Build project
         run: ./gradlew assemble
 
-      - name: Build APK
+      - name: Build Debug APK
         run: ./gradlew assembleDebug
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
 
       - name: Sign APK
         run: |
           sudo apt-get -y install apksigner
           apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/release/*.apk
+          apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/debug/*.apk
 
       - name: Upload Signed app to Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: 'MicroG Extended'
+          name: 'MicroG Extended Debug'
           path: play-services-core/build/outputs/apk/default/debug/*.apk
+
+      - name: Upload Signed app to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'MicroG Extended Release'
+          path: play-services-core/build/outputs/apk/default/release/*.apk
