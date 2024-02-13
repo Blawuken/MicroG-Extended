@@ -1,3 +1,29 @@
+# [1.20.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.19.0...v1.20.0) (2024-02-13)
+
+
+### Bug Fixes
+
+* Fixed GetLocales lint https://github.com/microg/GmsCore/commit/f0b15d275a0c4ec3625033d651414d396e368320 ([af83134](https://github.com/Blawuken/MicroG-Extended/commit/af831346732c5874ce0467e62423b6d05b1b524a))
+* Fixed string about libraries ([98b9a3d](https://github.com/Blawuken/MicroG-Extended/commit/98b9a3d59e267046fa992a1644cf849d4df811f5))
+* Fixed the problem that Chai - Chat with AI Friends cannot log in using google ([af96221](https://github.com/Blawuken/MicroG-Extended/commit/af962213c6c2cc1ceb229b95eddd5b067b3b14e6))
+* Fixed the problem that the background of the authorization login page is transparent and the horizontal screen display is incomplete and cannot be slid. ([254e42c](https://github.com/Blawuken/MicroG-Extended/commit/254e42c866814b7edaf40240d5c245150418a728))
+
+
+### Features
+
+* Always show icon launcher in home ([009833c](https://github.com/Blawuken/MicroG-Extended/commit/009833cd556d5dd7fc5358a0f6ddf50e9deb310a))
+* Apply ThemeEngine to webview activity ([e27d8b9](https://github.com/Blawuken/MicroG-Extended/commit/e27d8b9d67ff021d3a5d7440c925c3d15f848fb5))
+* Introduct menu theme dialog ([a180344](https://github.com/Blawuken/MicroG-Extended/commit/a180344deda9b26139e53e21f69c45957c463c98))
+* Introduct splashscreen ([889460c](https://github.com/Blawuken/MicroG-Extended/commit/889460c3b7ac9b161e3c63f26c14193c4a073d71))
+* Introduct theme settings ([abfcb91](https://github.com/Blawuken/MicroG-Extended/commit/abfcb9117475fce3eb94d8a410326dd013ceb91b))
+* Optimized new Darkmode ([4792f6d](https://github.com/Blawuken/MicroG-Extended/commit/4792f6d0eede892849e5124d1b7275d0009cf27a))
+* Panorama service completion ([aaf0f01](https://github.com/Blawuken/MicroG-Extended/commit/aaf0f0178ce0e96765851a4a25380d5b801fb95e))
+* Recode `MainSettingsActivity` kotlin to java ([e0df345](https://github.com/Blawuken/MicroG-Extended/commit/e0df34503509e2c4156d6bc26e86d8b29582878c))
+* Set AppCompatActivity to BaseActivity ([511056c](https://github.com/Blawuken/MicroG-Extended/commit/511056c388ef0f3457057c1c8251fc655be921ca))
+* supplement the num 153 <ACCOUNT_DATA> service ([e0fae3e](https://github.com/Blawuken/MicroG-Extended/commit/e0fae3e55b592ddace94dbcc8ba07a9d5de5af70))
+* supplement the num 52 <PSEUDONYMOUS_ID> service ([0de7f12](https://github.com/Blawuken/MicroG-Extended/commit/0de7f126867fe9f0ebb194307d812f4e3ea10c7f))
+* Use fake-signature module https://github.com/microg/GmsCore/commit/0f04df65e0deca5ca58b6d377a464d27f669f06e ([5a4ea1b](https://github.com/Blawuken/MicroG-Extended/commit/5a4ea1bf0575f45c30ac8753d01869c8c57c1769))
+
 # [1.19.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.18.0...v1.19.0) (2024-02-04)
 
 
