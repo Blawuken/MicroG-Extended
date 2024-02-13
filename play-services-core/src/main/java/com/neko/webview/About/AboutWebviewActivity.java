@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import com.google.android.gms.R;
+import com.quickersilver.themeengine.ThemeEngine;
 
 public class AboutWebviewActivity extends Activity {
 
@@ -15,6 +16,7 @@ public class AboutWebviewActivity extends Activity {
     @SuppressLint("SetJavaScriptEnabled")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemeEngine.applyToActivity(this);
         setContentView(R.layout.uwu_webview);
         mWebView = findViewById(R.id.uwu_webview);
         WebSettings webSettings = mWebView.getSettings();
