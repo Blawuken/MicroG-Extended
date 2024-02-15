@@ -37,6 +37,8 @@
 
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.Material3.Dark">
         <item name="colorSurface">?colorPrimary</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
