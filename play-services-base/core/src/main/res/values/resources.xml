@@ -4,5 +4,5 @@
     <string name="vanced">Vanced</string>
     <string name="revanced">ReVanced</string>
     <string name="revanced_extended">ReVanced Extended</string>
-    <string name="youtube_advanced">YouTube Advanced</string>
+    <!-- <string name="youtube_advanced">YouTube Advanced</string> -->
 </resources>
