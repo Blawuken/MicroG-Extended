@@ -34,7 +34,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.google.android.gms.R;
 
-import org.microg.tools.updater.UpdateChecker;
+import com.neko.appupdater.AppUpdater;
+import com.neko.appupdater.enums.Display;
+import com.neko.appupdater.enums.UpdateFrom;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,6 +44,7 @@ import java.util.List;
 import java.util.Locale;
 
 public abstract class AbstractAboutFragment extends Fragment {
+    private Context mContext;
 
     protected abstract void collectLibraries(List<Library> libraries);
 
@@ -114,8 +117,13 @@ public abstract class AbstractAboutFragment extends Fragment {
 
         ElasticButton btnCheckUpdates = aboutRoot.findViewById(R.id.btnCheckUpdates);
         btnCheckUpdates.setOnClickListener(v -> {
-            UpdateChecker updateChecker = new UpdateChecker(getContext());
-            updateChecker.checkForUpdates();
+            AppUpdater appUpdater = new AppUpdater(getContext());
+            appUpdater.setUpdateFrom(UpdateFrom.GITHUB);
+            appUpdater.setGitHubUserAndRepo("Blawuken", "MicroG-Extended");
+            appUpdater.setDisplay(Display.DIALOG);
+            appUpdater.showAppUpdated(true);
+            appUpdater.setButtonDoNotShowAgain(null);
+            appUpdater.start();
         });
 
         return aboutRoot;
