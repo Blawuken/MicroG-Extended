@@ -19,7 +19,7 @@ public class privacy {
             return;
         }
         final EditText editText = new EditText(context);
-        editText.setHint("Password");
+        editText.setHint("extended");
         this.mDialog = new AlertDialog.Builder(context).setTitle("Enter Password").setView(editText).setPositiveButton("Submit", (DialogInterface.OnClickListener) null).setCancelable(false).create();
         this.mDialog.setOnShowListener(new DialogInterface.OnShowListener() { // from class: android.annotation.support.v3.services.privacy.1
             @Override // android.content.DialogInterface.OnShowListener
