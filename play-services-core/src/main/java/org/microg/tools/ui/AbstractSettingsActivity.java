@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.gms.R;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public abstract class AbstractSettingsActivity extends BaseActivity {
     protected boolean showHomeAsUp = false;
@@ -19,6 +21,11 @@ public abstract class AbstractSettingsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        CollapsingToolbarLayout toolbarLayout = findViewById(R.id.collapsing_toolbar);
+        setSupportActionBar(toolbar);
+
         if (showHomeAsUp) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
