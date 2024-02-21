@@ -14,51 +14,65 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            style="?attr/collapsingToolbarLayoutLargeStyle"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:maxLines="3"
+            app:expandedTitleGravity="center"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarTitle.Expanded"
+            app:toolbarId="@+id/toolbar"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <org.microg.tools.ui.SwitchBar
         android:id="@+id/switch_bar"
         android:background="@color/switchbar_background_color"
         android:visibility="gone"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="?actionBarSize"/>
 
     <FrameLayout
         android:id="@+id/custom_bar"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <androidx.cardview.widget.CardView
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0.0dip"
-        android:layout_marginBottom="16.0dip"
-        android:layout_marginStart="16.0dip"
-        android:layout_marginEnd="16.0dip"
-        app:cardBackgroundColor="@android:color/transparent"
-        app:cardCornerRadius="28.0dip"
-        app:cardElevation="0.0dip">
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/uwu_background_lengkung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
-            android:background="@drawable/bg_anu"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <FrameLayout
+            android:id="@+id/content_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="25.0dip"
+            android:layout_weight="1"/>
 
-            <FrameLayout
-                android:id="@+id/content_wrapper"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginStart="-16.0dip"
-                android:layout_marginEnd="-16.0dip"/>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

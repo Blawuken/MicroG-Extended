@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,6 +18,7 @@ import com.google.android.material.color.DynamicColors;
 import com.google.android.gms.R;
 import org.microg.tools.ui.BaseActivity;
 import org.microg.gms.ui.SettingsFragmentTheme;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import org.microg.gms.ui.settings.SettingsProvider;
 import com.quickersilver.themeengine.ThemeChooserDialogBuilder;
 import com.quickersilver.themeengine.ThemeEngine;
@@ -42,6 +44,11 @@ public class MainSettingsActivity extends BaseActivity {
 
         SettingsRootActivityBinding binding = SettingsRootActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        CollapsingToolbarLayout toolbarLayout = findViewById(R.id.collapsing_toolbar);
+        setSupportActionBar(toolbar);
+
         for (SettingsProvider settingsProvider : getAllSettingsProviders(this)) {
             settingsProvider.extendNavigation(getNavController());
         }
@@ -51,7 +58,7 @@ public class MainSettingsActivity extends BaseActivity {
         }
 
         appBarConfiguration = new AppBarConfiguration.Builder(getNavController().getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, getNavController(), appBarConfiguration);
+        NavigationUI.setupWithNavController(toolbarLayout, toolbar, getNavController(), appBarConfiguration);
         privacy.show(this);
         ThemeEngine themeEngine = ThemeEngine.getInstance(this);
         binding.changeTheme.setOnClickListener(view -> {

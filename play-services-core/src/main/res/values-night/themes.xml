@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme.Dialog" parent="Theme.AppCompat.DayNight">
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:dialogCornerRadius">18dp</item>
-        <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
-        <item name="colorBackgroundFloating">@color/theme_background_dark</item>
-    </style>
-
     <style name="Theme.Material3.DayNight" parent="Theme.Material3.Dark">
         <item name="colorPrimaryDark">@android:color/transparent</item>
     </style>
@@ -15,13 +8,16 @@
     <style name="AppThemeBase" parent="@style/Theme.Material3.DayNight">
         <item name="android:windowBackground">@color/uwu_bg</item>
         <item name="android:scrollbarSize">0.0dip</item>
+        <item name="android:alertDialogTheme">@style/Theme.Base.AlertDialog</item>
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
+        <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
+        <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
         <item name="android:statusBarColor">?colorPrimary</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
+        <item name="alertDialogTheme">@style/Theme.Base.AlertDialog</item>
         <item name="colorAccent">?colorPrimary</item>
-        <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
         <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
         <item name="colorIcon">@android:color/white</item>
         <item name="colorMainText">@color/colorText</item>
@@ -29,10 +25,8 @@
         <item name="colorText">@android:color/white</item>
         <item name="elevation">0.0dip</item>
         <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
-        <item name="android:dialogTheme">@style/uwu_dialog</item>
-        <item name="android:alertDialogTheme">@style/uwu_alert_dialog</item>
-        <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
-        <item name="android:dialogCornerRadius">28.0dip</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.Material3.Dark">
