@@ -44,14 +44,14 @@
         android:key="prefcat_push_status">
         <Preference
             android:icon="@drawable/ic_status"
-            android:layout="@layout/uwu_top_no_arrow"
+            android:layout="@layout/uwu_sin_no_arrow"
             android:title="@string/pref_info_status"
             android:selectable="false"
             android:key="pref_push_status" />
 
         <org.microg.gms.ui.TextPreference
             android:icon="@drawable/ic_info_outline"
-            android:layout="@layout/uwu_bot_no_arrow"
+            android:layout="@layout/uwu_sin_info"
             android:selectable="false"
             android:summary="@string/pref_gcm_enable_mcs_summary" />
     </PreferenceCategory>

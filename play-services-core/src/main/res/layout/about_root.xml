@@ -87,7 +87,7 @@
         android:paddingRight="?attr/listPreferredItemPaddingRight"
         android:text="@string/about_root_libraries"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="?android:textColorPrimary" />
+        android:textColor="?colorPrimary" />
 
     <ListView
         android:id="@android:id/list"

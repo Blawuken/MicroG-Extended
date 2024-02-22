@@ -13,20 +13,29 @@
         android:theme="@style/AppTheme.AppBarOverlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
-            style="?attr/collapsingToolbarLayoutLargeStyle"
+            android:theme="@style/Uwu.Material3.CollapsingToolbar"
+            android:clipToPadding="false"
             android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:maxLines="3"
-            app:expandedTitleGravity="center"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
             app:expandedTitleTextAppearance="@style/CollapsingToolbarTitle.Expanded"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:forceApplySystemWindowInsetTop="true"
+            app:extraMultilineHeightEnabled="true"
+            app:expandedTitleGravity="center"
+            app:contentScrim="?colorPrimary"
+            app:scrimAnimationDuration="50"
+            app:titleCollapseMode="fade"
+            app:statusBarScrim="@null"
             app:toolbarId="@+id/toolbar"
-            android:layout_height="?attr/collapsingToolbarLayoutLargeSize">
+            app:maxLines="3">
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -53,16 +62,5 @@
             app:navGraph="@navigation/nav_settings" />
 
     </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_gravity="end|bottom|center"
-        android:id="@+id/change_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16.0dip"
-        app:fabSize="auto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_round_edit" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
