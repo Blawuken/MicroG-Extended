@@ -4,7 +4,7 @@
     android:clipToPadding="false"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="2.0dip"
+    android:layout_marginTop="0.0dip"
     android:layout_marginBottom="2.0dip"
     android:layout_marginStart="16.0dip"
     android:layout_marginEnd="16.0dip"

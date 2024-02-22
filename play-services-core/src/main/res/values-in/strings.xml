@@ -146,6 +146,7 @@
     <string name="pref_device_registration_serial_title">Serial</string>
     <string name="pref_device_registration_import_custom_profile_summary">Impor profil perangkat dari file</string>
     <string name="pref_device_registration_select_profile_title">Pilih profil</string>
+    <string name="pref_hide_launcher_icon">Sembunyikan ikon dari beranda</string>
     <string name="pref_device_registration_device_profile_category">Profil perangkat</string>
 
     <string name="push_notifications_summary_off">OFF</string>

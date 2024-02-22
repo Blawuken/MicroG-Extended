@@ -72,6 +72,15 @@
                 android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity" />
         </Preference>
 
+        <SwitchPreference
+            android:icon="@drawable/ic_hide_launcher_icon"
+            android:layout="@layout/uwu_mid_switch"
+            android:title="@string/pref_hide_launcher_icon"
+            android:key="pref_hide_launcher_icon"
+            android:defaultValue="true"
+            android:summaryOn="@string/service_status_enabled_short"
+            android:summaryOff="@string/service_status_disabled_short" />
+
         <Preference
             android:icon="@drawable/uwu_about"
             android:layout="@layout/uwu_bot"
