@@ -58,13 +58,13 @@
         <Preference
             android:enabled="false"
             android:icon="@drawable/uwu_tls"
-            android:layout="@layout/uwu_mid_no_arrow"
+            android:layout="@layout/uwu_bot_no_arrow"
             android:title="@string/pref_device_registration_android_id"
             android:key="pref_device_registration_android_id" />
 
         <org.microg.gms.ui.TextPreference
             android:icon="@drawable/ic_info_outline"
-            android:layout="@layout/uwu_bot_no_arrow"
+            android:layout="@layout/uwu_sin_info"
             android:selectable="false"
             android:summary="@string/pref_checkin_enable_summary" />
     </PreferenceCategory>

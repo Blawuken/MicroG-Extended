@@ -55,9 +55,24 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.Material3.Dark">
-        <item name="colorSurface">?colorPrimary</item>
-        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:colorBackground">?colorPrimary</item>
+        <item name="colorOnBackground">?colorPrimary</item>
         <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorSurface">?colorPrimary</item>
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="elevationOverlayEnabled">true</item>
+        <item name="elevationOverlayColor">?colorPrimary</item>
+        <item name="colorAccent">?colorPrimary</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:background">@drawable/uwu_card_view_corner</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="popupMenuBackground">@drawable/uwu_card_view_corner</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <style name="LoginThemeBase" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -199,6 +214,11 @@
         <item name="android:fontFamily">@font/lexend</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">30dp</item>
+    </style>
+
+    <style name="Uwu.Material3.CollapsingToolbar" parent="@style/Widget.Material3.CollapsingToolbar.Large">
+        <item name="collapsedTitleTextColor">@android:color/white</item>
+        <item name="expandedTitleTextColor">@android:color/white</item>
     </style>
 
 </resources>
