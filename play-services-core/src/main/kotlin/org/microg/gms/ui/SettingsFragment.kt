@@ -5,12 +5,15 @@
 
 package org.microg.gms.ui
 
+import android.content.ComponentName
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
+import androidx.preference.SwitchPreference
 import com.google.android.gms.R
 import kotlinx.coroutines.launch
 import org.microg.gms.checkin.CheckinPreferences
@@ -30,6 +33,7 @@ class SettingsFragment : ResourceSettingsFragment() {
         const val PREF_CHECKIN = "pref_checkin"
         const val PREF_ACCOUNTS = "pref_accounts"
         const val PREF_PLAY = "pref_play"
+        const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
         
     }
 
@@ -55,6 +59,13 @@ class SettingsFragment : ResourceSettingsFragment() {
         findPreference<Preference>(PREF_PLAY)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
             findNavController().navigate(requireContext(), R.id.openPlaySettings)
             true
+        }
+        findPreference<SwitchPreference>(PREF_CAST_HIDE_LAUNCHER_ICON)?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                val isEnabled = newValue as Boolean
+                updateLauncherIconVisibility(isEnabled)
+                true
+            }
         }
         findPreference<Preference>(PREF_ABOUT)!!.summary = getString(org.microg.tools.ui.R.string.about_version_str, AboutFragment.getSelfVersion(context))
 
@@ -95,6 +106,23 @@ class SettingsFragment : ResourceSettingsFragment() {
             true
         }
         return this
+    }
+
+    private fun updateLauncherIconVisibility(isEnabled: Boolean) {
+        val mainSettingsComponent = ComponentName(requireActivity(), "com.neko.splash.app.SplashActivity")
+        val launcherSettingsComponent = ComponentName(requireActivity(), "org.microg.gms.ui.SettingsActivityLauncher")
+
+        requireActivity().packageManager.setComponentEnabledSetting(mainSettingsComponent,
+            if (isEnabled) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+            PackageManager.DONT_KILL_APP
+        )
+
+        requireActivity().packageManager.setComponentEnabledSetting(launcherSettingsComponent,
+            if (isEnabled) PackageManager.COMPONENT_ENABLED_STATE_DISABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+            PackageManager.DONT_KILL_APP
+        )
     }
 
     override fun onResume() {
