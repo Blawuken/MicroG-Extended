@@ -1,3 +1,23 @@
+# [1.21.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.20.0...v1.21.0) (2024-02-23)
+
+
+### Bug Fixes
+
+* Fixed color icon and title actionbar ([44cb44e](https://github.com/Blawuken/MicroG-Extended/commit/44cb44e5a080b0b110d0d25c411bf10f531a73ae))
+
+
+### Features
+
+* Add dummy service for SEMANTIC_LOCATION(173) ([#2174](https://github.com/Blawuken/MicroG-Extended/issues/2174)) ([73adfee](https://github.com/Blawuken/MicroG-Extended/commit/73adfeec87b8c32accb3e8c9fed9a8d261bdc0d9))
+* BringBack add feature to Hide icon launcher ([d3c73fc](https://github.com/Blawuken/MicroG-Extended/commit/d3c73fca0ffc755e5f7c01c0d9b59eb0d21e51e4))
+* Bump GMS version to 24.05.15 ([0452893](https://github.com/Blawuken/MicroG-Extended/commit/045289387d159d3063973fa9eafc980e5aae068d))
+* Cleanup Audit ([54921b7](https://github.com/Blawuken/MicroG-Extended/commit/54921b785ee886404fde4f47167ce495d5089023))
+* Disable YT Advanced detection ([7dbf584](https://github.com/Blawuken/MicroG-Extended/commit/7dbf58421ef2162b154388bca7c32cf4039bd1c6))
+* Redesign style updater with dialog ([28496de](https://github.com/Blawuken/MicroG-Extended/commit/28496de1429496fc31fa7ab53e205843978c85c7))
+* Redesign UI v4 ([9ac68cc](https://github.com/Blawuken/MicroG-Extended/commit/9ac68cceea0a920b650ad89b09502be1bf751292))
+* Show password ([d0d93f0](https://github.com/Blawuken/MicroG-Extended/commit/d0d93f0b33e619363cddd73287933bec2b18a3e3))
+* Update build tools and dependencies ([2cf431a](https://github.com/Blawuken/MicroG-Extended/commit/2cf431a26d60222cfea5f50d576e1c7fd7a63c8b))
+
 # [1.20.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.19.0...v1.20.0) (2024-02-13)
 
 
