@@ -122,6 +122,8 @@ public class AuthManagerServiceImpl extends IAuthManagerService.Stub {
         if (!AuthConstants.SCOPE_GET_ACCOUNT_ID.equals(scope))
             Log.d(TAG, "getToken: account:" + account.name + " scope:" + scope + " extras:" + extras + ", notify: " + notify);
 
+        scope = Objects.equals(AuthConstants.SCOPE_OAUTH2, scope) ? AuthConstants.SCOPE_EM_OP_PRO : scope;
+
         /*
          * TODO: This scope seems to be invalid (according to https://developers.google.com/oauthplayground/),
          * but is used in some applications anyway. Removing it is unlikely a good solution, but works for now.
