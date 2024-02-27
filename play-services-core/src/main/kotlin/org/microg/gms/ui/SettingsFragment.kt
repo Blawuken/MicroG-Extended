@@ -33,7 +33,9 @@ class SettingsFragment : ResourceSettingsFragment() {
         const val PREF_CHECKIN = "pref_checkin"
         const val PREF_ACCOUNTS = "pref_accounts"
         const val PREF_PLAY = "pref_play"
+        const val PREF_SELFCHECK = "pref_selfcheck"
         const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
+        const val PREF_DEVOPTIONS = "pref_devoption"
         
     }
 
@@ -60,6 +62,10 @@ class SettingsFragment : ResourceSettingsFragment() {
             findNavController().navigate(requireContext(), R.id.openPlaySettings)
             true
         }
+        findPreference<Preference>(PREF_SELFCHECK)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            findNavController().navigate(requireContext(), R.id.openSelfcheck)
+            true
+        }
         findPreference<SwitchPreference>(PREF_CAST_HIDE_LAUNCHER_ICON)?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 val isEnabled = newValue as Boolean
@@ -68,7 +74,10 @@ class SettingsFragment : ResourceSettingsFragment() {
             }
         }
         findPreference<Preference>(PREF_ABOUT)!!.summary = getString(org.microg.tools.ui.R.string.about_version_str, AboutFragment.getSelfVersion(context))
-
+        findPreference<Preference>(PREF_DEVOPTIONS)!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            findNavController().navigate(requireContext(), R.id.devOptionManager)
+            true
+        }
         for (entry in getAllSettingsProviders(requireContext()).flatMap { it.getEntriesStatic(requireContext()) }) {
             entry.createPreference()
         }

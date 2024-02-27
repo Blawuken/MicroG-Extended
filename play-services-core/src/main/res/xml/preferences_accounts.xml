@@ -23,11 +23,9 @@
         <Preference
             android:icon="@drawable/uwu_dns"
             android:layout="@layout/uwu_mid"
-            android:title="@string/account_manager_title">
-            <intent
-                android:targetPackage="@string/var_pref_start_gms_package"
-                android:targetClass="org.microg.gms.ui.LegacyAccountSettingsActivity" />
-        </Preference>
+            android:key="pref_legacy_accounts"
+            android:title="@string/account_manager_title"
+            android:summary="@string/account_manager_summary" /> />
 
         <Preference
             android:icon="@drawable/ic_manage_account"

@@ -20,8 +20,9 @@
 
     <Preference
         android:layout="@layout/uwu_dashboard_main"
-        android:title="@string/uwu_header_title"
-        android:selectable="false" />
+        android:key="pref_uwu_opsipengembang"
+        android:title="@string/prefcat_about"
+        android:summary="MicroG Extended" />
 
     <Preference
         android:layout="@layout/uwu_menu_tools"
@@ -34,11 +35,8 @@
     <Preference
         android:icon="@drawable/uwu_about"
         android:layout="@layout/uwu_sin"
+        android:key="pref_uwu_credits"
         android:title="@string/uwu_credits"
-        android:summary="@string/uwu_tap_credit_summary">
-        <intent
-            android:targetPackage="@string/var_pref_start_gms_package"
-            android:targetClass="org.microg.gms.ui.Credits$AsActivity" />
-    </Preference>
+        android:summary="@string/uwu_tap_credit_summary" />
 
 </PreferenceScreen>

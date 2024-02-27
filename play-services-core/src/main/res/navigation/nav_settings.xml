@@ -48,7 +48,11 @@
     <fragment
         android:id="@+id/accountManagerFragment"
         android:name="org.microg.gms.ui.AccountsFragment"
-        android:label="@string/pref_add_account_title" />
+        android:label="@string/pref_add_account_title">
+        <action
+            android:id="@+id/openAccountSettingsFragment"
+            app:destination="@id/AccountSettingsFragment" />
+    </fragment>
 
     <!-- Push Notifications -->
 
@@ -106,5 +110,36 @@
         android:id="@+id/playFragment"
         android:name="org.microg.gms.ui.PlayFragment"
         android:label="@string/service_name_play" />
+
+    <!-- Account Permission -->
+
+    <fragment
+        android:id="@+id/AccountSettingsFragment"
+        android:name="org.microg.gms.ui.LegacyAccountSettingsActivity$AccountSettingsFragment"
+        android:label="@string/account_manager_title" />
+
+    <!-- Dev Option-->
+
+    <fragment
+        android:id="@+id/devOptionManager"
+        android:name="org.microg.gms.ui.DevOptionFragment"
+        android:label="@string/opsi_pengembang">
+        <action
+            android:id="@+id/openCreditsUwu"
+            app:destination="@id/UwuCredits" />
+        <action
+            android:id="@+id/openOpsiPengembang"
+            app:destination="@id/UwuOpsiPengembang" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UwuCredits"
+        android:name="org.microg.gms.ui.Credits$AsFragment"
+        android:label="@string/uwu_credits" />
+
+    <fragment
+        android:id="@+id/UwuOpsiPengembang"
+        android:name="org.microg.gms.ui.OpsiPengembang$AsFragment"
+        android:label="@string/prefcat_about" />
 
 </navigation>
