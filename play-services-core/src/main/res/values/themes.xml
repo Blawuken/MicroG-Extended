@@ -61,6 +61,8 @@
         <item name="colorControlNormal">@android:color/white</item>
         <item name="colorSurface">?colorPrimary</item>
         <item name="colorOnSurface">@android:color/white</item>
+        <item name="colorOnSurfaceInverse">@android:color/white</item>
+        <item name="colorOnSurfaceVariant">@android:color/white</item>
         <item name="titleTextColor">@android:color/white</item>
         <item name="elevationOverlayEnabled">true</item>
         <item name="elevationOverlayColor">?colorPrimary</item>

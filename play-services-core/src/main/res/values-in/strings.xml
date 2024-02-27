@@ -12,6 +12,7 @@
     <string name="ask_scope_permission_title"><xliff:g contoh ="F-Droid">%1$s</xliff:g> ingin:</string>
     <string name="ask_service_permission_title"><xliff:g example="F-Droid">%1$s</xliff:g> ingin menggunakan :</string>
     <string name="account_manager_title">Pengelola Akun Google</string>
+    <string name="account_manager_summary">Berikan izin untuk beberapa aplikasi agar dapat mengakses akun anda</string>
     <string name="sorry">Maaf…</string>
     <string name="auth_before_connect">"Aplikasi di perangkat Anda mencoba untuk masuk ke akun Google. Jika ini disengaja, gunakan tombol <b>Masuk</b> untuk menyambung ke halaman masuk Google. Tekan <b>Huawei</b> untuk masuk ke perangkat dari produsen tersebut"</string>
     <string name="auth_sign_in">Masuk</string>

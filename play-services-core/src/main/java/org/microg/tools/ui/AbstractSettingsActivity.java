@@ -26,7 +26,7 @@ public abstract class AbstractSettingsActivity extends BaseActivity {
         CollapsingToolbarLayout toolbarLayout = findViewById(R.id.collapsing_toolbar);
         setSupportActionBar(toolbar);
 
-        if (showHomeAsUp) {
+        if (showHomeAsUp && getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 

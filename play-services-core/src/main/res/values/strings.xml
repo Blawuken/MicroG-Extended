@@ -12,6 +12,7 @@
     <string name="ask_scope_permission_title"><xliff:g example="F-Droid">%1$s</xliff:g> would like to:</string>
     <string name="ask_service_permission_title"><xliff:g example="F-Droid">%1$s</xliff:g> would like to use:</string>
     <string name="account_manager_title">Google Account Manager</string>
+    <string name="account_manager_summary">Give permission for several applications to access your account</string>
     <string name="sorry">Sorry…</string>
     <string name="auth_before_connect">"An app on your device is trying to sign in to a Google account. If this was intentional, use the <b>Sign in</b> button to connect to Google sign-in page. Press <b>Huawei</b> to sign-in to a device from this manufacturer"</string>
     <string name="auth_sign_in">Sign in</string>

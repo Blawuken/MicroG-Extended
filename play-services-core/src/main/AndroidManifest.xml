@@ -469,24 +469,6 @@
             android:taskAffinity="org.microg.gms.settings" />
 
         <activity
-            android:label="@string/prefcat_about"
-            android:name="org.microg.gms.ui.OpsiPengembang$AsActivity"
-            android:process=":ui"
-            android:taskAffinity="org.microg.gms.settings" />
-
-        <activity
-            android:label="@string/uwu_credits"
-            android:name="org.microg.gms.ui.Credits$AsActivity"
-            android:process=":ui"
-            android:taskAffinity="org.microg.gms.settings" />
-
-        <activity
-            android:label="@string/opsi_pengembang"
-            android:name="org.microg.gms.ui.DevOption$AsActivity"
-            android:process=":ui"
-            android:taskAffinity="org.microg.gms.settings" />
-
-        <activity
             android:label="@string/uwu_network_switcher_title"
             android:name="com.neko.other.NetworkSwitcher"
             android:process=":ui"

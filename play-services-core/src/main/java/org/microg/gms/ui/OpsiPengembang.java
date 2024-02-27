@@ -16,15 +16,21 @@
 
 package org.microg.gms.ui;
 
+import androidx.fragment.app.Fragment;
 import com.google.android.gms.R;
-
 import org.microg.tools.ui.AbstractSettingsActivity;
+import org.microg.tools.ui.ResourceSettingsFragment;
 
-public class OpsiPengembang {
-    public static class AsActivity extends AbstractSettingsActivity {
-        public AsActivity() {
-            showHomeAsUp = true;
-            preferencesResource = R.xml.preferences_maintainer;
+public class OpsiPengembang extends AbstractSettingsActivity {
+
+    @Override
+    protected Fragment getFragment() {
+        return new AsFragment();
+    }
+
+    public static class AsFragment extends ResourceSettingsFragment {
+        public AsFragment() {
+            preferencesResource =  R.xml.preferences_maintainer;
         }
     }
 }

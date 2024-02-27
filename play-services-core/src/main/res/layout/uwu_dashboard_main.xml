@@ -39,9 +39,7 @@
 
         </LinearLayout>
 
-        <com.neko.oneclick.CardView
-            android:targetPackage="com.mgoogle.android.gms"
-            android:targetClass="org.microg.gms.ui.OpsiPengembang$AsActivity"
+        <androidx.cardview.widget.CardView
             android:gravity="bottom|center"
             android:layout_gravity="bottom|center"
             android:layout_width="fill_parent"
@@ -112,7 +110,7 @@
                                 android:ellipsize="marquee"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/prefcat_about"
+                                android:id="@android:id/title"
                                 android:singleLine="false" />
 
                             <TextView
@@ -121,7 +119,7 @@
                                 android:ellipsize="marquee"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="MicroG Extended"
+                                android:id="@android:id/summary"
                                 android:singleLine="false" />
 
                         </LinearLayout>
@@ -159,7 +157,7 @@
 
             </FrameLayout>
 
-        </com.neko.oneclick.CardView>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
@@ -123,6 +124,11 @@ class AccountsFragment : PreferenceFragmentCompat() {
             } catch (activityNotFoundException: ActivityNotFoundException) {
                 Log.e(TAG, "Failed to launch sync settings", activityNotFoundException)
             }
+            true
+        }
+
+        findPreference<Preference>("pref_legacy_accounts")!!.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            findNavController().navigate(requireContext(), R.id.openAccountSettingsFragment)
             true
         }
 

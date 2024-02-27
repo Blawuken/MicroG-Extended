@@ -65,12 +65,9 @@
         <Preference
             android:icon="@drawable/uwu_build_type"
             android:layout="@layout/uwu_top"
+            android:key="pref_selfcheck"
             android:title="@string/self_check_title"
-            android:summary="@string/self_check_desc">
-            <intent
-                android:targetPackage="@string/var_pref_start_gms_package"
-                android:targetClass="org.microg.gms.ui.SelfCheckFragment$AsActivity" />
-        </Preference>
+            android:summary="@string/self_check_desc" />
 
         <SwitchPreference
             android:icon="@drawable/ic_hide_launcher_icon"
@@ -94,12 +91,9 @@
         <Preference
             android:icon="@drawable/ic_style_maintainer"
             android:layout="@layout/uwu_sin"
+            android:key="pref_devoption"
             android:title="@string/opsi_pengembang"
-            android:summary="@string/opsi_pengembang_summary">
-            <intent
-                android:targetPackage="@string/var_pref_start_gms_package"
-                android:targetClass="org.microg.gms.ui.DevOption$AsActivity" />
-        </Preference>
+            android:summary="@string/opsi_pengembang_summary" />
 
     </PreferenceCategory>
 </PreferenceScreen>
