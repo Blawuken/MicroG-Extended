@@ -39,7 +39,6 @@
             android:summary="@string/pref_device_registration_import_custom_profile_summary" />
 
         <Preference
-            android:enabled="false"
             android:icon="@drawable/uwu_copyright"
             android:layout="@layout/uwu_bot_no_arrow"
             android:title="@string/pref_device_registration_serial_title"
@@ -56,7 +55,6 @@
             android:key="pref_device_registration_status" />
 
         <Preference
-            android:enabled="false"
             android:icon="@drawable/uwu_tls"
             android:layout="@layout/uwu_bot_no_arrow"
             android:title="@string/pref_device_registration_android_id"
