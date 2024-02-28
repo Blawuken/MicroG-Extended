@@ -43,10 +43,18 @@
         <SwitchPreference
             android:icon="@drawable/uwu_payload"
             android:title="@string/pref_auth_include_android_id_title"
-            android:layout="@layout/uwu_bot_switch"
+            android:layout="@layout/uwu_mid_switch"
             android:key="auth_include_android_id"
             android:summary="@string/pref_auth_include_android_id_summary"
             android:defaultValue="true" />
+
+        <SwitchPreference
+            android:icon="@drawable/uwu_payload"
+            android:title="@string/pref_auth_strip_device_name_title"
+            android:layout="@layout/uwu_bot_switch"
+            android:key="auth_strip_device_name"
+            android:summary="@string/pref_auth_strip_device_name_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 </PreferenceScreen>
