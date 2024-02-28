@@ -90,12 +90,14 @@
     <string name="cond_perm_title">Izin tidak ada</string>
 
     <string name="pref_auth_trust_google_title">Percayai Google untuk izin aplikasi</string>
-    <string name="pref_auth_trust_google_summary">Saat dinonaktifkan, pengguna ditanya sebelum permintaan otorisasi aplikasi dikirim ke Google. Beberapa aplikasi akan gagal menggunakan akun Google jika ini dinonaktifkan</string>
+    <string name="pref_auth_trust_google_summary">Jika dinonaktifkan, pengguna akan ditanyai sebelum permintaan otorisasi aplikasi dikirim ke Google. Beberapa aplikasi akan gagal menggunakan akun Google jika ini dinonaktifkan.</string>
     <string name="pref_auth_visible_title">Izinkan aplikasi menemukan akun</string>
     <string name="pref_auth_visible_summary">Saat diaktifkan, semua aplikasi di perangkat ini akan dapat melihat alamat email Akun Google Anda tanpa izin sebelumnya</string>
     <string name="brand_spoof_button">Huawei</string>
     <string name="pref_auth_include_android_id_title">Otentikasi dengan pendaftaran perangkat</string>
-    <string name="pref_auth_include_android_id_summary">Jika dinonaktifkan, permintaan autentikasi tidak akan ditautkan ke pendaftaran perangkat, yang memungkinkan perangkat yang tidak sah untuk masuk, namun mungkin memiliki konsekuensi yang tidak terduga</string>
+    <string name="pref_auth_include_android_id_summary">Jika dinonaktifkan, permintaan autentikasi tidak akan ditautkan ke pendaftaran perangkat, sehingga memungkinkan perangkat yang tidak sah untuk masuk, namun mungkin menimbulkan konsekuensi yang tidak terduga.</string>
+    <string name="pref_auth_strip_device_name_title">Hapus nama perangkat untuk autentikasi</string>
+    <string name="pref_auth_strip_device_name_summary">Jika diaktifkan, permintaan autentikasi tidak akan menyertakan nama perangkat, sehingga memungkinkan perangkat yang tidak sah untuk masuk, namun mungkin menimbulkan konsekuensi yang tidak terduga.</string>
 
     <string name="pref_checkin_enable_summary">Mendaftarkan perangkat Anda ke layanan Google dan membuat pengenal perangkat unik. MicroG strip mengidentifikasi bit selain nama akun Google Anda dari data pendaftaran</string>
     <string name="pref_device_registration_android_id">ID Android</string>
