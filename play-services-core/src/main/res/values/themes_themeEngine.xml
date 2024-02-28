@@ -554,5 +554,4 @@
         <item name="colorPrimaryInverse">@color/yellow_primaryInverse</item>
     </style>
 
-    <style name="ThemeOverlay.Black" parent="ThemeOverlay.AppCompat"/>
 </resources>
