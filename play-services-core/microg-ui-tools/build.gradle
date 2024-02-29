@@ -47,9 +47,5 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompatVersion"
     implementation "androidx.preference:preference:$preferenceVersion"
     implementation "com.google.android.material:material:$materialVersion"
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-
-    // skydoves ElasticViews
-    implementation 'com.github.skydoves:elasticviews:2.1.0'
 }
 
