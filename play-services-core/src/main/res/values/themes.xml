@@ -26,7 +26,7 @@
 
     <style name="AppTheme.Dialog" parent="Theme.Material3.DayNight">
         <item name="android:windowIsFloating">true</item>
-        <item name="android:colorButtonNormal">?colorPrimaryContainer</item>
+        <item name="android:colorButtonNormal">?attr/colorPrimaryContainer</item>
         <item name="colorBackgroundFloating">?colorSurfaceContainer</item>
     </style>
 
@@ -35,18 +35,18 @@
         <item name="android:scrollbarSize">0.0dip</item>
         <item name="android:alertDialogTheme">@style/Theme.Base.AlertDialog</item>
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
-        <item name="android:colorButtonNormal">?colorPrimary</item>
+        <item name="android:colorButtonNormal">?attr/colorPrimary</item>
         <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
-        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">true</item>
         <item name="alertDialogTheme">@style/Theme.Base.AlertDialog</item>
-        <item name="colorAccent">?colorPrimary</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
         <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
         <item name="colorIcon">@android:color/white</item>
         <item name="colorMainText">@color/colorText</item>
-        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="colorPrimaryDark">?attr/colorPrimary</item>
         <item name="colorText">@android:color/white</item>
         <item name="elevation">0.0dip</item>
         <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
@@ -55,18 +55,18 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.Material3.Dark">
-        <item name="android:background">?colorPrimary</item>
-        <item name="android:colorBackground">?colorPrimary</item>
-        <item name="colorOnBackground">?colorPrimary</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+        <item name="colorOnBackground">?attr/colorPrimary</item>
         <item name="colorControlNormal">@android:color/white</item>
-        <item name="colorSurface">?colorPrimary</item>
+        <item name="colorSurface">?attr/colorPrimary</item>
         <item name="colorOnSurface">@android:color/white</item>
         <item name="colorOnSurfaceInverse">@android:color/white</item>
         <item name="colorOnSurfaceVariant">@android:color/white</item>
         <item name="titleTextColor">@android:color/white</item>
         <item name="elevationOverlayEnabled">true</item>
-        <item name="elevationOverlayColor">?colorPrimary</item>
-        <item name="colorAccent">?colorPrimary</item>
+        <item name="elevationOverlayColor">?attr/colorPrimary</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
         <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
 
@@ -117,7 +117,7 @@
 
     <style name="uwu_button_borderless" parent="@android:style/Widget.Material.Button.Borderless.Colored">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
@@ -195,7 +195,7 @@
     <style name="uwu_splash_theme" parent="@style/AppThemeBase">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
         <item name="android:windowLightNavigationBar">false</item>
     </style>
 
