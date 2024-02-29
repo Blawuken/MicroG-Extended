@@ -40,7 +40,7 @@
             app:forceApplySystemWindowInsetTop="true"
             app:extraMultilineHeightEnabled="true"
             app:expandedTitleGravity="center"
-            app:contentScrim="?colorPrimary"
+            app:contentScrim="?attr/colorPrimary"
             app:scrimAnimationDuration="50"
             app:titleCollapseMode="fade"
             app:statusBarScrim="@null"

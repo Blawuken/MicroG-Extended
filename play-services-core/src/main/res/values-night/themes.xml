@@ -12,16 +12,16 @@
         <item name="android:homeAsUpIndicator">@drawable/uwu_back_arrow</item>
         <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
         <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
-        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="alertDialogTheme">@style/Theme.Base.AlertDialog</item>
-        <item name="colorAccent">?colorPrimary</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
         <item name="colorBackgroundFloating">@color/uwu_bg_card</item>
         <item name="colorIcon">@android:color/white</item>
         <item name="colorMainText">@color/colorText</item>
-        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="colorPrimaryDark">?attr/colorPrimary</item>
         <item name="colorText">@android:color/white</item>
         <item name="elevation">0.0dip</item>
         <item name="preferenceCategoryStyle">@style/Preference.xd.Category</item>
@@ -49,12 +49,12 @@
         <item name="android:windowMinWidthMajor">75.0%</item>
         <item name="android:windowMinWidthMinor">75.0%</item>
         <item name="android:colorControlHighlight">@color/uwu_ripple</item>
-        <item name="android:colorAccent">?colorPrimary</item>
+        <item name="android:colorAccent">?attr/colorPrimary</item>
         <item name="android:buttonBarPositiveButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:buttonBarNeutralButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:buttonBarNegativeButtonStyle">@style/uwu_button_borderless_dialog</item>
         <item name="android:windowElevation">0.0dip</item>
-        <item name="android:colorEdgeEffect">?colorPrimary</item>
+        <item name="android:colorEdgeEffect">?attr/colorPrimary</item>
     </style>
 
 </resources>
