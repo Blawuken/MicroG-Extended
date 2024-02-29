@@ -50,6 +50,10 @@ dependencies {
     // skydoves ElasticViews
     implementation 'com.github.skydoves:elasticviews:2.1.0'
 
+    // Updater
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'org.jsoup:jsoup:1.17.1'
+
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])
 }
