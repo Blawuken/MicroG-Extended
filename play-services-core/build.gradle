@@ -39,20 +39,20 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     // Cardview
-    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.cardview:cardview:$cardviewVersion"
     
     // Switch Button
-    implementation 'com.kyleduo.switchbutton:library:2.1.0'
+    implementation "com.kyleduo.switchbutton:library:$switchbuttonVersion"
 
     // Lottie
-    implementation 'com.airbnb.android:lottie:6.3.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 
     // skydoves ElasticViews
-    implementation 'com.github.skydoves:elasticviews:2.1.0'
+    implementation "com.github.skydoves:elasticviews:$skydoveselasticviewsVersion"
 
     // Updater
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'org.jsoup:jsoup:1.17.1'
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "org.jsoup:jsoup:$jsoupVersion"
 
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])

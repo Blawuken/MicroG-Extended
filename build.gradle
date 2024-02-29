@@ -32,6 +32,13 @@ buildscript {
     ext.volleyVersion = '1.2.1'
     ext.wireVersion = '4.8.0'
 
+    ext.cardviewVersion = '1.0.0'
+    ext.switchbuttonVersion = '2.1.0'
+    ext.lottieVersion = '6.3.0'
+    ext.skydoveselasticviewsVersion = '2.1.0'
+    ext.okhttpVersion = '4.10.0'
+    ext.jsoupVersion = '1.17.1'
+
     ext.androidBuildGradleVersion = '8.2.2'
 
     ext.androidBuildVersionTools = '34.0.0'
