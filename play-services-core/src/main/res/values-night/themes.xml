@@ -57,5 +57,14 @@
         <item name="android:colorEdgeEffect">?attr/colorPrimary</item>
     </style>
 
+    <style name="uwu_splash_theme" parent="@style/AppThemeBase">
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>
 

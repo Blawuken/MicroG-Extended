@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/splash_root"
-    android:background="?attr/colorPrimary"
+    android:background="?attr/colorPrimaryContainer"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,7 +31,7 @@
 
         <TextView
             android:textSize="24.0sp"
-            android:textColor="@android:color/white"
+            android:textColor="?android:textColorPrimary"
             android:id="@+id/splash_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
 
     <TextView
         android:textSize="14.0sp"
-        android:textColor="@android:color/white"
+        android:textColor="?android:textColorPrimary"
         android:gravity="center_horizontal"
         android:id="@+id/splash_owner"
         android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
 
     <TextView
         android:textSize="14.0sp"
-        android:textColor="@android:color/white"
+        android:textColor="?android:textColorPrimary"
         android:id="@+id/splash_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
