@@ -590,6 +590,12 @@
             </intent-filter>
         </service>
 
+        <service android:name="org.microg.gms.mobstore.MobStoreFileService" >
+            <intent-filter>
+                <action android:name="com.google.android.mobstore.service.START" />
+            </intent-filter>
+        </service>
+
         <service android:name="org.microg.gms.DummyService">
             <intent-filter>
                 <action android:name="com.google.android.contextmanager.service.ContextManagerService.START" />
