@@ -193,10 +193,12 @@
     </style>
 
     <style name="uwu_splash_theme" parent="@style/AppThemeBase">
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:navigationBarColor">?attr/colorPrimary</item>
-        <item name="android:windowLightNavigationBar">false</item>
     </style>
 
     <style name="Theme.Base.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
