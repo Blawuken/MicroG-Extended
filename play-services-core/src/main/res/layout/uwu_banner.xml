@@ -37,11 +37,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20.0dip">
-            <TextView
+            <com.neko.marquee.deviceinfo.Grettings
                 android:textSize="17.0sp"
                 android:textColor="?android:textColorSecondary"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
                 android:text="@string/uwu_title_dashboard_tools"
                 android:includeFontPadding="false" />
             <TextView
@@ -50,10 +56,10 @@
                 android:textColor="?android:textColorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5.0dip"
+                android:layout_marginTop="10.0dip"
                 android:text="@string/uwu_summary_dashboard_tools"
                 android:includeFontPadding="false"
-                android:layout_marginEnd="100.0dip" />
+                android:layout_marginEnd="110.0dip" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
