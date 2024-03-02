@@ -7,6 +7,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.neko.waveview.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/colorPrimaryContainer"
+        app:above_wave_color="?attr/colorPrimary"
+        app:blow_wave_color="?attr/colorPrimary"
+        app:progress="30"
+        app:wave_height="large"
+        app:wave_hz="fast"
+        app:wave_length="little" />
+
     <LinearLayout
         android:gravity="center"
         android:layout_gravity="center"

@@ -12,6 +12,8 @@ import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import com.google.android.gms.R;
 import org.microg.gms.ui.MainSettingsActivity;
@@ -40,6 +42,10 @@ public class SplashActivity extends BaseActivity {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+            | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
         setContentView(R.layout.uwu_activity_splash);
         new Handler().postDelayed(new Runnable() { // from class: com.neko.splash.app.SplashActivity.100000000
             @Override // java.lang.Runnable
