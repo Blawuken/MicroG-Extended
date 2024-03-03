@@ -1,3 +1,28 @@
+# [1.22.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.21.0...v1.22.0) (2024-03-03)
+
+
+### Bug Fixes
+
+* Fixed account access for google wifi ([fa762f0](https://github.com/Blawuken/MicroG-Extended/commit/fa762f083ca9ed1ec05da3b9f63c6acb1645710b))
+* Fixed the login exception issue when the scope is "oauth2:" ([5ebbe82](https://github.com/Blawuken/MicroG-Extended/commit/5ebbe823d35ef6e1cbca2ab0a15963ccc3b3316d))
+
+
+### Features
+
+* Add Grettings Text to banner ([9dff9e9](https://github.com/Blawuken/MicroG-Extended/commit/9dff9e9c042fbfd7b28efab3fbb1defbda4190a5))
+* Add some apps to improve support for huawei devices ([0a30904](https://github.com/Blawuken/MicroG-Extended/commit/0a3090461ad6eed18031848f55ac877586422939))
+* Auth: Allow stripping device name from requests ([2a0efea](https://github.com/Blawuken/MicroG-Extended/commit/2a0efea3632b8ad4f8f30effb1a48bf217453ed7))
+* Change more preference to settingsfragment ([69f0dbb](https://github.com/Blawuken/MicroG-Extended/commit/69f0dbb08ba517e601e2ead3cbaa1714248e0d2b))
+* Enable selected more preference device registration ([2da1820](https://github.com/Blawuken/MicroG-Extended/commit/2da18205da663d877d7e723ea0ff80ae8c9e4c34))
+* Improve dummy for MobStoreFile service (1/2) ([e877360](https://github.com/Blawuken/MicroG-Extended/commit/e87736040a409b4760ff3955ae5c5f9f02a63419))
+* Improve dummy for MobStoreFile service (2/2) ([dbdf6ad](https://github.com/Blawuken/MicroG-Extended/commit/dbdf6ad3070978b0b563344600081c61a02124fc))
+* Improved BG theme in DarkMode ([b4d5cdc](https://github.com/Blawuken/MicroG-Extended/commit/b4d5cdc077c2f5396c383eb0b92646ac79e25fb0))
+* Redesign SplashScreen ([760589c](https://github.com/Blawuken/MicroG-Extended/commit/760589c2eab58911536ff620f2f86bc2e78424fe))
+* Redesign splashscreen with full screen display and add waveview animation ([2e23609](https://github.com/Blawuken/MicroG-Extended/commit/2e2360931c6de0c337dd0b77f4ad0904e12937f4))
+* Relayout preference account ([42644ae](https://github.com/Blawuken/MicroG-Extended/commit/42644aed0b19e8ae40480265e822cf4049f3695b))
+* Removed true Black Theme ([7364b4c](https://github.com/Blawuken/MicroG-Extended/commit/7364b4ce608952bdfd181f4ce0c809dde476ba6c))
+* Update Background color to supporting Theme ([caee4c0](https://github.com/Blawuken/MicroG-Extended/commit/caee4c03d710a64795bd9e5103687950eea751ab))
+
 # [1.21.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.20.0...v1.21.0) (2024-02-23)
 
 
