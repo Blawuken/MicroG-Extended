@@ -13,7 +13,7 @@
         <item name="android:colorButtonNormal">@color/theme_foreground_dark</item>
         <item name="android:actionOverflowMenuStyle">@style/uwu_popup_window</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
-        <item name="android:navigationBarColor">?attr/colorSurfaceVariant</item>
+        <item name="android:navigationBarColor">@color/uwu_bg</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="alertDialogTheme">@style/Theme.Base.AlertDialog</item>
