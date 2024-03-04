@@ -1,4 +1,4 @@
-package com.neko.marquee.deviceinfo;
+package com.neko.marquee.text;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -33,15 +33,15 @@ public class Grettings extends TextView {
 
         StringBuilder sb = new StringBuilder();
         if (timeOfDay >= 0 && timeOfDay < 5) {
-            sb.append("🌕 Good Morning...");
+            sb.append("Good Morning...");
         } else if (timeOfDay >= 5 && timeOfDay < 9) {
-            sb.append("🌥️ Good Morning...");
+            sb.append("Good Morning...");
         } else if (timeOfDay >= 9 && timeOfDay < 15) {
-            sb.append("☀️ Good Afternoon...");
+            sb.append("Good Afternoon...");
         } else if (timeOfDay >= 15 && timeOfDay < 18) {
-            sb.append("🌅 Good Afternoon...");
+            sb.append("Good Afternoon...");
         } else if (timeOfDay >= 18 && timeOfDay < 24) {
-            sb.append("🌙 Good Night...");
+            sb.append("Good Night...");
         }
         setText(sb);
     }
