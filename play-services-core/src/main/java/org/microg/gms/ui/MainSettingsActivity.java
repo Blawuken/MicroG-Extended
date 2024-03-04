@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -31,6 +32,7 @@ public class MainSettingsActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        isStoragePermissionGranted();
         super.onCreate(savedInstanceState);
 
         Intent intent = getIntent();
@@ -53,6 +55,13 @@ public class MainSettingsActivity extends BaseActivity {
         NavigationUI.setupWithNavController(toolbarLayout, toolbar, getNavController(), appBarConfiguration);
 
         privacy.show(this);
+    }
+
+    public boolean isStoragePermissionGranted() {
+        if (Build.VERSION.SDK_INT >= 23 && checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") != 0) {
+            ActivityCompat.requestPermissions(this, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, 1);
+        }
+        return false;
     }
 
     @Override
