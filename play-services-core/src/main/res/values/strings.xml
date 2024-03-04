@@ -229,4 +229,10 @@
     <string name="uwu_speed_test_title">Speed Test</string>
     <string name="uwu_speed_test_summary">Test your network speed here.</string>
     <string name="title_choose_theme">Choose Theme</string>
+
+    <string name="homepage_widget_battery_percent">percent</string>
+    <string name="homepage_widget_battery_charge">Charging</string>
+    <string name="homepage_widget_battery_discharge">Discharging</string>
+    <string name="homepage_widget_battery_title">Battery</string>
+    <string name="homepage_widget_storage_title">Storage</string>
 </resources>
