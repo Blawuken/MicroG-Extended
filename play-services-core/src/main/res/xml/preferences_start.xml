@@ -30,6 +30,10 @@
         android:summary="@string/extended_check_desc"
         android:selectable="false" />
 
+    <Preference
+        android:layout="@layout/homepage_widgets"
+        android:selectable="false" />
+
     <PreferenceCategory
         android:title="@string/prefcat_google_services">
 
