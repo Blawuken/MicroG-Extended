@@ -32,15 +32,13 @@ public class Grettings extends TextView {
         int timeOfDay = calendar.get(Calendar.HOUR_OF_DAY);
 
         StringBuilder sb = new StringBuilder();
-        if (timeOfDay >= 0 && timeOfDay < 5) {
+        if (timeOfDay >= 0 && timeOfDay < 9) {
             sb.append("Good Morning...");
-        } else if (timeOfDay >= 5 && timeOfDay < 9) {
-            sb.append("Good Morning...");
-        } else if (timeOfDay >= 9 && timeOfDay < 15) {
+        } else if (timeOfDay >= 9 && timeOfDay < 16) {
             sb.append("Good Afternoon...");
-        } else if (timeOfDay >= 15 && timeOfDay < 18) {
-            sb.append("Good Afternoon...");
-        } else if (timeOfDay >= 18 && timeOfDay < 24) {
+        } else if (timeOfDay >= 16 && timeOfDay < 21) {
+            sb.append("Good Evening...");
+        } else if (timeOfDay >= 21 && timeOfDay < 24) {
             sb.append("Good Night...");
         }
         setText(sb);
