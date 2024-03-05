@@ -5,11 +5,11 @@ import android.graphics.Canvas
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.ViewPropertyAnimator
+import androidx.cardview.widget.CardView
 import com.google.android.gms.R
-import com.google.android.material.card.MaterialCardView
 
 
-class ElasticView(context: Context, attrs: AttributeSet? = null) : MaterialCardView(context, attrs) {
+class ElasticView(context: Context, attrs: AttributeSet? = null) : CardView(context, attrs) {
 
     private val ANIMATION_DURATION = 200L
     private val ANIMATION_DURATION_SHORT = 100L

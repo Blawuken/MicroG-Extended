@@ -25,6 +25,7 @@
             android:layout_marginTop="16.0dip"
             android:layout_marginBottom="16.0dip"
             android:layout_marginStart="2.0dip"
+            android:layerType="software"
             app:cardBackgroundColor="@color/uwu_bg"
             app:cardCornerRadius="18.0dip"
             app:cardElevation="0.0dip">
