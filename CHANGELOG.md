@@ -1,3 +1,20 @@
+# [1.23.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.22.0...v1.23.0) (2024-03-05)
+
+
+### Bug Fixes
+
+* Fixed layer corner of elasticview ([dbb05aa](https://github.com/Blawuken/MicroG-Extended/commit/dbb05aa95852b88d8ca54ae97653cfbb03a70196))
+* Fixed scrolling lag in preferences that apply lottie ([374bef9](https://github.com/Blawuken/MicroG-Extended/commit/374bef928f02937017fcba9328132a1ab1bc266c))
+
+
+### Features
+
+* Introduct banner Battery and Storage progressbar ([38cbe2b](https://github.com/Blawuken/MicroG-Extended/commit/38cbe2be14ba5a4e2b55ab75b20e375671d2c37c))
+* Redesign banner ([c41ffe5](https://github.com/Blawuken/MicroG-Extended/commit/c41ffe556349bbb192550c3a76b87703cc97f68b))
+* Redesign BG dialog menu Theme ([2a283ac](https://github.com/Blawuken/MicroG-Extended/commit/2a283ac2fe530a9f7e8eaa078450011105f4263a))
+* Redesign layout about phone ([327b4a1](https://github.com/Blawuken/MicroG-Extended/commit/327b4a157f2bdeeaaf348dfd45404406ffe98fbe))
+* Redesign preference credits ([7316c3f](https://github.com/Blawuken/MicroG-Extended/commit/7316c3ff9fb774b6ce43967942205a9523be90be))
+
 # [1.22.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.21.0...v1.22.0) (2024-03-03)
 
 
