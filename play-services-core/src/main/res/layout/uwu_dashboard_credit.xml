@@ -64,6 +64,7 @@
             android:layout_marginRight="12.0dip"
             android:layout_marginBottom="12.0dip"
             android:layout_marginHorizontal="12.0dip"
+            android:layerType="software"
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="19.0dip"
             app:cardElevation="0.0dip">
