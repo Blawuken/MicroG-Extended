@@ -108,7 +108,7 @@
         android:title="@string/uwu_material_design_cat" />
     <Preference
         android:icon="@drawable/uwu_telegram"
-        android:layout="@layout/uwu_sin"
+        android:layout="@layout/uwu_top"
         android:title="xdroidOSS° newsletter"
         android:key="PROFILE"
         android:summary="mnmlist"
@@ -116,6 +116,28 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/xdroidOSS" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_mid"
+        android:title="RisingTechOSS"
+        android:key="PROFILE"
+        android:summary="risingOS News"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/RisingOS_news" />
+    </Preference>
+    <Preference
+        android:icon="@drawable/uwu_telegram"
+        android:layout="@layout/uwu_bot"
+        android:title="AfterLife Project"
+        android:key="PROFILE"
+        android:summary="update official channel"
+        android:dependency="AKTIF_PROFILE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Afterlife_update" />
     </Preference>
     <PreferenceCategory
         android:title="@string/uwu_microg" />
