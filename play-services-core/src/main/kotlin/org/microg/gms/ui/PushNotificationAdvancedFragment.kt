@@ -6,12 +6,15 @@ package org.microg.gms.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.TwoStatePreference
 import com.google.android.gms.R
+import com.google.android.material.color.MaterialColors
+import com.google.android.material.transition.platform.MaterialSharedAxis
 import org.microg.gms.gcm.*
 
 class PushNotificationAdvancedFragment : PreferenceFragmentCompat() {
@@ -23,6 +26,17 @@ class PushNotificationAdvancedFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.preferences_gcm_advanced)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enterTransition = MaterialSharedAxis(MaterialSharedAxis.X, true)
+        reenterTransition = MaterialSharedAxis(MaterialSharedAxis.X, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        view.setBackgroundColor(MaterialColors.getColor(view, android.R.attr.colorBackground))
     }
 
     @SuppressLint("RestrictedApi")

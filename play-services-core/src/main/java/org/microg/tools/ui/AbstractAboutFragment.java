@@ -33,6 +33,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.google.android.gms.R;
+import com.google.android.material.color.MaterialColors;
+import com.google.android.material.transition.platform.MaterialSharedAxis;
 
 import com.neko.appupdater.AppUpdater;
 import com.neko.appupdater.enums.Display;
@@ -82,6 +84,21 @@ public abstract class AbstractAboutFragment extends Fragment {
         } catch (Exception e) {
             return "";
         }
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setEnterTransition(new MaterialSharedAxis(MaterialSharedAxis.X, true));
+        setExitTransition(new MaterialSharedAxis(MaterialSharedAxis.X, true));
+        setReenterTransition(new MaterialSharedAxis(MaterialSharedAxis.X, false));
+        setReturnTransition(new MaterialSharedAxis(MaterialSharedAxis.X, false));
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        view.setBackgroundColor(MaterialColors.getColor(view, android.R.attr.colorBackground));
     }
 
     public static String getSelfVersion(Context context) {

@@ -16,14 +16,33 @@
 
 package org.microg.tools.ui;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.fragment.app.DialogFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+
+import com.google.android.material.color.MaterialColors;
+import com.google.android.material.transition.platform.MaterialSharedAxis;
 
 public abstract class AbstractSettingsFragment extends PreferenceFragmentCompat {
     private static final String TAG = AbstractSettingsFragment.class.getSimpleName();
 
     private static final String DIALOG_FRAGMENT_TAG = "androidx.preference.PreferenceFragment.DIALOG";
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setEnterTransition(new MaterialSharedAxis(MaterialSharedAxis.X, true));
+        setReenterTransition(new MaterialSharedAxis(MaterialSharedAxis.X, false));
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        view.setBackgroundColor(MaterialColors.getColor(view, android.R.attr.colorBackground));
+    }
 
     @Override
     public void onDisplayPreferenceDialog(Preference preference) {

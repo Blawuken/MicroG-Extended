@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.text.format.DateUtils
 import android.util.Log
+import android.view.View
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
@@ -19,6 +20,8 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.gms.R
+import com.google.android.material.color.MaterialColors
+import com.google.android.material.transition.platform.MaterialSharedAxis
 import org.microg.gms.checkin.CheckinPreferences
 import org.microg.gms.checkin.getCheckinServiceInfo
 import org.microg.gms.profile.ProfileManager
@@ -44,6 +47,8 @@ class DeviceRegistrationFragment : PreferenceFragmentCompat() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enterTransition = MaterialSharedAxis(MaterialSharedAxis.X, true)
+        reenterTransition = MaterialSharedAxis(MaterialSharedAxis.X, false)
         profileFileImport = registerForActivityResult(ActivityResultContracts.GetContent(), this::onFileSelected)
     }
 
@@ -68,6 +73,11 @@ class DeviceRegistrationFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.preferences_device_registration)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        view.setBackgroundColor(MaterialColors.getColor(view, android.R.attr.colorBackground))
     }
 
     @SuppressLint("RestrictedApi")

@@ -7,6 +7,7 @@ package org.microg.gms.ui
 
 import android.os.Bundle
 import android.text.format.DateUtils
+import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.os.bundleOf
 import androidx.lifecycle.lifecycleScope
@@ -15,6 +16,8 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.gms.R
+import com.google.android.material.color.MaterialColors
+import com.google.android.material.transition.platform.MaterialSharedAxis
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.microg.gms.gcm.GcmDatabase
@@ -29,7 +32,14 @@ class PushNotificationAllAppsFragment : PreferenceFragmentCompat() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enterTransition = MaterialSharedAxis(MaterialSharedAxis.X, true)
+        reenterTransition = MaterialSharedAxis(MaterialSharedAxis.X, false)
         database = GcmDatabase(context)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        view.setBackgroundColor(MaterialColors.getColor(view, android.R.attr.colorBackground))
     }
 
     override fun onResume() {
