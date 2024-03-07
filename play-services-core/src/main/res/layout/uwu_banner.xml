@@ -36,7 +36,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/uwu_addon_logo"
                 android:adjustViewBounds="true"
-                android:tint="?attr/colorPrimary"/>
+                app:tint="?attr/colorPrimary"/>
 
             <ImageView
                 android:layout_gravity="end|bottom|center"
@@ -97,21 +97,21 @@
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?attr/colorPrimary"/>
+                        app:tint="?attr/colorPrimary"/>
 
                     <ImageView
                         android:padding="2.0dip"
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?attr/colorPrimaryContainer"/>
+                        app:tint="?attr/colorPrimaryContainer"/>
 
                     <ImageView
                         android:padding="2.0dip"
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?android:textColorSecondary"/>
+                        app:tint="?android:textColorSecondary"/>
 
                 </LinearLayout>
 
@@ -137,21 +137,21 @@
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?attr/colorPrimary"/>
+                        app:tint="?attr/colorPrimary"/>
 
                     <ImageView
                         android:padding="2.0dip"
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?attr/colorPrimaryContainer"/>
+                        app:tint="?attr/colorPrimaryContainer"/>
 
                     <ImageView
                         android:padding="2.0dip"
                         android:layout_width="20.0dip"
                         android:layout_height="20.0dip"
                         android:src="@drawable/ic_rounded"
-                        android:tint="?android:textColorSecondary"/>
+                        app:tint="?android:textColorSecondary"/>
 
                 </LinearLayout>
 

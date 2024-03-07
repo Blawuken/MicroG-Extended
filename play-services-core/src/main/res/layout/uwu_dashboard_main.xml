@@ -2,7 +2,7 @@
 <RelativeLayout
     android:paddingTop="0.0dip"
     android:paddingBottom="16.0dip"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -11,7 +11,7 @@
         android:gravity="bottom"
         android:layout_gravity="bottom"
         android:background="@drawable/uwu_card_view_rounded"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="300.0dip"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16.0dip"
@@ -22,8 +22,8 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="16.0dip"
         android:layout_marginEnd="16.0dip">
 
@@ -42,7 +42,7 @@
         <androidx.cardview.widget.CardView
             android:gravity="bottom|center"
             android:layout_gravity="bottom|center"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-5.0dip"
             android:layout_marginBottom="16.0dip"
@@ -54,13 +54,13 @@
 
             <FrameLayout
                 android:background="@drawable/uwu_bg_menu"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:gravity="center_vertical"
                     android:clipToPadding="false"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
@@ -101,7 +101,7 @@
 
                         <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
                             <TextView
@@ -146,7 +146,7 @@
                                 android:layout_height="25.0dip"
                                 android:layout_marginTop="1.0dip"
                                 android:src="@drawable/uwu_arrow"
-                                android:tint="?android:textColorPrimary"
+                                app:tint="?android:textColorPrimary"
                                 android:layout_marginStart="2.0dip" />
 
                         </LinearLayout>

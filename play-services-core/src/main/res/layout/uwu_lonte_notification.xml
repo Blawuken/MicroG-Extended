@@ -1,20 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:background="@android:color/transparent"
-    android:paddingTop="0.0dip"
-    android:paddingBottom="0.0dip"
-    android:layout_width="fill_parent"
-    android:layout_height="200.0dip"
-    android:minHeight="?android:listPreferredItemHeightSmall"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_gravity="center"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/notification"
-        app:lottie_renderMode="software"
-        app:lottie_repeatMode="restart" />
-</RelativeLayout>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:background="@drawable/uwu_bg_sin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip">
+
+        <FrameLayout
+            android:layout_gravity="center|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginHorizontal="16.0dip">
+
+            <LinearLayout
+                android:layout_gravity="start|center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?attr/colorPrimary" />
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?attr/colorPrimaryContainer" />
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/uwu_bg_corner"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.neko.marquee.deviceinfo.Device
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="2.0dip"
+                    android:textSize="12.0sp"
+                    android:textColor="?android:textColorPrimary"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="end|center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?android:textColorSecondary" />
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?attr/colorPrimaryContainer" />
+
+                <ImageView
+                    android:padding="2.0dip"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?attr/colorPrimary" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="190.0dip"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginTop="30.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:layerType="software"
+            android:layout_marginHorizontal="12.0dip"
+            app:cardBackgroundColor="@color/uwu_bg_color"
+            app:cardCornerRadius="19.0dip"
+            app:cardElevation="0.0dip">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/cardview_single"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="-30.0dip"
+                    android:backgroundTint="@color/uwu_bg_card"
+                    android:layout_marginHorizontal="75.0dip" />
+
+            </FrameLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10.0dip"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/notification"
+                app:lottie_renderMode="software"
+                app:lottie_repeatMode="restart" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</LinearLayout>

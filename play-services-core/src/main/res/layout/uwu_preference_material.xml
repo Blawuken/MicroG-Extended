@@ -2,7 +2,7 @@
 <LinearLayout
     android:gravity="center_vertical"
     android:clipToPadding="false"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
     android:minHeight="?android:listPreferredItemHeightSmall"
@@ -12,7 +12,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:minWidth="65.0dip">
         <LinearLayout
             android:background="@drawable/uwu_google_shape"
@@ -26,7 +26,7 @@
                 android:layout_width="25.0dip"
                 android:layout_height="25.0dip"
                 android:layout_marginTop="10.0dip"
-                android:tint="?colorIcon"
+                app:tint="?attr/colorIcon"
                 android:layout_marginStart="10.0dip"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:minWidth="65.0dip">
         <LinearLayout
             android:background="@drawable/uwu_bg_circle_arrow"
@@ -75,7 +75,7 @@
                 android:layout_height="25.0dip"
                 android:layout_marginTop="1.0dip"
                 android:src="@drawable/uwu_arrow"
-                android:tint="?android:textColorPrimary"
+                app:tint="?android:textColorPrimary"
                 android:layout_marginStart="2.0dip" />
         </LinearLayout>
     </LinearLayout>

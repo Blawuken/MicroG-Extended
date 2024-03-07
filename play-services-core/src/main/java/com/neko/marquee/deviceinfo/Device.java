@@ -3,9 +3,9 @@ package com.neko.marquee.deviceinfo;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
-public class Device extends TextView {
+public class Device extends AppCompatTextView {
     private String memekVersion;
 
     private void JupokInfoSlur() {

@@ -43,7 +43,7 @@ buildscript {
 
     ext.androidBuildVersionTools = '34.0.0'
 
-    ext.androidMinSdk = 23
+    ext.androidMinSdk = 27
     ext.androidTargetSdk = 30
     ext.androidCompileSdk = 34
 
