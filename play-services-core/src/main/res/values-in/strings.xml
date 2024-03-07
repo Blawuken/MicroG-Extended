@@ -129,7 +129,7 @@
     <string name="gcm_network_state_disconnected">Terputus</string>
     <string name="gcm_network_state_connected">Terhubung sejak <xliff:g example="2 jam yang lalu">%1$s</xliff:g></string>
     <string name="gcm_enable_switch">Menerima pemberitahuan push</string>
-    <string name="gcm_allow_app_popup">Izinkan <xliff:g example="F-Droid">%1$ s</xliff:g> untuk mendaftar pemberitahuan push?</string>
+    <string name="gcm_allow_app_popup">Izinkan <xliff:g example="F-Droid">%1$s</xliff:g> untuk mendaftar pemberitahuan push?</string>
 
     <string name="pref_push_app_allow_register_title">Izinkan pendaftaran</string>
     <string name="pref_push_app_allow_register_summary">Izinkan aplikasi mendaftar untuk pemberitahuan push</string>

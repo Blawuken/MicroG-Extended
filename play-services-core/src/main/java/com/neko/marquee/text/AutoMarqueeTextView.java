@@ -2,9 +2,9 @@ package com.neko.marquee.text;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
-public class AutoMarqueeTextView extends TextView {
+public class AutoMarqueeTextView extends AppCompatTextView {
     @Override // android.view.View
     public boolean isFocused() {
         return true;

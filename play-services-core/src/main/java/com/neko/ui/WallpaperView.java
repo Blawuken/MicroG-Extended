@@ -3,10 +3,10 @@ package com.neko.ui;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import androidx.appcompat.widget.AppCompatImageView;
 
 
-public class WallpaperView extends ImageView {
+public class WallpaperView extends AppCompatImageView {
 
     Context contextM;
 

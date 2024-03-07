@@ -3,9 +3,9 @@ package com.neko.marquee.deviceinfo;
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
-public class Serial extends TextView {
+public class Serial extends AppCompatTextView {
     private String memekVersion;
 
     @Override // android.view.View

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:background="@drawable/uwu_banner_bg_bot"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="0.0dip"
         android:layout_marginBottom="5.0dip"
@@ -33,7 +33,7 @@
             <LinearLayout
                 android:gravity="center"
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="16.0dip"
                 android:paddingEnd="0.0dip">
@@ -41,14 +41,14 @@
                     android:textSize="17.0sp"
                     android:textColor="@android:color/white"
                     android:ellipsize="end"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Version" />
                 <com.neko.marquee.text.AutoMarqueeVersiTextView
                     android:textSize="14.0sp"
                     android:textColor="@android:color/white"
                     android:ellipsize="marquee"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
                     android:marqueeRepeatLimit="marquee_forever" />
@@ -58,7 +58,7 @@
             android:layout_gravity="center"
             android:background="?android:listDivider"
             android:layout_width="2.0px"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="10.0dip"
             android:layout_marginBottom="10.0dip" />
         <LinearLayout
@@ -82,7 +82,7 @@
             <LinearLayout
                 android:gravity="center"
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="16.0dip"
                 android:paddingEnd="0.0dip">
@@ -90,14 +90,14 @@
                     android:textSize="17.0sp"
                     android:textColor="@android:color/white"
                     android:ellipsize="end"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Hardware" />
                 <com.neko.marquee.deviceinfo.Hardware
                     android:textSize="14.0sp"
                     android:textColor="@android:color/white"
                     android:ellipsize="marquee"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
                     android:marqueeRepeatLimit="marquee_forever" />

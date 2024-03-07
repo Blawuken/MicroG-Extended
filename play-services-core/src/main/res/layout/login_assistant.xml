@@ -18,23 +18,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/auth_root"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <org.microg.gms.auth.login.FullScreenVideoView
         android:id="@+id/videoView"
         android:background="@android:color/transparent"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/title_container"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="64.0dip">
 
             <com.airbnb.lottie.LottieAnimationView
@@ -56,7 +56,7 @@
                 android:textSize="36.0sp"
                 android:textColor="@android:color/white"
                 android:id="@+id/title"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="?android:listPreferredItemPaddingStart"
                 android:layout_marginRight="?android:listPreferredItemPaddingStart"
@@ -66,7 +66,7 @@
         </RelativeLayout>
         <FrameLayout
             android:id="@+id/auth_content"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="0.0dip"
             android:layout_weight="1.0">
 
@@ -74,8 +74,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                 android:textColor="@android:color/white"
                 android:id="@+id/description_text"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="?android:listPreferredItemPaddingStart"
                 android:layout_marginTop="18.0dip"
                 android:layout_marginRight="?android:listPreferredItemPaddingStart" />
@@ -83,7 +83,7 @@
         </FrameLayout>
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10.0dip">
 
@@ -96,7 +96,7 @@
                 android:background="@drawable/button_background_positive"
                 android:paddingLeft="24.0dip"
                 android:paddingRight="24.0dip"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="68.0dip"
                 app:button_cornerRadius="28.0dip"
                 app:button_duration="250"
@@ -112,7 +112,7 @@
                 android:background="@drawable/button_background_spoof"
                 android:paddingLeft="24.0dip"
                 android:paddingRight="24.0dip"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="68.0dip"
                 android:layout_marginBottom="18.0dip"
                 app:button_cornerRadius="28.0dip"

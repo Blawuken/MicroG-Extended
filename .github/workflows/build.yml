@@ -60,7 +60,7 @@ jobs:
           fi
 
       - name: Build project
-        run: ./gradlew assemble
+        run: ./gradlew --no-daemon build
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug

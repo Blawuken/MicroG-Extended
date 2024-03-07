@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:paddingTop="5.0dip"
     android:paddingBottom="16.0dip"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingStart="16.0dip"
     android:paddingEnd="16.0dip"
@@ -11,14 +11,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="0.0dip"
         android:layout_marginBottom="0.0dip">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1.0">
             <com.neko.oneclick.CardView
                 android:targetPackage="com.mgoogle.android.gms"
@@ -32,12 +32,12 @@
                 app:cardElevation="0.0dip">
                 <FrameLayout
                     android:background="@drawable/uwu_bg_menu"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <LinearLayout
                         android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                         <LinearLayout
                             android:background="@drawable/uwu_google_shape"
                             android:layout_width="45.0dip"
@@ -59,13 +59,13 @@
                             android:paddingTop="10.0dip"
                             android:paddingBottom="10.0dip"
                             android:layout_width="wrap_content"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1.0"
                             android:layout_marginStart="20.0dip"
                             android:layout_marginEnd="20.0dip">
                             <LinearLayout
                                 android:orientation="vertical"
-                                android:layout_width="fill_parent"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                                 <TextView
                                     android:textSize="17.0sp"
@@ -89,7 +89,7 @@
                         <LinearLayout
                             android:gravity="end"
                             android:orientation="horizontal"
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0.0dip"
                             android:layout_marginBottom="16.0dip"
@@ -105,8 +105,8 @@
                                     android:layout_height="25.0dip"
                                     android:layout_marginTop="1.0dip"
                                     android:src="@drawable/uwu_arrow"
-                                    android:tint="?android:textColorPrimary"
-                                    android:layout_marginStart="2.0dip" />
+                                    android:layout_marginStart="2.0dip"
+                                    app:tint="?android:textColorPrimary" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -116,7 +116,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1.0">
             <com.neko.oneclick.CardView
                 android:targetPackage="com.mgoogle.android.gms"
@@ -131,12 +131,12 @@
                 app:cardElevation="0.0dip">
                 <FrameLayout
                     android:background="@drawable/uwu_bg_menu"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <LinearLayout
                         android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                         <LinearLayout
                             android:background="@drawable/uwu_google_shape"
                             android:layout_width="45.0dip"
@@ -158,13 +158,13 @@
                             android:paddingTop="10.0dip"
                             android:paddingBottom="10.0dip"
                             android:layout_width="wrap_content"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1.0"
                             android:layout_marginStart="20.0dip"
                             android:layout_marginEnd="20.0dip">
                             <LinearLayout
                                 android:orientation="vertical"
-                                android:layout_width="fill_parent"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                                 <TextView
                                     android:textSize="17.0sp"
@@ -188,7 +188,7 @@
                         <LinearLayout
                             android:gravity="end"
                             android:orientation="horizontal"
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0.0dip"
                             android:layout_marginBottom="16.0dip"
@@ -204,8 +204,8 @@
                                     android:layout_height="25.0dip"
                                     android:layout_marginTop="1.0dip"
                                     android:src="@drawable/uwu_arrow"
-                                    android:tint="?android:textColorPrimary"
-                                    android:layout_marginStart="2.0dip" />
+                                    android:layout_marginStart="2.0dip"
+                                    app:tint="?android:textColorPrimary" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -224,12 +224,12 @@
                 app:cardElevation="0.0dip">
                 <FrameLayout
                     android:background="@drawable/uwu_bg_menu"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <LinearLayout
                         android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                         <LinearLayout
                             android:background="@drawable/uwu_google_shape"
                             android:layout_width="45.0dip"
@@ -251,13 +251,13 @@
                             android:paddingTop="10.0dip"
                             android:paddingBottom="10.0dip"
                             android:layout_width="wrap_content"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1.0"
                             android:layout_marginStart="20.0dip"
                             android:layout_marginEnd="20.0dip">
                             <LinearLayout
                                 android:orientation="vertical"
-                                android:layout_width="fill_parent"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                                 <TextView
                                     android:textSize="17.0sp"
@@ -281,7 +281,7 @@
                         <LinearLayout
                             android:gravity="end"
                             android:orientation="horizontal"
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0.0dip"
                             android:layout_marginBottom="16.0dip"
@@ -297,8 +297,8 @@
                                     android:layout_height="25.0dip"
                                     android:layout_marginTop="1.0dip"
                                     android:src="@drawable/uwu_arrow"
-                                    android:tint="?android:textColorPrimary"
-                                    android:layout_marginStart="2.0dip" />
+                                    android:layout_marginStart="2.0dip"
+                                    app:tint="?android:textColorPrimary" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>

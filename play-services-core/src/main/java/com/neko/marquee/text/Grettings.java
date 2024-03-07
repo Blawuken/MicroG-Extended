@@ -2,10 +2,10 @@ package com.neko.marquee.text;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 import java.util.Calendar;
 
-public class Grettings extends TextView {
+public class Grettings extends AppCompatTextView {
 
     @Override // android.view.View
     public boolean isFocused() {

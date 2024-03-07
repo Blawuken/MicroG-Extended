@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginTop="0.0dip"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <FrameLayout
         android:background="@drawable/uwu_background_lengkung"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <androidx.cardview.widget.CardView
             android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="16.0dip"
             android:layout_marginBottom="16.0dip"
             android:layout_marginStart="16.0dip"
@@ -21,10 +23,14 @@
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="20.0dip"
             app:cardElevation="0.0dip">
+
             <WebView
                 android:id="@+id/uwu_webview"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
         </androidx.cardview.widget.CardView>
+
     </FrameLayout>
+
 </FrameLayout>

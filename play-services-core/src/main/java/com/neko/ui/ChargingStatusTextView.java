@@ -20,11 +20,11 @@ import android.content.Context;
 import android.os.BatteryManager;
 import android.os.Handler;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.android.gms.R;
 
-public class ChargingStatusTextView extends TextView {
+public class ChargingStatusTextView extends AppCompatTextView {
 
     private String chargingText;
     private String dischargingText;

@@ -2,10 +2,10 @@ package com.neko.marquee.text;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
 import com.google.android.gms.BuildConfig;
 
-public class AutoMarqueeVersiTextView extends TextView {
+public class AutoMarqueeVersiTextView extends AppCompatTextView {
     private String memekVersion;
 
     private void JupokInfoSlur() {
