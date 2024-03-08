@@ -6,6 +6,10 @@ on:
     branches:
       - test
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,9 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Make sure the release step uses its own credentials:
-          # https://github.com/cycjimmy/semantic-release-action#private-packages
-          persist-credentials: false
           fetch-depth: 0
 
       - name: JDK Setup
@@ -31,24 +32,29 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
-      - name: Cache Node modules
-        uses: actions/cache@v3
-        with:
-          path: |
-            node_modules
-          key: npm-${{ hashFiles('package-lock.json') }}
-
-      - name: Cache Gradle
-        uses: burrunan/gradle-cache-action@v1
-
-      - name: Setup Java
-        run: echo "JAVA_HOME=$JAVA_HOME_17_X64" >> $GITHUB_ENV
-
       - name: "Gradle Wrapper validation"
         uses: gradle/wrapper-validation-action@v2
 
       - name: "Setup Gradle"
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: 8.6
+          build-root-directory: systems/commons
+          cache-disabled: false
+          cache-read-only: false
+          cache-write-only: false
+          cache-overwrite-existing: false
+          gradle-home-cache-includes: caches notifications
+
+          gradle-home-cache-cleanup: false
+          add-job-summary: always
+          add-job-summary-as-pr-comment: never
+          dependency-graph: disabled
+          dependency-graph-continue-on-failure: true
+          build-scan-publish: false
+          generate-job-summary: true
+          gradle-home-cache-strict-match: false
+          workflow-job-context: null
 
       - name: "Setup matchers"
         run: |
@@ -84,13 +90,13 @@ jobs:
           apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/debug/*.apk
 
       - name: Upload Signed app to Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: 'MicroG Extended Debug'
           path: play-services-core/build/outputs/apk/default/debug/*.apk
 
       - name: Upload Signed app to Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: 'MicroG Extended Release'
           path: play-services-core/build/outputs/apk/default/release/*.apk
