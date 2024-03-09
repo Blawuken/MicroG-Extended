@@ -1,13 +1,13 @@
 package com.neko.other;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.net.Uri;
+import org.microg.tools.ui.BaseActivity;
 
-public class NetworkSwitcher extends AppCompatActivity
+public class NetworkSwitcher extends BaseActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)

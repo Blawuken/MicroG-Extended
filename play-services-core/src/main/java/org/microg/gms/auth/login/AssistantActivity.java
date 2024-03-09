@@ -30,11 +30,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.R;
+import org.microg.tools.ui.BaseActivity;
 
-public abstract class AssistantActivity extends AppCompatActivity {
+public abstract class AssistantActivity extends BaseActivity {
     private static final int TITLE_MIN_HEIGHT = 64;
     private static final double TITLE_WIDTH_FACTOR = (8.0 / 18.0);
     private FullScreenVideoView mVideoView;

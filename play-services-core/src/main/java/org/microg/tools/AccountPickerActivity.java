@@ -19,12 +19,12 @@ package org.microg.tools;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import org.microg.tools.ui.BaseActivity;
 
 /**
  * This is just an activity that forwards to the systems native account picker
  */
-public class AccountPickerActivity extends AppCompatActivity {
+public class AccountPickerActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

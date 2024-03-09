@@ -16,7 +16,6 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.getSystemService
 import androidx.lifecycle.lifecycleScope
 import com.google.android.gms.R
@@ -39,6 +38,7 @@ import org.microg.gms.auth.login.LoginActivity
 import org.microg.gms.people.DatabaseHelper
 import org.microg.gms.people.PeopleManager
 import org.microg.gms.utils.getApplicationLabel
+import org.microg.tools.ui.BaseActivity
 
 private const val TAG = "AuthSignInActivity"
 private const val REQUEST_CODE_ADD_ACCOUNT = 100
@@ -49,7 +49,7 @@ private val ACCEPTABLE_SCOPES = setOf(Scopes.OPENID, Scopes.EMAIL, Scopes.PROFIL
  * TODO: Get privacy policy / terms of service links via
  *       https://clientauthconfig.googleapis.com/google.identity.clientauthconfig.v1.ClientAuthConfig/GetDisplayBrand
  */
-class AuthSignInActivity : AppCompatActivity() {
+class AuthSignInActivity : BaseActivity() {
     private val config: SignInConfiguration?
         get() = runCatching {
             intent?.extras?.also { it.classLoader = SignInConfiguration::class.java.classLoader }?.getParcelable<SignInConfiguration>("config")

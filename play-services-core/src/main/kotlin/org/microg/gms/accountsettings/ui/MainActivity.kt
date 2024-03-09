@@ -16,10 +16,10 @@ import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.RelativeLayout.LayoutParams.MATCH_PARENT
 import android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.updateLayoutParams
 import org.microg.gms.auth.AuthConstants
 import org.microg.gms.common.Constants
+import org.microg.tools.ui.BaseActivity
 
 private const val TAG = "AccountSettings"
 
@@ -118,7 +118,7 @@ private val ACTION_TO_SCREEN_ID = hashMapOf(
     ACTION_PRIVACY_SETTINGS to 10004,
 )
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var webView: WebView
 
     private fun getSelectedAccountName(): String? = null
