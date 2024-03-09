@@ -12,10 +12,10 @@ import android.content.Intent.*
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import org.microg.gms.auth.AuthConstants.DEFAULT_ACCOUNT_TYPE
 import org.microg.gms.common.PackageUtils
 import org.microg.tools.AccountPickerActivity
+import org.microg.tools.ui.BaseActivity
 
 private const val TAG = "AccountSettingsLoader"
 
@@ -31,7 +31,7 @@ private const val EXTRA_ALLOWABLE_ACCOUNT_TYPES = "allowableAccountTypes"
 
 private const val REQUEST_ACCOUNT_PICKER = 1
 
-class LoaderActivity : AppCompatActivity() {
+class LoaderActivity : BaseActivity() {
     private var canAskForAccount = false
 
     private fun launchFallback() {

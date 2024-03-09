@@ -13,7 +13,6 @@ import android.view.View
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings
 import android.webkit.WebView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebResourceErrorCompat
 import androidx.webkit.WebViewClientCompat
@@ -23,12 +22,13 @@ import kotlinx.coroutines.withContext
 import org.microg.gms.auth.AuthManager
 import org.microg.gms.common.Constants.GMS_PACKAGE_NAME
 import org.microg.gms.common.PackageUtils
+import org.microg.tools.ui.BaseActivity
 import java.net.URLEncoder
 import java.util.*
 
 private const val TAG = "AccountSettingsWebView"
 
-class WebViewHelper(private val activity: AppCompatActivity, private val webView: WebView, private val allowedPrefixes: Set<String> = emptySet<String>()) {
+class WebViewHelper(private val activity: BaseActivity, private val webView: WebView, private val allowedPrefixes: Set<String> = emptySet<String>()) {
     fun openWebView(url: String?, accountName: String?) {
         prepareWebViewSettings(webView.settings)
         webView.webViewClient = object : WebViewClientCompat() {
