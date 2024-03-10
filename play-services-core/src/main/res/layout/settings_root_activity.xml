@@ -58,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="25.0dip"
+            android:layout_marginBottom="0.0dip"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_settings" />
 
