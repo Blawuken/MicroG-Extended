@@ -6,8 +6,13 @@
 package org.microg.gms.ui
 
 import android.content.ComponentName
+import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
+import android.os.PowerManager
+import android.provider.Settings
 import android.util.Log
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
@@ -36,7 +41,7 @@ class SettingsFragment : ResourceSettingsFragment() {
         const val PREF_SELFCHECK = "pref_selfcheck"
         const val PREF_CAST_HIDE_LAUNCHER_ICON = "pref_hide_launcher_icon"
         const val PREF_DEVOPTIONS = "pref_devoption"
-        
+        const val PREF_IGNORE_BATTERY_OPTIMIZATION = "pref_ignore_battery_optimization"
     }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
@@ -80,6 +85,37 @@ class SettingsFragment : ResourceSettingsFragment() {
         }
         for (entry in getAllSettingsProviders(requireContext()).flatMap { it.getEntriesStatic(requireContext()) }) {
             entry.createPreference()
+        }
+
+        findPreference<Preference>(PREF_IGNORE_BATTERY_OPTIMIZATION)?.isVisible =
+            !isBatteryOptimizationPermissionGranted()
+
+        findPreference<Preference>(PREF_IGNORE_BATTERY_OPTIMIZATION)?.setOnPreferenceClickListener {
+            requestBatteryOptimizationPermission()
+            true
+        }
+    }
+
+    private fun isBatteryOptimizationPermissionGranted(): Boolean {
+        val powerManager = requireContext().getSystemService(Context.POWER_SERVICE) as PowerManager
+        val packageName = requireContext().packageName
+        return powerManager.isIgnoringBatteryOptimizations(packageName)
+    }
+
+    private fun requestBatteryOptimizationPermission() {
+        val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
+            data = Uri.parse("package:${requireContext().packageName}")
+        }
+        startActivity(intent)
+    }
+
+    private fun updateBatteryOptimizationPreferenceVisibility() {
+        findPreference<Preference>(PREF_IGNORE_BATTERY_OPTIMIZATION)?.apply {
+            isVisible = !isBatteryOptimizationPermissionGranted()
+            setOnPreferenceClickListener {
+                requestBatteryOptimizationPermission()
+                true
+            }
         }
     }
 
@@ -136,6 +172,7 @@ class SettingsFragment : ResourceSettingsFragment() {
 
     override fun onResume() {
         super.onResume()
+        updateBatteryOptimizationPreferenceVisibility()
         val context = requireContext()
         if (GcmPrefs.get(requireContext()).isEnabled) {
             val database = GcmDatabase(context)
