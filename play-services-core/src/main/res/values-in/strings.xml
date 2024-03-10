@@ -69,8 +69,8 @@
     <string name="self_check_name_correct_sig"><xliff:g example="F-Droid">%1$s</xliff:g> tanda tangan yang benar</string>
     <string name="self_check_resolution_correct_sig">Baik <xliff:g example="F-Droid yang diinstal ">%1$s</xliff:g> tidak kompatibel atau spoofing tanda tangan tidak aktif untuk itu. Silakan periksa dokumentasi aplikasi dan ROM mana yang kompatibel</string>
 
-    <string name="self_check_name_battery_optimizations">Pengoptimalan baterai diabaikan</string>
-    <string name="self_check_resolution_battery_optimizations">Sentuh di sini untuk menonaktifkan pengoptimalan baterai. Tidak melakukan hal ini dapat mengakibatkan aplikasi berperilaku buruk</string>
+    <string name="self_check_name_battery_optimizations">Abaikan pengoptimalan baterai</string>
+    <string name="self_check_resolution_battery_optimizations">Sentuh di sini untuk menonaktifkan pengoptimalan baterai. Tidak melakukan hal ini dapat menyebabkan masalah dalam menerima notifikasi dari YouTube dan aplikasi terdaftar lainnya</string>
 
     <string name="self_check_pkg_revanced">ReVanced</string>
     <string name="self_check_pkg_revanced_extended">ReVanced Extended</string>
