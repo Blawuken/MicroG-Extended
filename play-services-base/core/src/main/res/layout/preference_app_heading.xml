@@ -1,68 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ SPDX-FileCopyrightText: 2023 microG Project Team
   ~ SPDX-License-Identifier: Apache-2.0
   -->
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    style="?attr/materialCardViewFilledStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="?attr/listPreferredItemPaddingStart"
-    android:paddingTop="32dp"
-    android:paddingEnd="?attr/listPreferredItemPaddingEnd"
-    android:paddingBottom="32dp">
+    android:layout_margin="17dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="?colorSurfaceContainer"
+    app:cardCornerRadius="28dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@android:id/icon"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:layout_gravity="center"
             android:antialias="true"
-            android:scaleType="fitCenter"
-            tools:src="@android:mipmap/sym_def_app_icon" />
+            android:scaleType="fitCenter" />
 
         <TextView
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
             android:ellipsize="marquee"
             android:gravity="center"
             android:singleLine="false"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textColor="?android:attr/textColorPrimary"
-            tools:text="@tools:sample/lorem" />
+            android:textAppearance="?attr/textAppearanceTitleLarge"
+            android:textColor="?android:attr/textColorPrimary" />
 
         <TextView
             android:id="@+id/version_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="?android:textColorPrimary"
-            tools:text="1.0.0" />
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?android:textColorPrimary" />
 
         <TextView
             android:id="@+id/package_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="?android:textColorSecondary"
-            tools:text="com.example.package" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary" />
 
-        <TextView
+        <com.google.android.material.chip.Chip
             android:id="@+id/patcher_name"
+            style="@style/Widget.Material3.Chip.Assist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="?android:colorAccent"
-            android:visibility="gone"
-            tools:text="ReVanced" />
+            android:layout_gravity="center"
+            android:clickable="false"
+            app:chipBackgroundColor="?colorPrimaryContainer"
+            app:chipIcon="@drawable/ic_patcher"
+            app:chipStrokeWidth="0dp" />
     </LinearLayout>
-</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
