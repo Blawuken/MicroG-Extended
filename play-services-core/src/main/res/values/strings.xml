@@ -74,7 +74,7 @@
 
     <string name="self_check_pkg_revanced">ReVanced</string>
     <string name="self_check_pkg_revanced_extended">ReVanced Extended</string>
-    <!-- <string name="self_check_pkg_youtube_advanced">YouTube Advanced</string> -->
+    <string name="self_check_pkg_youtube_advanced">YouTube Advanced</string> -->
     <string name="self_check_pkg_vanced">Vanced</string>
     <string name="self_check_revanced_name_app_installed">Running with <xliff:g example="F-Droid">%1$s</xliff:g></string>
     <string name="self_check_revanced_resolution_app_installed"><xliff:g example="F-Droid">%1$s</xliff:g> apps not found, compile or install a modified apk</string>
