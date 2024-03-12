@@ -25,9 +25,9 @@ android {
 
 dependencies {
     // Dependencies from play-services-gcm:17.0.0
-    api "androidx.collection:collection:1.0.0"
-    api "androidx.core:core:1.0.0"
-    api 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    api "androidx.collection:collection:$collectionVersion"
+    api "androidx.core:core:$coreVersion"
+    api "androidx.legacy:legacy-support-core-utils:$legacysupportcoreutilsVersion"
     api project(':play-services-base')
     api project(':play-services-basement')
     api project(':play-services-iid')
