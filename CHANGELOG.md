@@ -1,3 +1,25 @@
+# [1.24.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.23.0...v1.24.0) (2024-03-12)
+
+
+### Bug Fixes
+
+* Fixed pading bottom in background ([f619d49](https://github.com/Blawuken/MicroG-Extended/commit/f619d496f22591430248d51a91bc3564678ff0aa))
+* Fixed Updater preference dialog Display ([94c8afa](https://github.com/Blawuken/MicroG-Extended/commit/94c8afac489730afc23c9ebd0c2631b9ad829f5b))
+
+
+### Features
+
+* Add Google Apps signing key for automatic permission granting ([4edf0ad](https://github.com/Blawuken/MicroG-Extended/commit/4edf0ad690d52446941f84376d3dedf3a7d93c23))
+* Added request battery optimization card in home settings ([9d94b64](https://github.com/Blawuken/MicroG-Extended/commit/9d94b643bb854025f4079fedd0bf62c86a846987))
+* Bringback add YT Advanced detection ([908a0f6](https://github.com/Blawuken/MicroG-Extended/commit/908a0f6b43288e3a4f0b2e1169926f87185ffc06))
+* Bump GMS version to 24.08.12 ([a271ff4](https://github.com/Blawuken/MicroG-Extended/commit/a271ff4207663fa9ba75414ebdb38ca3d3be28dc))
+* Improve dummy for FITNESS_HISTORY service ([ea1acc3](https://github.com/Blawuken/MicroG-Extended/commit/ea1acc3a06545c080586c5c043b2a36064072873))
+* Improvement app heading design ([61b10da](https://github.com/Blawuken/MicroG-Extended/commit/61b10daa087c3687c290e24daab5ad9d43169f6e))
+* Make supporting theme in another activity ([42cd7a5](https://github.com/Blawuken/MicroG-Extended/commit/42cd7a5c8d114ccdacbbc2c9f9f27ce5dec88195))
+* Refactor code and update minimum API 27 ([1d8e080](https://github.com/Blawuken/MicroG-Extended/commit/1d8e0809c997a022e83a2ec80f5405d2ef703876))
+* Rework known google package system ([28e5ec6](https://github.com/Blawuken/MicroG-Extended/commit/28e5ec6ed5e771225f260e0ffe0958a96d1ea199))
+* Update build tools and dependencies ([c53ecc6](https://github.com/Blawuken/MicroG-Extended/commit/c53ecc6c93f448bfed6f4ffca35041cec3f859ed))
+
 # [1.23.0](https://github.com/Blawuken/MicroG-Extended/compare/v1.22.0...v1.23.0) (2024-03-05)
 
 
