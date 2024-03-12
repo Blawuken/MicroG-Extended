@@ -35,13 +35,6 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
-      - name: Cache Node modules
-        uses: actions/cache@v3
-        with:
-          path: |
-            node_modules
-          key: npm-${{ hashFiles('package-lock.json') }}
-
       - name: "Gradle Wrapper validation"
         uses: gradle/wrapper-validation-action@v2
 
@@ -95,7 +88,13 @@ jobs:
           sudo apt-get -y install apksigner
           apksigner sign --key platform.pk8 --cert platform.x509.pem play-services-core/build/outputs/apk/default/release/*.apk
 
-      - name: Setup semantic-release
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: 'npm'
+
+      - name: Install dependencies
         run: npm install
 
       - name: Release
