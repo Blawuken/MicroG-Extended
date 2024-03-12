@@ -1,5 +1,9 @@
 package com.neko.appupdater;
 
+import android.content.Context;
+import android.os.Build;
+import android.util.AttributeSet;
+
 import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -77,25 +81,78 @@ class UtilsDisplay {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         initNotificationChannel(context, notificationManager);
 
-        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_CANCEL_CURRENT);
-        PendingIntent pendingIntentUpdate = PendingIntent.getActivity(context, 0, UtilsLibrary.intentToUpdate(context, updateFrom, apk), PendingIntent.FLAG_CANCEL_CURRENT);
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.S) {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            PendingIntent pendingIntentUpdate = PendingIntent.getActivity(context, 0, UtilsLibrary.intentToUpdate(context, updateFrom, apk), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
-        NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
                 .addAction(R.drawable.ic_system_update_white_24dp, context.getResources().getString(R.string.appupdater_btn_update), pendingIntentUpdate);
 
-        notificationManager.notify(0, builder.build());
+            notificationManager.notify(0, builder.build());
+        } else {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent pendingIntentUpdate = PendingIntent.getActivity(context, 0, UtilsLibrary.intentToUpdate(context, updateFrom, apk), PendingIntent.FLAG_UPDATE_CURRENT);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .addAction(R.drawable.ic_system_update_white_24dp, context.getResources().getString(R.string.appupdater_btn_update), pendingIntentUpdate);
+
+            notificationManager.notify(0, builder.build());
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+            PendingIntent pendingIntentUpdate = PendingIntent.getActivity(context, 0, UtilsLibrary.intentToUpdate(context, updateFrom, apk), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .addAction(R.drawable.ic_system_update_white_24dp, context.getResources().getString(R.string.appupdater_btn_update), pendingIntentUpdate);
+
+            notificationManager.notify(0, builder.build());
+        } else {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent pendingIntentUpdate = PendingIntent.getActivity(context, 0, UtilsLibrary.intentToUpdate(context, updateFrom, apk), PendingIntent.FLAG_UPDATE_CURRENT);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .addAction(R.drawable.ic_system_update_white_24dp, context.getResources().getString(R.string.appupdater_btn_update), pendingIntentUpdate);
+
+            notificationManager.notify(0, builder.build());
+        }
     }
 
     static void showUpdateNotAvailableNotification(Context context, String title, String content, int smallIconResourceId) {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         initNotificationChannel(context, notificationManager);
 
-        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_CANCEL_CURRENT);
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.S) {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
-        NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
                 .setAutoCancel(true);
 
-        notificationManager.notify(0, builder.build());
+            notificationManager.notify(0, builder.build());
+        } else {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .setAutoCancel(true);
+
+            notificationManager.notify(0, builder.build());
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .setAutoCancel(true);
+
+            notificationManager.notify(0, builder.build());
+        } else {
+            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, context.getPackageManager().getLaunchIntentForPackage(UtilsLibrary.getAppPackageName(context)), PendingIntent.FLAG_UPDATE_CURRENT);
+
+            NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
+                .setAutoCancel(true);
+
+            notificationManager.notify(0, builder.build());
+        }
     }
 
     private static NotificationCompat.Builder getBaseNotification(Context context, PendingIntent contentIntent, String title, String content, int smallIconResourceId) {
@@ -112,7 +169,7 @@ class UtilsDisplay {
     }
 
     private static void initNotificationChannel(Context context, NotificationManager notificationManager) {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel mChannel = new NotificationChannel(
                     context.getString(R.string.appupdater_channel),
                     context.getString(R.string.appupdater_channel_name),
