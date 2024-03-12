@@ -35,7 +35,7 @@ description = 'microG implementation of play-services-cast-framework'
 
 dependencies {
     // Dependencies from play-services-cast-framework:21.2.0
-    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.appcompat:appcompat:1.6.1'
     api 'androidx.collection:collection:1.0.0'
     api 'androidx.concurrent:concurrent-futures:1.1.0'
     api 'androidx.core:core:1.0.0'
