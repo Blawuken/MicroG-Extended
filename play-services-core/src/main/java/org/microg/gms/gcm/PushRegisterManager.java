@@ -24,7 +24,6 @@ import org.microg.gms.checkin.LastCheckinInfo;
 import org.microg.gms.common.HttpFormClient;
 import org.microg.gms.common.PackageUtils;
 import org.microg.gms.common.Utils;
-import org.microg.gms.utils.ExtendedPackageInfo;
 
 import java.io.IOException;
 
@@ -71,16 +70,15 @@ public class PushRegisterManager {
 
     public static void completeRegisterRequest(Context context, GcmDatabase database, String requestId, RegisterRequest request, BundleCallback callback) {
         if (request.app != null) {
-            ExtendedPackageInfo packageInfo = new ExtendedPackageInfo(context, request.app);
             if (request.appVersion <= 0)
-                request.appVersion = packageInfo.getShortVersionCode();
+                request.appVersion = PackageUtils.versionCode(context, request.app);
             if (!request.delete) {
                 if (request.appSignature == null) {
-                    request.appSignature = packageInfo.getFirstCertificateSha1Hex();
+                    request.appSignature = PackageUtils.firstSignatureDigest(context, request.app);
                 }
-                request.sdkVersion = packageInfo.getTargetSdkVersion();
+                request.sdkVersion = PackageUtils.targetSdkVersion(context, request.app);
                 if (!request.hasExtraParam(GcmConstants.EXTRA_APP_VERSION_NAME))
-                    request.extraParam(GcmConstants.EXTRA_APP_VERSION_NAME, packageInfo.getVersionName());
+                    request.extraParam(GcmConstants.EXTRA_APP_VERSION_NAME, PackageUtils.versionName(context, request.app));
             }
         }
 

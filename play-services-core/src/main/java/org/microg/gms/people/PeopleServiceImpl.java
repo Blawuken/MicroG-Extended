@@ -35,7 +35,6 @@ import com.google.android.gms.people.internal.IPeopleService;
 import com.google.android.gms.people.model.AccountMetadata;
 
 import org.microg.gms.auth.AuthConstants;
-import org.microg.gms.common.GooglePackagePermission;
 import org.microg.gms.common.NonCancelToken;
 import org.microg.gms.common.PackageUtils;
 
@@ -54,7 +53,7 @@ public class PeopleServiceImpl extends IPeopleService.Stub {
     public void loadOwners(final IPeopleCallbacks callbacks, boolean var2, boolean var3, final String accountName, String var5, int sortOrder) {
         Log.d(TAG, "loadOwners: " + var2 + ", " + var3 + ", " + accountName + ", " + var5 + ", " + sortOrder);
         if (context.checkCallingPermission(Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-            PackageUtils.assertGooglePackagePermission(context, GooglePackagePermission.OWNER);
+            PackageUtils.assertExtendedAccess(context);
         }
         AccountManager accountManager = AccountManager.get(context);
         Bundle accountMetadata = new Bundle();
@@ -93,7 +92,7 @@ public class PeopleServiceImpl extends IPeopleService.Stub {
     @Override
     public void loadCircles(IPeopleCallbacks callbacks, String account, String pageGaiaId, String circleId, int type, String var6, boolean var7) throws RemoteException {
         Log.d(TAG, "loadCircles: " + account + ", " + pageGaiaId + ", " + circleId + ", " + type + ", " + var6 + ", " + var7);
-        PackageUtils.assertGooglePackagePermission(context, GooglePackagePermission.PEOPLE);
+        PackageUtils.assertExtendedAccess(context);
         try {
             DatabaseHelper databaseHelper = new DatabaseHelper(context);
             Cursor owner = databaseHelper.getOwner(account);
@@ -120,7 +119,7 @@ public class PeopleServiceImpl extends IPeopleService.Stub {
     @Override
     public ICancelToken loadOwnerAvatar(final IPeopleCallbacks callbacks, final String account, String pageId, int size, int flags) {
         Log.d(TAG, "loadOwnerAvatar: " + account + ", " + pageId + ", " + size + ", " + flags);
-        PackageUtils.assertGooglePackagePermission(context, GooglePackagePermission.OWNER);
+        PackageUtils.assertExtendedAccess(context);
         final Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {

@@ -13,7 +13,6 @@ import android.os.Parcel
 import android.util.Log
 import com.google.android.gms.auth.appcert.IAppCertService
 import kotlinx.coroutines.runBlocking
-import org.microg.gms.common.GooglePackagePermission
 import org.microg.gms.common.PackageUtils
 import org.microg.gms.utils.warnOnTransactionIssues
 
@@ -30,12 +29,12 @@ class AppCertServiceImpl(private val context: Context) : IAppCertService.Stub() 
     private val manager = AppCertManager(context)
 
     override fun fetchDeviceKey(): Boolean {
-        PackageUtils.assertGooglePackagePermission(context, GooglePackagePermission.APP_CERT)
+        PackageUtils.assertExtendedAccess(context)
         return runBlocking { manager.fetchDeviceKey() }
     }
 
     override fun getSpatulaHeader(packageName: String): String? {
-        PackageUtils.assertGooglePackagePermission(context, GooglePackagePermission.APP_CERT)
+        PackageUtils.assertExtendedAccess(context)
         return runBlocking { manager.getSpatulaHeader(packageName) }
     }
 
