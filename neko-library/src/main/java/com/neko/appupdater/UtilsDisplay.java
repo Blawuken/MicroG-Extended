@@ -14,7 +14,7 @@ import android.media.RingtoneManager;
 import androidx.core.app.NotificationCompat;
 import android.app.AlertDialog;
 import android.view.View;
-import com.google.android.gms.R;
+import com.neko.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import com.neko.appupdater.enums.UpdateFrom;

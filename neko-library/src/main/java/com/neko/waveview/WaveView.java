@@ -8,7 +8,7 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import com.google.android.gms.R;
+import com.neko.R;
 
 /**
  * Created by John on 2014/10/15.

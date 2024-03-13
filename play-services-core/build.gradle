@@ -20,6 +20,7 @@ dependencies {
     implementation project(':fake-signature')
     implementation project(':play-services-base-core-package')
     implementation project(':play-services-fitness')
+    implementation project(':neko-library')
 
     // AndroidX UI
     implementation "androidx.multidex:multidex:$multidexVersion"
@@ -49,10 +50,6 @@ dependencies {
 
     // skydoves ElasticViews
     implementation "com.github.skydoves:elasticviews:$skydoveselasticviewsVersion"
-
-    // Updater
-    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
-    implementation "org.jsoup:jsoup:$jsoupVersion"
 
     // Anu
     implementation fileTree(dir: 'libs/', include: ['*.jar', '*.aar'])

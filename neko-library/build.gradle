@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.neko"
+
+    compileSdkVersion androidCompileSdk
+    buildToolsVersion "$androidBuildVersionTools"
+
+    defaultConfig {
+        versionName project.version as String
+        minSdkVersion androidMinSdk
+        targetSdkVersion androidTargetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+
+dependencies {
+    api "androidx.appcompat:appcompat:$appcompatVersion"
+    api "com.google.android.material:material:$materialVersion"
+    api "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    api "org.jsoup:jsoup:$jsoupVersion"
+}

@@ -7,7 +7,7 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.R;
+import com.neko.R;
 
 // y=Asin(ωx+φ)+k
 class Wave extends View {

@@ -11,7 +11,7 @@ import android.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.android.gms.R;
+import com.neko.R;
 import com.neko.appupdater.enums.AppUpdaterError;
 import com.neko.appupdater.enums.Display;
 import com.neko.appupdater.enums.Duration;

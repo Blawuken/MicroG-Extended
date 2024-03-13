@@ -1,12 +1,12 @@
-package android.annotation.support.v3.services;
+package com.neko.password;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import androidx.appcompat.app.AlertDialog;
 
 public class privacy {
     private final Context mContext;

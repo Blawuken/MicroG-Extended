@@ -1,6 +1,5 @@
 package org.microg.gms.ui;
 
-import android.annotation.support.v3.services.privacy;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -21,6 +20,7 @@ import org.microg.tools.ui.BaseActivity;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import org.microg.gms.ui.settings.SettingsProvider;
 import com.google.android.gms.databinding.SettingsRootActivityBinding;
+import com.neko.password.privacy;
 
 import static org.microg.gms.ui.settings.SettingsProviderKt.getAllSettingsProviders;
 
